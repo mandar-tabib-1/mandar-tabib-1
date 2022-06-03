@@ -2,7 +2,7 @@
 - 👀 I’m interested in fluid dynamics and machine learning
 - 🌱 I’m currently learning applications of ML in fluid dynamics. 
 - 💞️ I’m looking to collaborate on such topics.
-- 📫 How to reach me : email ID. 
+- 📫 How to reach me : mandar.tabib@sintef.no 
 
 <!---
 mandar-tabib-1/mandar-tabib is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
