@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @mandar-tabib
-- 👀 I’m interested in fluid dynamics and machine learning
-- 🌱 I’m currently learning applications of ML in fluid dynamics. 
+- 👀 I’m interested combining artificial intelligence with physics-based models like CFD.
+- 🌱 I have worked on hybrid methods to combine them.
 - 💞️ I’m looking to collaborate on such topics.
 - 📫 How to reach me : mandar.tabib@sintef.no 
 
