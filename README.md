@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @mandar-tabib
-- 👀 I’m interested combining artificial intelligence with physics-based models like CFD.
+- 👀 I combine artificial intelligence with physics-based numerical modelling (like CFD, 1D models) for scientific fields.
 - 🌱 I have worked on hybrid methods to combine them.
 - 💞️ I’m looking to collaborate on such topics.
 - 📫 How to reach me : mandar.tabib@sintef.no 
