@@ -98,6 +98,7 @@ flowchart LR
   C --> H
   H --> G
   G --> W & P & Au
+  G -. "Agentic CFD" .-> C
   H --> W & Hy & Gh & P & Av & Au & S
   C --> Hy & P & Av & S
 ```
@@ -108,7 +109,7 @@ flowchart LR
 ## 🤖 Flagship 2025–2026: Agentic AI × Hybrid Modelling
 
 **Question:** *Can LLM-based agents automate physics-based engineering workflows, and can local open-weight LLMs replace costly closed models?*
-We tested this on three industrial cases, all following a **propose → verify → constrain** pattern.
+We tested this on four cases, from industrial operations to fully agentic CFD simulation, all following a **propose → verify → constrain** pattern.
 
 <table>
 <tr>
@@ -125,6 +126,16 @@ A nine-module pipeline: live weather data (yr.no API + BM25/RAG search) → crit
 <img src="assets/agentic/agentic_windfarm_architecture.png" width="100%" alt="Agentic wind farm architecture"/>
 <img src="assets/agentic/gp_power_uncertainty.png" width="49%" alt="Gaussian process power prediction"/>
 <img src="assets/agentic/pdm_pipeline.png" width="49%" alt="Predictive maintenance pipeline"/>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" align="center">
+<img src="assets/agentic/llm4_optimization.png" width="320" alt="LLM-4-Optimization: agent-orchestrated optimisers, native tool calling vs prompt-based ReAct, and power gain by method"/><br/>
+<sub><b>Agents in optimisation (LLM-4-Optimization).</b> The agent is <i>not</i> the optimiser; it <i>chooses</i> one. In a multi-step loop with self-verification it calls <code>evaluate_yaw</code>, <code>run_optimizer</code>, <code>compare_results</code>, <code>validate_physics</code> and <code>commit_solution</code>, reasoning over earlier results before each new call. We compared native tool calling with prompt-based ReAct.</sub>
+</td>
+<td width="50%" valign="top" align="center">
+<img src="assets/agentic/llm4_pdm_code_vs_tool.png" width="442" alt="LLM-4-PdM-Code vs LLM-4-PdM-Tool fault predictions"/><br/>
+<sub><b>Agents in predictive maintenance.</b> <b>LLM-4-PdM-Code</b> writes its own diagnostic code (its own tool) from the SCADA data. <b>LLM-4-PdM-Tool</b> uses external tools we provide: a persistence test, decision-boundary instability analysis, feature-level analysis and a SHAP consistency check. The LLM's reasoning is logged for audit.</sub>
 </td>
 </tr>
 <tr>
@@ -154,12 +165,38 @@ An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintai
 <img src="assets/agentic/shipagent_rams_architecture.png" width="100%" alt="ShipAgent RAMS architecture"/>
 </td>
 </tr>
+<tr>
+<td colspan="2" valign="top">
+
+**Case 4 · Agentic Simulation with Agentic CFD** *(in collaboration with NTNU: Mikael Shahly and Adil Rasheed, with Vasileios Tsiolakis, SINTEF)*
+*Can a team of AI agents, supervised by a human, take a fluid-flow simulation from a one-sentence request to a validated result?*
+Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticCFD** chains four pipeline agents: **Specification → Case Builder → Mesh → Improvement**. A user approval gate follows each agent. Three fresh-context subagents are on call: an **adversarial critic** briefed to *fail* each mesh and result, a CFD hand, and a source explorer. The design is cybernetic: one feedback loop closed three times, as agent ↔ case, critic ↔ builder, and user ↔ agents. Every number in the specification carries a provenance tag (`[ASSUMED]`, `[INFERRED]`, `[COMPUTED]`, `[REVISED]`, `[RETRACTED]`).
+
+| Case (increasing difficulty) | Result vs trusted reference |
+|---|---|
+| 🔵 **Cylinder** ("I want to do a simulation of flow past a cylinder") | drag within **2.0 %**, shedding frequency within **0.3 %** of benchmark; all 5 spec criteria met |
+| 🟣 **NASA wall-mounted hump** (strong separation, 175k-cell wall-resolved mesh, 2 turbulence models) | reattachment within **0.4 %** of NASA's reference solution |
+| 🟢 **Industrial pipe flange, 3D** (no published answer) | validated by self-consistency: mesh refinement until Δp converges, plus mass-balance and wall-resolution checks; a split verdict reported honestly |
+| 🟠 **E779A rotating propeller** (blade rebuilt from tables) | thrust within **1.7 %** of experiment, up from 38 % off after the agent found a bug in its *own* geometry code |
+
+✅ Every case was driven by **a user with no prior CFD background**, and the agents found and cited the reference data themselves. The agents also caught a physically impossible request (vortex shedding at Re < 40) and refused an unsuitable meshing tool after checking the source.
+
+<p align="center">
+<img src="assets/agentic/agentic_cfd_pipeline_architecture.png" width="100%" alt="AgenticCFD pipeline with approval gates and software architecture"/><br/>
+<img src="assets/agentic/agentic_cfd_case_studies.png" width="100%" alt="AgenticCFD case studies: cylinder, NASA hump, flange, propeller"/><br/>
+<sub>AgenticCFD: the pipeline with four approval gates, the software architecture, and the four validation case studies.</sub>
+</p>
+
+</td>
+</tr>
 </table>
 
 <details>
-<summary><b>📊 Show benchmark results: ML vs LLM fault diagnosis and optimiser comparison</b></summary>
+<summary><b>📊 Show more: AgenticCFD feedback loops, ML vs LLM fault diagnosis, optimiser comparison</b></summary>
 <br/>
 <p align="center">
+<img src="assets/agentic/agentic_cfd_loops.png" width="90%" alt="AgenticCFD: one feedback loop closed three times"/><br/>
+<sub>AgenticCFD's cybernetic idea: the agent corrects the case (1), the critic checks the builder (2), and the user governs the process (3).</sub><br/><br/>
 <img src="assets/agentic/ml_vs_llm_fault_diagnosis.png" width="80%" alt="ML pipeline vs LLM fault diagnosis"/><br/>
 <sub>Ground truth vs ML pipeline vs LLM-alone vs LLM+tools on an unseen turbine (SCADA data).</sub><br/><br/>
 <img src="assets/agentic/optimizer_benchmark.png" width="90%" alt="Optimiser benchmark"/><br/>
@@ -170,6 +207,7 @@ An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintai
 
 **Challenges we worked to mitigate in multi-turn agent loops:** LLM and workflow latency · tool integration · reproducibility (prompt sensitivity, model choice) · verifying agents · context bloat, compaction and drift · token cost.
 *Poster: "Testing Agentic AI and Hybrid Modelling for Optimization and Predictive Maintenance in Engineering", M. Tabib & A. Rasheed, SINTEF (2026). Funded by the Research Council of Norway, the EU and SINTEF (FME NorthWind, AI4HyDROP, SEP, TAPI).*
+*Poster: "Agentic CFD: Building AI Agents for Physics-Based Simulation", A. Rasheed, M. Shahly, V. Tsiolakis & M. Tabib, NTNU / SINTEF Digital (2026).*
 </details>
 
 ---
@@ -509,7 +547,7 @@ An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintai
 | **Safe RL** with predictive safety filters | Wake steering, drones, vessels |
 | **Generative AI** super-resolution (GAN, diffusion) | Wind-field state estimation |
 | **ML data assimilation**: EnKF + nudging | Aviation wake vortices |
-| **Agentic AI**: LLM orchestration + verifiers | Wind farm, aluminium, ships |
+| **Agentic AI**: LLM orchestration + verifiers | Wind farm, aluminium, ships, **agentic CFD (OpenFOAM)** |
 
 </td>
 </tr>
