@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1400&color=1F8FBF&center=true&vCenter=true&width=860&lines=Senior+Research+Scientist+%C2%B7+SINTEF+Digital%2C+Trondheim%2C+Norway;~20+years+combining+physics-based+models+with+AI;Scientific+ML+%C2%B7+Hybrid+Analysis+%26+Modelling+(HAM)+%C2%B7+Digital+Twins;Agentic+AI+%2B+LLMs+orchestrating+physics+and+hybrid+models;Wind+%C2%B7+Hydrogen+%C2%B7+Process+%26+Oil-Gas+%C2%B7+Aviation+%C2%B7+Drones+%C2%B7+Ships;Open+to+collaboration+%E2%80%94+let's+build+trustworthy+AI+for+engineering" alt="Typing SVG"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1400&color=1F8FBF&center=true&vCenter=true&width=860&lines=Senior+Research+Scientist+%C2%B7+SINTEF+Digital%2C+Trondheim%2C+Norway;Energy+%C2%B7+Process+%26+Oil-Gas+%C2%B7+ Defense Industry +%C2%B7+Drones+%C2%B7+Ships;Open+to+Research+Collaboration" alt="Typing SVG"/></a>
 </p>
 
 <p align="center">
@@ -32,24 +32,48 @@
 
 ## 👋 About me
 
-I am a **Senior Research Scientist** in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway, one of Europe's largest independent research organisations.
-For nearly **two decades** I have worked on **combining artificial intelligence with physics-based models**, and I apply these methods across energy, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health.
+I am a Senior Research Scientist in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway. SINTEF is one of Europe's largest independent research organisations with more than 2000 employees. For nearly two decades including my Ph.D. and my Master's thesis, I have worked on numerical tools involving either artificial intelligence or physics-based models or combining both in novel ways. I like to apply these methods across energy, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health.
 
-My research develops computational tools in three connected areas:
+**My research** presented here is mostly published in scientific peer-reviewed journal publications as mentioned. The purpose of this Readme is to enable Research collaborations. 
+
+To summarize, my research develops computational tools in three connected areas, with table below giving some ideas on where it is applied.
 
 <table>
 <tr>
 <td width="33%" valign="top" align="center">
 <h3>🧠 Artificial Intelligence</h3>
-Deep learning (CNN, LSTM, Transformers, GANs, diffusion) · Reinforcement learning with safety filters · Gaussian processes & uncertainty-aware AI · Explainable AI (SHAP) · <b>Agentic AI & LLMs</b> for scientific workflows
+Deep learning (CNN, LSTM, Transformers, GANs, diffusion) · Reinforcement learning with safety filters · Gaussian processes & uncertainty-aware AI · Explainable AI (SHAP) · <b>Recently, Agentic AI & LLMs</b> for scientific workflows
 </td>
 <td width="33%" valign="top" align="center">
 <h3>⚛️ Hybrid Modelling (Physics + AI)</h3>
-Physics-informed NNs · Learned corrections of imperfect physics · Parametric reduced-order models (POD, autoencoders, Grassmann manifolds) · Equation discovery (SINDy, symbolic regression) · ML data assimilation · Optimal sensor placement
+Physics-informed NNs · Learned corrections of imperfect physics · Parametric reduced-order models (POD, autoencoders, Grassmann manifolds) · Equation discovery (SINDy, symbolic regression) · ML data assimilation · Optimal sensor placement.
 </td>
 <td width="33%" valign="top" align="center">
-<h3>🌊 Computational Fluid Dynamics</h3>
-LES / RANS turbulence · Multiphase & reactive flows · CFD-DEM · Actuator-line & sliding-mesh wind turbines · Multiscale (meso-to-micro) atmospheric flows · Fluid-structure interaction
+<h3>🌊 Numerical methods and Computational Fluid Dynamics</h3>
+LES / RANS turbulence · Multiphase & reactive flows · CFD-DEM · Actuator-line & sliding-mesh wind turbines · Multiscale (meso-to-micro) atmospheric flows · 
+</td>
+</tr>
+</table>
+
+## 🧰 Method toolbox: Hybrid Analysis & Modelling for digital twins, and Agentic AI.
+
+<table>
+<tr>
+<td width="42%" align="center"><img src="assets/methods/ham_venn.png" width="100%" alt="HAM at the intersection of physics, big data and data-driven models"/></td>
+<td width="58%" valign="top">
+
+| HAM method | Where I've used it |
+|---|---|
+| Physics-guided ML / **PINNs** (incl. Bayesian UQ) | Pore pressure, wind |
+| **Learned correction** of imperfect physics | Drilling 1D model, wake-vortex ROM |
+| **Parametric ROM**: POD / autoencoder + LSTM / Neural ODE / Grassmann | Wind, airfoils, urban flow, H₂ storage |
+| **Equation discovery**: SINDy, symbolic regression | Aluminium (COSTA-SINDy), turbine noise |
+| **Sparse sensing** & optimal sensor placement | Greenhouse, ship engine |
+| **Safe RL** with predictive safety filters | Wake steering, drones, vessels |
+| **Generative AI** super-resolution (GAN, diffusion) | Wind-field state estimation |
+| **ML data assimilation**: EnKF + nudging | Aviation wake vortices |
+| **Agentic AI**: LLM orchestration + verifiers | Wind farm, aluminium, ships, **agentic CFD (OpenFOAM)** |
+
 </td>
 </tr>
 </table>
@@ -87,10 +111,10 @@ flowchart LR
   end
   subgraph D["Where they create value"]
     W["🌬️ Wind farms"]
-    Hy["💧 Hydrogen & CO₂ capture"]
-    Gh["🌱 Greenhouse"]
+    Hy["💧  Low-Carbon Process Design"]
+    Gh["🌱 Smart Greenhouse"]
     P["🏭 Process & Oil-Gas"]
-    Av["✈️ Aviation"]
+    Av["✈️ Aviation and Defense"]
     Au["🚁🚢 Drones & Ships"]
     S["🏙️ Smart city"]
   end
