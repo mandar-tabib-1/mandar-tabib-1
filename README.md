@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1400&color=1F8FBF&center=true&vCenter=true&width=860&lines=Senior+Research+Scientist+%C2%B7+SINTEF+Digital%2C+Trondheim%2C+Norway;Energy+%C2%B7+Process+%26+Oil-Gas+%C2%B7+ Defense Industry +%C2%B7+Drones+%C2%B7+Ships;Open+to+Research+Collaboration" alt="Typing SVG"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1400&color=1F8FBF&center=true&vCenter=true&width=860&lines=Senior+Research+Scientist+%C2%B7+SINTEF+Digital%2C+Trondheim%2C+Norway;Energy+%C2%B7+Process Industry+%26+Oil-Gas+%C2%B7+ Defense Industry +%C2%B7+Drones+%C2%B7+Ships;Open+to+Research+Collaboration" alt="Typing SVG"/></a>
 </p>
 
 <p align="center">
@@ -32,11 +32,13 @@
 
 ## 👋 About me
 
-I am a Senior Research Scientist in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway. SINTEF is one of Europe's largest independent research organisations with more than 2000 employees. For nearly two decades including my Ph.D. and my Master's thesis, I have worked on numerical tools involving either artificial intelligence or physics-based models or combining both in novel ways. I like to apply these methods across energy, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health.
+I am a Senior Research Scientist in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway. 
+SINTEF is one of Europe's largest independent research organisations with more than 2000 employees. 
+For nearly two decades (including my Ph.D. and my Master's thesis), I have worked on numerical tools involving either artificial intelligence or physics-based models or combining both in novel ways (Hybrid analytics and modelling) while integrating new methods like Agentic AI and Generative AI in workflows. As disseminated below, I have applied these methods across domains like energy, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health sector.
 
-**My research** presented here is mostly published in scientific peer-reviewed journal publications as mentioned. The purpose of this Readme is to enable Research collaborations. 
+**My research** presented here is mostly published in scientific peer-reviewed journal publications as cited in references. The purpose of this Readme is to enable Research collaborations. 
 
-To summarize, my research develops computational tools in three connected areas, with table below giving some ideas on where it is applied.
+**To summarize**, my research develops computational tools in three connected areas, with table below giving some ideas on where it is applied.
 
 <table>
 <tr>
@@ -64,16 +66,16 @@ LES / RANS turbulence · Multiphase & reactive flows · CFD-DEM · Actuator-line
 
 | HAM method | Where I've used it |
 |---|---|
-| Physics-guided ML / **PINNs** (incl. Bayesian UQ) | Pore pressure, wind |
-| **Learned correction** of imperfect physics | Drilling 1D model, wake-vortex ROM |
-| **Parametric ROM**: POD / autoencoder + LSTM / Neural ODE / Grassmann | Wind, airfoils, urban flow, H₂ storage |
-| **Equation discovery**: SINDy, symbolic regression | Aluminium (COSTA-SINDy), turbine noise |
-| **Sparse sensing** & optimal sensor placement | Greenhouse, ship engine |
-| **Safe RL** with predictive safety filters | Wake steering, drones, vessels |
+|**Agentic AI**: LLM orchestration + verifiers | Wind farm, Aluminium Industry, Autonomous Ships, **Agentic CFD (OpenFOAM)** |
+| Physics-guided ML and Physics-informed Neural Networks |  Wind energy |
+| Uncertainty Quantification in ML (incl. Bayesian UQ) |  Pore pressure prediction|
+| **Learned correction** of imperfect physics | Drilling models , Aviation: Wake-vortex models. |
+| **Parametric ROM**: POD / autoencoder + LSTM / Neural ODE / Grassmann | Wind energy, Urban flow - Smart City, H₂ storage |
+| **Equation discovery**: SINDy, symbolic regression | Aluminium process (COSTA-SINDy), Turbine noise |
+| **Sparse sensing** & optimal sensor placement | Greenhouse, Ship engine |
+| **Safe RL** with predictive safety filters | Drone path planning, Autonomous Vessels, Defense |
 | **Generative AI** super-resolution (GAN, diffusion) | Wind-field state estimation |
 | **ML data assimilation**: EnKF + nudging | Aviation wake vortices |
-| **Agentic AI**: LLM orchestration + verifiers | Wind farm, aluminium, ships, **agentic CFD (OpenFOAM)** |
-
 </td>
 </tr>
 </table>
@@ -92,10 +94,10 @@ LES / RANS turbulence · Multiphase & reactive flows · CFD-DEM · Actuator-line
 <table align="center">
 <tr>
 <td align="center" width="14%"><a href="#wind">🌬️<br/><b>Wind &amp; Renewable Energy</b></a></td>
-<td align="center" width="14%"><a href="#hydrogen">💧<br/><b>Hydrogen &amp; Low-Carbon</b></a></td>
-<td align="center" width="14%"><a href="#greenhouse">🌱<br/><b>Greenhouse Digital Twin</b></a></td>
+<td align="center" width="14%"><a href="#hydrogen">💧<br/><b> Low-Carbon Process Design</b></a></td>
+<td align="center" width="14%"><a href="#greenhouse">🌱<br/><b> Digital Twin Enablers (example: Greenhouse) </b></a></td>
 <td align="center" width="14%"><a href="#process">🏭<br/><b>Process &amp; Oil-Gas</b></a></td>
-<td align="center" width="14%"><a href="#aviation">✈️<br/><b>Aviation Safety</b></a></td>
+<td align="center" width="14%"><a href="#aviation">✈️<br/><b>Aviation Safety and Defense </b></a></td>
 <td align="center" width="14%"><a href="#autonomy">🚁🚢<br/><b>Drones &amp; Autonomous Ships</b></a></td>
 <td align="center" width="14%"><a href="#smartcity">🏙️<br/><b>Smart City</b></a></td>
 </tr>
@@ -130,69 +132,66 @@ flowchart LR
 ---
 
 <a name="agentic"></a>
-## 🤖 Flagship 2025–2026: Agentic AI × Hybrid Modelling
+## 2025–2026: Agentic AI × Hybrid Modelling applied on four cases.
 
 **Question:** *Can LLM-based agents automate physics-based engineering workflows, and can local open-weight LLMs replace costly closed models?*
 We tested this on four cases, from industrial operations to fully agentic CFD simulation, all following a **propose → verify → constrain** pattern.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+### Case 1 · Wind farm: optimisation and predictive maintenance
 
-**Case 1 · Wind farm: optimisation and predictive maintenance**
 A nine-module pipeline: live weather data (yr.no API + BM25/RAG search) → critical turbine pairs → **parametric ROM of the wake (10,000× faster than CFD)** → **Gaussian-process power prediction with confidence bounds** → wake-steering optimisation, with an LLM choosing and iterating the optimiser via tool calls.
-- ✅ **+0.0923 MW** total gain over 3 optimised turbine pairs
-- ✅ Classical ML pipeline (Autoencoder + GMM health states + gradient-boosting classifier + RNN RUL + SHAP) **outperformed a local LLM** for SCADA fault diagnosis
-- ✅ Verifier / critic agents run in advisory or blocking mode with physics checks
+- ✅ Classical ML pipeline (Autoencoder + GMM health states + gradient-boosting classifier + RNN RUL + SHAP) **outperformed a local LLM with tools** for SCADA fault diagnosis
+- ✅ LLM used as Orchestrator, recommendor, critic agents that are run in advisory or blocking mode with physics checks.
 
-</td>
-<td width="50%" valign="top">
-<img src="assets/agentic/agentic_windfarm_architecture.png" width="100%" alt="Agentic wind farm architecture"/>
-<img src="assets/agentic/gp_power_uncertainty.png" width="49%" alt="Gaussian process power prediction"/>
-<img src="assets/agentic/pdm_pipeline.png" width="49%" alt="Predictive maintenance pipeline"/>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top" align="center">
-<img src="assets/agentic/llm4_optimization.png" width="320" alt="LLM-4-Optimization: agent-orchestrated optimisers, native tool calling vs prompt-based ReAct, and power gain by method"/><br/>
-<sub><b>Agents in optimisation (LLM-4-Optimization).</b> The agent is <i>not</i> the optimiser; it <i>chooses</i> one. In a multi-step loop with self-verification it calls <code>evaluate_yaw</code>, <code>run_optimizer</code>, <code>compare_results</code>, <code>validate_physics</code> and <code>commit_solution</code>, reasoning over earlier results before each new call. We compared native tool calling with prompt-based ReAct.</sub>
-</td>
-<td width="50%" valign="top" align="center">
-<img src="assets/agentic/llm4_pdm_code_vs_tool.png" width="442" alt="LLM-4-PdM-Code vs LLM-4-PdM-Tool fault predictions"/><br/>
-<sub><b>Agents in predictive maintenance.</b> <b>LLM-4-PdM-Code</b> writes its own diagnostic code (its own tool) from the SCADA data. <b>LLM-4-PdM-Tool</b> uses external tools we provide: a persistence test, decision-boundary instability analysis, feature-level analysis and a SHAP consistency check. The LLM's reasoning is logged for audit.</sub>
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-<img src="assets/agentic/aluminium_cell.jpg" width="42%" alt="Aluminium electrolysis cell"/>
-<img src="assets/agentic/aluminium_agent_loop.png" width="56%" alt="Multi-agent optimiser loop"/>
-</td>
-<td width="50%" valign="top">
+<p align="center">
+<img src="assets/agentic/agentic_windfarm_architecture.png" width="640" alt="Agentic wind farm architecture"/><br/>
+<img src="assets/agentic/gp_power_uncertainty.png" width="300" alt="Gaussian process power prediction"/>
+<img src="assets/agentic/pdm_pipeline.png" width="420" alt="Predictive maintenance pipeline"/>
+</p>
 
-**Case 2 · Aluminium electrolysis: agentic process optimisation**
+**Agents in optimisation (LLM-4-Optimization).** The agent is *not* the optimiser; it *chooses* one. In a multi-step loop with self-verification it calls `evaluate_yaw`, `run_optimizer`, `compare_results`, `validate_physics` and `commit_solution`, reasoning over earlier results before each new call. We compared native tool calling with prompt-based ReAct.
+
+<p align="center">
+<img src="assets/agentic/llm4_optimization.png" width="320" alt="LLM-4-Optimization: agent-orchestrated optimisers, native tool calling vs prompt-based ReAct, and power gain by method"/>
+</p>
+
+**Agents in predictive maintenance.** **LLM-4-PdM-Code** writes its own diagnostic code (its own tool) from the SCADA data. **LLM-4-PdM-Tool** uses external tools we provide: a persistence test, decision-boundary instability analysis, feature-level analysis and a SHAP consistency check. The LLM's reasoning is logged for audit.
+
+<p align="center">
+<img src="assets/agentic/llm4_pdm_code_vs_tool.png" width="442" alt="LLM-4-PdM-Code vs LLM-4-PdM-Tool fault predictions"/>
+</p>
+
+---
+
+### Case 2 · Aluminium electrolysis: agentic process optimisation
+
 An LLM agent sets the anode–cathode distance to minimise energy while keeping the process stable. It chooses between four simulators: physics ODE, neural, and two hybrids (COSTA-SINDy and COSTA-DDM).
 - ✅ Modest accuracy gain and **~10× lower run-to-run variance** than rule-based search
 - ⚠️ **~800× longer wall-clock** (275 s vs 0.3 s per run), mostly from LLM latency. This is an honest lesson on where agents pay off.
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<p align="center">
+<img src="assets/agentic/aluminium_cell.jpg" width="280" alt="Aluminium electrolysis cell"/>
+<img src="assets/agentic/aluminium_agent_loop.png" width="420" alt="Multi-agent optimiser loop"/>
+</p>
 
-**Case 3 · ShipAgent: multi-agent RAMS for autonomous vessels**
+---
+
+### Case 3 · ShipAgent: Multi-agent RAMS for autonomous vessels
+
 An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintainability and Safety agents over an ML-Kalman sensor-fusion layer. Collision avoidance combines a **COLREGS rule lookup** with an **RL policy guarded by a Predictive Safety Filter**, which escalates from speed reduction to steering correction, then override, then emergency stop.
 
 🔗 **Code:** [PowerLift-WindTurbine](https://github.com/mandar-tabib-1/PowerLift-WindTurbine) · [ShipAgent-RAMS](https://github.com/mandar-tabib-1/ShipAgent-RAMS) · 🌐 [Live demo: agentic wind farm](https://agenticwindfarm.streamlit.app/)
 
-</td>
-<td width="50%" valign="top">
-<img src="assets/agentic/shipagent_rams_architecture.png" width="100%" alt="ShipAgent RAMS architecture"/>
-</td>
-</tr>
-<tr>
-<td colspan="2" valign="top">
+<p align="center">
+<img src="assets/agentic/shipagent_rams_architecture.png" width="640" alt="ShipAgent RAMS architecture"/>
+</p>
 
-**Case 4 · Agentic Simulation with Agentic CFD** *(in collaboration with NTNU: Mikael Shahly and Adil Rasheed, with Vasileios Tsiolakis, SINTEF)*
+---
+
+### Case 4 · Agentic Simulation with Agentic CFD
+
+*(in collaboration with NTNU: Mikael Shahly and Adil Rasheed, with Vasileios Tsiolakis, SINTEF done with SEP funding.)*
+
 *Can a team of AI agents, supervised by a human, take a fluid-flow simulation from a one-sentence request to a validated result?*
 Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticCFD** chains four pipeline agents: **Specification → Case Builder → Mesh → Improvement**. A user approval gate follows each agent. Three fresh-context subagents are on call: an **adversarial critic** briefed to *fail* each mesh and result, a CFD hand, and a source explorer. The design is cybernetic: one feedback loop closed three times, as agent ↔ case, critic ↔ builder, and user ↔ agents. Every number in the specification carries a provenance tag (`[ASSUMED]`, `[INFERRED]`, `[COMPUTED]`, `[REVISED]`, `[RETRACTED]`).
 
@@ -206,14 +205,10 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 ✅ Every case was driven by **a user with no prior CFD background**, and the agents found and cited the reference data themselves. The agents also caught a physically impossible request (vortex shedding at Re < 40) and refused an unsuitable meshing tool after checking the source.
 
 <p align="center">
-<img src="assets/agentic/agentic_cfd_pipeline_architecture.png" width="100%" alt="AgenticCFD pipeline with approval gates and software architecture"/><br/>
-<img src="assets/agentic/agentic_cfd_case_studies.png" width="100%" alt="AgenticCFD case studies: cylinder, NASA hump, flange, propeller"/><br/>
+<img src="assets/agentic/agentic_cfd_pipeline_architecture.png" width="700" alt="AgenticCFD pipeline with approval gates and software architecture"/><br/>
+<img src="assets/agentic/agentic_cfd_case_studies.png" width="700" alt="AgenticCFD case studies: cylinder, NASA hump, flange, propeller"/><br/>
 <sub>AgenticCFD: the pipeline with four approval gates, the software architecture, and the four validation case studies.</sub>
 </p>
-
-</td>
-</tr>
-</table>
 
 <details>
 <summary><b>📊 Show more: AgenticCFD feedback loops, ML vs LLM fault diagnosis, optimiser comparison</b></summary>
@@ -237,7 +232,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 ---
 
 <a name="wind"></a>
-## 🌬️ 1 · Renewable & Green Energy: Wind
+## 🌬️ 1 · Renewable & Green Energy: Wind Energy.
 
 <table>
 <tr>
@@ -252,8 +247,8 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I bring**
-- **Digital-twin enablers for offshore wind farms (FME NorthWind, WP4 lead researcher):** semi-supervised predictive maintenance on SCADA data (Autoencoder + GMM + LSTM); **safe RL with safety filters** for wake-steering power optimisation; **physics-informed generative AI (GANs) for super-resolved wind states**; hybrid surrogates for wake prediction (PCA / conv-autoencoders + RNN / Neural ODE latent dynamics).
+**What I did**
+- **Develop Digital-twin enablers for offshore wind farms (FME NorthWind, WP4 lead researcher):** semi-supervised predictive maintenance on SCADA data (Autoencoder + GMM + LSTM); **safe RL with safety filters** for wake-steering power optimisation; **physics-informed generative AI (GANs) for super-resolved wind states**; hybrid surrogates for wake prediction (PCA / conv-autoencoders + RNN / Neural ODE latent dynamics). The Unity Digital Twin User-interface was developed in NTNU by Florian, and my enablers were developed for this purpose. 
 - **High-fidelity CFD of rotating turbines and real wind farms:** LES/RANS of the industrial-scale **Bessaker wind farm** (terrain, wakes, atmospheric stability); actuator-line vs sliding-mesh vs MRF comparisons; NREL 5 MW and marine-boundary-layer interaction; FSI (NOWITECH FME, KPN FSI-WT).
 - **Reduced-order models:** POD-based data mining of near wakes and parametric ROMs of flow around blades.
 - **Now:** *PreWinT* (2026–2028): an AI-enabled digital twin for **wind-turbine noise**, correcting low-order aero-acoustic models with symbolic regression.
