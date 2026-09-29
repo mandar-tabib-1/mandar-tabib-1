@@ -605,8 +605,12 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 <!-- REPOS:START -->
 | Repository | Description |
 |---|---|
-| [PowerLift-WindTurbine](https://github.com/mandar-tabib-1/PowerLift-WindTurbine) | Agentic AI framework for wind-farm wake-steering optimisation and predictive maintenance |
-| [ShipAgent-RAMS](https://github.com/mandar-tabib-1/ShipAgent-RAMS) | Multi-agent AI for reliability, availability, maintainability and safety of autonomous vessels |
+| [ShipAgent-RAMS](https://github.com/mandar-tabib-1/ShipAgent-RAMS) | Testing Collision Safety and Predictive Maintenance along with Sensor Reliability for Autonomous Vessels using Agents and LLM. |
+| [PowerLift-WindTurbine](https://github.com/mandar-tabib-1/PowerLift-WindTurbine) | — |
+| [GNN-FM](https://github.com/mandar-tabib-1/GNN-FM) | — |
+| [Python_AI_Prague](https://github.com/mandar-tabib-1/Python_AI_Prague) | AI for wind and turbulence along segment of prague city. |
+| [ROM_Prague](https://github.com/mandar-tabib-1/ROM_Prague) | — |
+| [HAM_win](https://github.com/mandar-tabib-1/HAM_win) | — |
 <!-- REPOS:END -->
 
 ---
