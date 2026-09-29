@@ -32,11 +32,16 @@
 
 ## 👋 About me
 
-I am a Senior Research Scientist in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway. 
-SINTEF is one of Europe's largest independent research organisations with more than 2000 employees. 
-For nearly two decades (including my Ph.D. and my Master's thesis), I have worked on numerical tools involving either artificial intelligence or physics-based models or combining both in novel ways (Hybrid analytics and modelling) while integrating new methods like Agentic AI and Generative AI in workflows. As disseminated below, I have applied these methods across domains like energy, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health sector.
+I am a Senior Research Scientist in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway.  
 
-**My research** presented here is mostly published in scientific peer-reviewed journal publications as cited in references. The purpose of this Readme is to enable Research collaborations. 
+SINTEF is one of Europe's largest independent research organisations with more than 2000 employees.  
+
+**My research**: For nearly two decades (including my Ph.D. and my Master's thesis), I have worked on numerical tools involving either artificial intelligence or physics-based models or combining both in novel ways (Hybrid analytics and modelling) while integrating new methods like Agentic AI and Generative AI in workflows and for digital twins and industry 4.0 . As disseminated below, I have applied these methods across domains like energy, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health sector.  
+
+
+**My research** presented here is mostly published in scientific peer-reviewed journal publications <ins>as cited below in references<ins>. The purpose of this Readme is to enable Research collaborations. 
+<ins>Note<ins>: Claude has been used to generate this readme.md based on my results and publications from different projects.  
+
 
 **To summarize**, my research develops computational tools in three connected areas, with table below giving some ideas on where it is applied.
 
@@ -57,7 +62,7 @@ LES / RANS turbulence · Multiphase & reactive flows · CFD-DEM · Actuator-line
 </tr>
 </table>
 
-## 🧰 Method toolbox: Hybrid Analysis & Modelling for digital twins, and Agentic AI.
+## 🧰Method toolbox: Hybrid Analysis & Modelling, and Agentic AI.
 
 <table>
 <tr>
@@ -189,8 +194,7 @@ An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintai
 ---
 
 ### Case 4 · Agentic Simulation with Agentic CFD
-
-*(in collaboration with NTNU: Mikael Shahly and Adil Rasheed, with Vasileios Tsiolakis, SINTEF done with SEP funding.)*
+*(in collaboration with NTNU: Mikael Shahly , Adil Rasheed, Vasileios Tsiolakis and myself with SEP funding.)*
 
 *Can a team of AI agents, supervised by a human, take a fluid-flow simulation from a one-sentence request to a validated result?*
 Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticCFD** chains four pipeline agents: **Specification → Case Builder → Mesh → Improvement**. A user approval gate follows each agent. Three fresh-context subagents are on call: an **adversarial critic** briefed to *fail* each mesh and result, a CFD hand, and a source explorer. The design is cybernetic: one feedback loop closed three times, as agent ↔ case, critic ↔ builder, and user ↔ agents. Every number in the specification carries a provenance tag (`[ASSUMED]`, `[INFERRED]`, `[COMPUTED]`, `[REVISED]`, `[RETRACTED]`).
@@ -248,7 +252,8 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </table>
 
 **What I did**
-- **Develop Digital-twin enablers for offshore wind farms (FME NorthWind, WP4 lead researcher):** semi-supervised predictive maintenance on SCADA data (Autoencoder + GMM + LSTM); **safe RL with safety filters** for wake-steering power optimisation; **physics-informed generative AI (GANs) for super-resolved wind states**; hybrid surrogates for wake prediction (PCA / conv-autoencoders + RNN / Neural ODE latent dynamics). The Unity Digital Twin User-interface was developed in NTNU by Florian, and my enablers were developed for this purpose. 
+- **Develop Digital-twin enablers for offshore wind farms (FME NorthWind, WP4 lead researcher):** semi-supervised predictive maintenance on SCADA data (Autoencoder + GMM + LSTM); **safe RL with safety filters** for wake-steering power optimisation; **physics-informed generative AI (GANs) for super-resolved wind states**; hybrid surrogates for wake prediction (PCA / conv-autoencoders + RNN / Neural ODE latent dynamics).  
+ Note: The Unity Digital Twin User-interface was developed in NTNU by Florian and Adil, and my enablers were developed for this digital twin. 
 - **High-fidelity CFD of rotating turbines and real wind farms:** LES/RANS of the industrial-scale **Bessaker wind farm** (terrain, wakes, atmospheric stability); actuator-line vs sliding-mesh vs MRF comparisons; NREL 5 MW and marine-boundary-layer interaction; FSI (NOWITECH FME, KPN FSI-WT).
 - **Reduced-order models:** POD-based data mining of near wakes and parametric ROMs of flow around blades.
 - **Now:** *PreWinT* (2026–2028): an AI-enabled digital twin for **wind-turbine noise**, correcting low-order aero-acoustic models with symbolic regression.
@@ -285,7 +290,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 ---
 
 <a name="hydrogen"></a>
-## 💧 2 · Hydrogen & Low-Carbon Energy Systems
+## 💧 2 · Low-Carbon Energy Systems Design and Hydrogen Process.
 
 <table>
 <tr>
@@ -304,7 +309,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I bring**
+**What I did**
 - **Hydrogen storage, thermal state estimation:** a deep-learning **hybrid POD-LSTM surrogate** that reconstructs natural-convection temperature fields in storage enclosures in real time.
 - **Hydrogen-material susceptibility (exploratory):** ML surrogates that estimate embrittlement indices of alloys from composition and processing features, replacing slow, costly experiments.
 - **Syngas (H₂/CO) chemical-looping combustion with CO₂ capture (EU DemoCLOCK, 500 kW):** a multiscale workflow in which 3D CFD-DEM of real pellet shapes (spheres, fluted rings, cylinders) supplies closures (Δp, heat and mass transfer, porosity) to a **1D multi-domain particle-reactor model**. This helps select oxygen-carrier shapes that minimise pressure drop, maximise conversion and avoid fuel slip.
@@ -345,7 +350,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I bring** *(project manager & lead researcher, 2023–2024, with NTNU Cybernetics)*
+**What research was done** *(project manager & lead researcher, 2023–2024, with NTNU Cybernetics)*
 - **Reconstruct the full 3D temperature field from only 10 sparse sensors:** POD basis functions plus QR-pivoted **optimal sensor placement**, trained offline on physics simulations and run online.
 - **Hybrid modelling** of spatio-temporal temperature evolution, and **control** via reinforcement learning, model-predictive control and **LLM agents**.
 - The full digital-twin stack: sensors → IoT/Azure → Unity 3D visualisation → state estimation, what-if analysis and autonomous maintenance. I supervised three MSc theses and helped set up the lab.
@@ -391,7 +396,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I bring**
+**What I did**
 - **Hybrid AI for drilling (KPN Hole Cleaning, Big Pressure; WP manager):** *learned corrections* of a physics-based 1D multiphase cuttings-transport model using along-string sensor data, both **intrusive (in-code)** and non-intrusive, **with uncertainty quantification**. In our comparison **LSTM (MSE 2.1×10⁻⁶) beat a Transformer (20.1×10⁻⁶)** for bottom-hole ECD correction. The work also covers real-time anomaly detection (Isolation Forest to LSTM-autoencoders), continual learning and drift monitoring, and **Bayesian PINNs for pore-pressure prediction** (multi-modal well logs + simulations).
 - **Multiphase and reactive CFD for design:** bubble columns, pump-mixers (LES with sub-grid-scale dispersion models), iron smelting, packed-bed reactors, CFD-DEM.
 - **Unsupervised ML on flow physics, since my PhD:** snapshot POD and hybrid **POD-wavelet** analysis to identify the dominant coherent structures that drive transport in process equipment.
@@ -447,7 +452,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I bring**
+**What I did**
 - **Real-time wake-vortex monitoring (EU SESAR, WP manager, 2014–2020):** ML-based data assimilation using an **ensemble Kalman filter with ML nudging**, which fuses sparse, noisy sensor data with imperfect reduced-order physics for optimal state estimation of vortex location. This directly supports runway throughput and safety.
 - **Airport flight-safety analysis at 10+ Norwegian airports for Avinor (PI, 2015–2020):** high-resolution CFD of **terrain- and building-induced turbulence and wind shear** at Stavanger-Sola, Bodø, Kristiansund, Gimsøya, Sandane and Ørsta-Volda, plus new airport siting. Twelve SINTEF reports delivered safety recommendations for critical infrastructure decisions.
 - **Deep-learning ROMs for aerofoils** (see the video below).
@@ -494,7 +499,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 <sub>Multiscale CFD (HARMONIE → SIMRA → building-resolved) → <b>ML reduced-order model</b> → turbulence along flight paths (hospital drone logistics).</sub>
 </p>
 
-**What I bring**
+**What I did**
 - **AI4HyDROP (EU SESAR, 2023–2025, SINTEF lead):** an AI safety framework for urban drone operations. **Physics-informed ML flow models compute urban turbulence in seconds**, which feeds **risk-aware RL path planning** and model-free control in turbulent cities.
 - **ATB, drones for medical transport between hospitals (RCN, WP manager):** hybrid analytics (ML + CFD) for real-time parametric urban wind prediction, using a **Grassmann-manifold deep-learning ROM**.
 - **Autonomous vessels (EU EDF dThor, 2022–2025):** ML-enhanced Kalman sensor fusion with adaptive noise, **RL + Predictive Safety Filter for COLREGS-compliant collision avoidance**, and LSTM remaining-useful-life for propulsion health. This is now extended into the **ShipAgent** multi-agent RAMS framework ([repo](https://github.com/mandar-tabib-1/ShipAgent-RAMS)).
@@ -532,7 +537,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I bring**
+**What I did**
 - **ML with subsequent physics-based analytics for transport planning (DIGMOB, AI-CLIMAMOB; RCN):** regression, SVR, random forest, ANN and LSTM on Oslo cycle-counter and weather data. Interpretable weather drivers of mobility are then turned into **CFD-based comfort maps** that guide where new bike infrastructure should go.
 - **Nested multiscale urban wind (meso → micro, LES vs RANS)**, validated against masts at Rikshospitalet, Oslo.
 - **Health:** CFD + unsupervised ML (POD) for **carotid-artery stenosis** disease progression (CarotidML).
