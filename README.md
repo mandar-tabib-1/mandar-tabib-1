@@ -241,7 +241,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 <table>
 <tr>
 <td width="50%" align="center">
-<img src="assets/wind/wind_turbine_digital_twin.gif" width="100%" alt="Wind turbine digital twin in Unity VR"/><br/>
+<img src="assets/wind/wind_turbine_unity.png" width="60%" alt="Wind turbine digital twin in Unity VR"/><br/>
 <sub><b>Digital twin of an offshore wind turbine</b> in Unity/VR (with NTNU), driven by AI surrogates.</sub>
 </td>
 <td width="50%" align="center">
@@ -340,7 +340,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 <table>
 <tr>
 <td width="45%" align="center">
-<img src="assets/greenhouse/greenhouse_digital_twin.gif" width="100%" alt="Greenhouse digital twin in Unity"/><br/>
+<img src="assets/greenhouse/greenhouse_unity_twin.png" width="70%" alt="Greenhouse digital twin in Unity"/><br/>
 <sub><b>Unity 3D digital twin</b> of the NTNU lab greenhouse (IoT + Azure).</sub>
 </td>
 <td width="55%" align="center">
@@ -349,6 +349,11 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </td>
 </tr>
 </table>
+
+<p align="center">
+<img src="assets/greenhouse/greenhouse_dt_enablers.png" width="800" alt="Greenhouse digital twin enablers: CAD, numerical models, data-driven models, sensors and actuators, user interface, IoT"/><br/>
+<sub>Digital-twin enablers of the greenhouse: physical asset ↔ virtual twin, with hybrid modelling, LLM agents, optimal sensor placement, CFD surrogates, RL/MPC control, and Unity 3D + IoT/Azure.</sub>
+</p>
 
 **What research was done** *(project manager & lead researcher, 2023–2024, with NTNU Cybernetics)*
 - **Reconstruct the full 3D temperature field from only 10 sparse sensors:** POD basis functions plus QR-pivoted **optimal sensor placement**, trained offline on physics simulations and run online.
@@ -656,6 +661,10 @@ I'm keen to work with **industry, universities and research partners** on:
 
 <p align="center">
   <sub>🔎 = find on Google Scholar · DOI badges link to the publisher version · results shown are from peer-reviewed papers, project deliverables and SINTEF posters/presentations.</sub>
+</p>
+
+<p align="center">
+  <sub>© Mandar Tabib / SINTEF. Figures and animations are shown to illustrate published and project research. Please do not reuse or redistribute them without permission; when referring to the work, cite the associated publications.</sub>
 </p>
 
 <p align="center">
