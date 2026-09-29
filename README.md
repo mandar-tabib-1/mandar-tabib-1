@@ -459,16 +459,21 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 <table>
 <tr>
-<td width="46%" align="center">
-<img src="assets/autonomy/drone_rl_path_planning.gif" width="100%" alt="RL drone path planning through urban turbulence"/><br/>
-<sub><b>Reinforcement-learning drone</b> planning a path that avoids high-turbulence zones and obstacles in Oslo.</sub>
+<td width="50%" align="center">
+<img src="assets/smartcity/urban_wind_city.gif" width="100%" alt="AI-predicted urban wind and turbulence"/><br/>
+<sub><b>① AI predicts urban wind and turbulence in seconds</b> (ML reduced-order model trained on multiscale CFD).</sub>
 </td>
-<td width="54%" align="center">
-<img src="assets/autonomy/drone_urban_workflow.png" width="100%" alt="Workflow from multiscale CFD to ML turbulence prediction"/><br/>
-<sub>Multiscale CFD (HARMONIE → SIMRA → building-resolved) → <b>ML reduced-order model</b> → turbulence along flight paths (hospital drone logistics).</sub>
+<td width="50%" align="center">
+<img src="assets/autonomy/drone_rl_path_planning.gif" width="100%" alt="RL drone path planning through urban turbulence"/><br/>
+<sub><b>② A reinforcement-learning drone plans a path</b> that avoids the high-turbulence zones and obstacles.</sub>
 </td>
 </tr>
 </table>
+
+<p align="center">
+<img src="assets/autonomy/drone_urban_workflow.png" height="260" alt="Workflow from multiscale CFD to ML turbulence prediction"/><br/>
+<sub>Multiscale CFD (HARMONIE → SIMRA → building-resolved) → <b>ML reduced-order model</b> → turbulence along flight paths (hospital drone logistics).</sub>
+</p>
 
 **What I bring**
 - **AI4HyDROP (EU SESAR, 2023–2025, SINTEF lead):** an AI safety framework for urban drone operations. **Physics-informed ML flow models compute urban turbulence in seconds**, which feeds **risk-aware RL path planning** and model-free control in turbulent cities.
