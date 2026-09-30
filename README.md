@@ -9,19 +9,19 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=19&pause=1400&color=1F8FBF&center=true&vCenter=true&width=860&lines=Senior+Research+Scientist+%C2%B7+SINTEF+Digital%2C+Trondheim%2C+Norway;Energy+%C2%B7+Process Industry+%26+Oil-Gas+%C2%B7+ Defense Industry +%C2%B7+Drones+%C2%B7+Ships;Open+to+Research+Collaboration" alt="Typing SVG"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=2200&color=1F8FBF&center=true&vCenter=true&width=846&height=30&lines=1.+Open+for+collaboration+and+joint+research+proposals+in+AI+and+Physics-based+models;2.+See+my+results+below+in%3A+Energy%2C+Defense+%28Drones%2C+Ships%2C+Aviation+Safety%29%2C;2.+...Process+Industry%2C+Material+Science%2C+Health%2C+Digital+Twins+and+AI+Agents" alt="Typing SVG"/></a>
 </p>
 
 <p align="center">
-  <a href="https://scholar.google.com/citations?user=Z372TWIAAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-1400%2B%20citations-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" alt="Google Scholar"/></a>
-  <a href="https://orcid.org/0000-0002-5836-9201"><img src="https://img.shields.io/badge/ORCID-0000--0002--5836--9201-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/></a>
-  <a href="https://www.youtube.com/@tabibmandar/videos"><img src="https://img.shields.io/badge/YouTube-Research%20videos-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a>
+   <a href="https://orcid.org/0000-0002-5836-9201"><img src="https://img.shields.io/badge/ORCID-0000--0002--5836--9201-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/></a>
+   <!--
+  <a href="https://www.youtube.com/@tabibmandar/videos"><img src="https://img.shields.io/badge/YouTube-Research%20videos-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a> -->
   <a href="mailto:mandar.tabib@sintef.no"><img src="https://img.shields.io/badge/Email-mandar.tabib%40sintef.no-0A66C2?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"/></a>
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Peer--reviewed%20publications-55%2B-0b3d91?style=flat-square" alt="55+ publications"/>
-  <img src="https://img.shields.io/badge/Citations-1400%2B-1f6f8b?style=flat-square" alt="1400+ citations"/>
+  <img src="https://img.shields.io/badge/Citations-1400%2B-1f6f8b?style=flat-square" alt="1400+ citations as of 2026."/>
   <img src="https://img.shields.io/badge/Research%20experience-since%202004-3fbac2?style=flat-square" alt="since 2004"/>
   <img src="https://img.shields.io/badge/PhD%20supervised%2Fmentored-6-6c5ce7?style=flat-square" alt="6 PhD"/>
   <img src="https://img.shields.io/badge/MSc%20theses%20supervised-8-e17055?style=flat-square" alt="8 MSc"/>
@@ -32,18 +32,16 @@
 
 ## 👋 About me
 
-I am a Senior Research Scientist in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway.  
+I am a Senior Research Scientist in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway.  SINTEF ¨(my workplace) is one of Europe's largest independent research organisations with more than 2000 employees.  
 
-SINTEF is one of Europe's largest independent research organisations with more than 2000 employees.  
-
-**My research**: For nearly two decades (including my Ph.D. and my Master's thesis), I have worked on numerical tools involving either artificial intelligence or physics-based models or combining both in novel ways (Hybrid analytics and modelling) while integrating new methods like Agentic AI and Generative AI in workflows and for digital twins and industry 4.0 . As disseminated below, I have applied these methods across domains like energy, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health sector.  
+**My research results presented here are mostly published:**: For nearly two decades (including my Ph.D. and my Master's thesis), I have worked on numerical tools involving either artificial intelligence or physics-based models or combining both in novel ways (Hybrid analytics and modelling) while integrating new methods like Agentic AI (in 2026) and Generative AI in workflows and tools for digital twins and industry 4.0 . As disseminated below, I have applied these methods across domains like energy, defense, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health sector.  
 
 
-**My research** presented here is mostly published in scientific peer-reviewed journal publications <ins>as cited below in references<ins>. The purpose of this Readme is to enable Research collaborations. 
-<ins>Note<ins>: Claude has been used to generate this readme.md based on my results and publications from different projects.  
+**My research** presented here is mostly published in scientific peer-reviewed journal publications <u>as cited below in the accompanying references</u>. The purpose of this Readme is to enable Research collaborations. 
+<u>Note</u>: Claude had been given access to all my publications and presentations in order to generate this readme.md.  
 
 
-**To summarize**, my research develops computational tools in three connected areas, with table below giving some ideas on where it is applied.
+**To summarize**, my research develops computational tools in three connected areas, with tables below giving some ideas on the tools used and the <u>domain areas</u> where it is applied.
 
 <table>
 <tr>
