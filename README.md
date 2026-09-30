@@ -41,7 +41,7 @@ I am a Senior Research Scientist in the *Computational Science and Engineering* 
 <u>Note</u>: Claude had been given access to all my publications and presentations in order to generate this readme.md.  
 
 
-**To summarize**, my research develops computational tools in three connected areas, with tables below giving some ideas on the tools used and the <u>domain areas</u> where it is applied.
+**To summarize**, my research develops <u>computational tools</u> in three connected areas, with tables below giving some ideas on the tools used and the <u>domain areas</u> where it is applied.
 
 <table>
 <tr>
@@ -51,7 +51,7 @@ Deep learning (CNN, LSTM, Transformers, GANs, diffusion) · Reinforcement learni
 </td>
 <td width="33%" valign="top" align="center">
 <h3>⚛️ Hybrid Modelling (Physics + AI)</h3>
-Physics-informed NNs · Learned corrections of imperfect physics · Parametric reduced-order models (POD, autoencoders, Grassmann manifolds) · Equation discovery (SINDy, symbolic regression) · ML data assimilation · Optimal sensor placement.
+Physics-informed NNs · Learned corrections of imperfect physics · Parametric reduced-order models (POD, autoencoders, Grassmann manifolds) · Equation discovery (SINDy, symbolic regression) · Combining ML and data assimilation · Optimal sensor placement. 
 </td>
 <td width="33%" valign="top" align="center">
 <h3>🌊 Numerical methods and Computational Fluid Dynamics</h3>
@@ -96,16 +96,20 @@ LES / RANS turbulence · Multiphase & reactive flows · CFD-DEM · Actuator-line
 
 <table align="center">
 <tr>
-<td align="center" width="14%"><a href="#wind">🌬️<br/><b>Wind &amp; Renewable Energy</b></a></td>
-<td align="center" width="14%"><a href="#hydrogen">💧<br/><b> Low-Carbon Process Design</b></a></td>
-<td align="center" width="14%"><a href="#greenhouse">🌱<br/><b> Digital Twin Enablers (example: Greenhouse) </b></a></td>
-<td align="center" width="14%"><a href="#process">🏭<br/><b>Process &amp; Oil-Gas</b></a></td>
-<td align="center" width="14%"><a href="#aviation">✈️<br/><b>Aviation Safety and Defense </b></a></td>
-<td align="center" width="14%"><a href="#autonomy">🚁🚢<br/><b>Drones &amp; Autonomous Ships</b></a></td>
-<td align="center" width="14%"><a href="#smartcity">🏙️<br/><b>Smart City</b></a></td>
+<td align="center" width="20%"><a href="#agentic-ai-and-hybrid-modelling-four-cases">🤖<br/><b>Agentic AI &amp; Hybrid Modelling</b></a></td>
+<td align="center" width="20%"><a href="#wind-and-renewable-energy">🌬️<br/><b>Wind &amp; Renewable Energy</b></a></td>
+<td align="center" width="20%"><a href="#low-carbon-process-design-and-hydrogen">💧<br/><b>Low-Carbon Process Design &amp; Hydrogen</b></a></td>
+<td align="center" width="20%"><a href="#digital-twin-enablers-greenhouse-example">🌱<br/><b>Digital Twin Enablers (Greenhouse)</b></a></td>
+<td align="center" width="20%"><a href="#process-industry-and-oil-and-gas">🏭<br/><b>Process Industry &amp; Oil-Gas</b></a></td>
+</tr>
+<tr>
+<td align="center" width="20%"><a href="#aviation-safety-and-defense">✈️<br/><b>Aviation Safety &amp; Defense</b></a></td>
+<td align="center" width="20%"><a href="#drones-and-autonomous-ships">🚁🚢<br/><b>Drones &amp; Autonomous Ships</b></a></td>
+<td align="center" width="20%"><a href="#smart-city-urban-climate-mobility-and-health">🏙️<br/><b>Smart City &amp; Health</b></a></td>
+<td align="center" width="20%"><a href="#material-science">🔬<br/><b>Material Science</b></a></td>
 </tr>
 </table>
-
+  <!--
 ```mermaid
 flowchart LR
   subgraph M["Methods I develop"]
@@ -123,7 +127,7 @@ flowchart LR
     Au["🚁🚢 Drones & Ships"]
     S["🏙️ Smart city"]
   end
-  A --> H
+  A -->  H
   C --> H
   H --> G
   G --> W & P & Au
@@ -133,12 +137,16 @@ flowchart LR
 ```
 
 ---
+-->
 
-<a name="agentic"></a>
-## 2025–2026: Agentic AI × Hybrid Modelling applied on four cases.
+## Agentic AI and Hybrid Modelling: Four Cases
 
 **Question:** *Can LLM-based agents automate physics-based engineering workflows, and can local open-weight LLMs replace costly closed models?*
 We tested this on four cases, from industrial operations to fully agentic CFD simulation, all following a **propose → verify → constrain** pattern.
+
+<p align="center"><img src="assets/agentic/poster/0_header.png" width="100%" alt="Poster: Testing Agentic AI and Hybrid Modelling for Optimization and Predictive Maintenance in Engineering"/></p>
+
+<sub>The figures for Cases 1–3 are panels cut from the A1 poster *"Testing Agentic AI and Hybrid Modelling for Optimization and Predictive Maintenance in Engineering"*. **Click any panel to enlarge it.**</sub>
 
 ### Case 1 · Wind farm: optimisation and predictive maintenance
 
@@ -146,23 +154,16 @@ A nine-module pipeline: live weather data (yr.no API + BM25/RAG search) → crit
 - ✅ Classical ML pipeline (Autoencoder + GMM health states + gradient-boosting classifier + RNN RUL + SHAP) **outperformed a local LLM with tools** for SCADA fault diagnosis
 - ✅ LLM used as Orchestrator, recommendor, critic agents that are run in advisory or blocking mode with physics checks.
 
-<p align="center">
-<img src="assets/agentic/agentic_windfarm_architecture.png" width="640" alt="Agentic wind farm architecture"/><br/>
-<img src="assets/agentic/gp_power_uncertainty.png" width="300" alt="Gaussian process power prediction"/>
-<img src="assets/agentic/pdm_pipeline.png" width="420" alt="Predictive maintenance pipeline"/>
-</p>
+<p align="center"><img src="assets/agentic/poster/1a_title.png" width="100%" alt="Poster case 1 title"/></p>
+<p align="center"><img src="assets/agentic/poster/1b_wake_steering.png" width="100%" alt="Poster case 1: wake-steering optimisation, modules 1 to 5"/></p>
+<p align="center"><img src="assets/agentic/poster/1c_pdm_agents.png" width="100%" alt="Poster case 1: fault diagnosis, predictive maintenance and supporting agent layers"/></p>
+<p align="center"><img src="assets/agentic/poster/1d_observations.png" width="100%" alt="Poster case 1: observations and challenges"/></p>
 
 **Agents in optimisation (LLM-4-Optimization).** The agent is *not* the optimiser; it *chooses* one. In a multi-step loop with self-verification it calls `evaluate_yaw`, `run_optimizer`, `compare_results`, `validate_physics` and `commit_solution`, reasoning over earlier results before each new call. We compared native tool calling with prompt-based ReAct.
 
-<p align="center">
-<img src="assets/agentic/llm4_optimization.png" width="320" alt="LLM-4-Optimization: agent-orchestrated optimisers, native tool calling vs prompt-based ReAct, and power gain by method"/>
-</p>
 
 **Agents in predictive maintenance.** **LLM-4-PdM-Code** writes its own diagnostic code (its own tool) from the SCADA data. **LLM-4-PdM-Tool** uses external tools we provide: a persistence test, decision-boundary instability analysis, feature-level analysis and a SHAP consistency check. The LLM's reasoning is logged for audit.
 
-<p align="center">
-<img src="assets/agentic/llm4_pdm_code_vs_tool.png" width="442" alt="LLM-4-PdM-Code vs LLM-4-PdM-Tool fault predictions"/>
-</p>
 
 ---
 
@@ -172,10 +173,9 @@ An LLM agent sets the anode–cathode distance to minimise energy while keeping 
 - ✅ Modest accuracy gain and **~10× lower run-to-run variance** than rule-based search
 - ⚠️ **~800× longer wall-clock** (275 s vs 0.3 s per run), mostly from LLM latency. This is an honest lesson on where agents pay off.
 
-<p align="center">
-<img src="assets/agentic/aluminium_cell.jpg" width="280" alt="Aluminium electrolysis cell"/>
-<img src="assets/agentic/aluminium_agent_loop.png" width="420" alt="Multi-agent optimiser loop"/>
-</p>
+<p align="center"><img src="assets/agentic/poster/2a_method_and_loop.png" width="100%" alt="Poster case 2: method, cell schematic and multi-agent optimiser loop"/></p>
+<p align="center"><img src="assets/agentic/poster/2b_results.png" width="100%" alt="Poster case 2: results"/></p>
+<p align="center"><img src="assets/agentic/poster/2c_observations.png" width="100%" alt="Poster case 2: observations"/></p>
 
 ---
 
@@ -185,9 +185,10 @@ An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintai
 
 🔗 **Code:** [PowerLift-WindTurbine](https://github.com/mandar-tabib-1/PowerLift-WindTurbine) · [ShipAgent-RAMS](https://github.com/mandar-tabib-1/ShipAgent-RAMS) · 🌐 [Live demo: agentic wind farm](https://agenticwindfarm.streamlit.app/)
 
-<p align="center">
-<img src="assets/agentic/shipagent_rams_architecture.png" width="640" alt="ShipAgent RAMS architecture"/>
-</p>
+<p align="center"><img src="assets/agentic/poster/3a_title.png" width="100%" alt="Poster case 3 title"/></p>
+<p align="center"><img src="assets/agentic/poster/3b_architecture.png" width="100%" alt="Poster case 3: agent architecture"/></p>
+<p align="center"><img src="assets/agentic/poster/3c_communication_safety.png" width="100%" alt="Poster case 3: cross-agent communication and safety logic"/></p>
+<p align="center"><img src="assets/agentic/poster/3d_observations.png" width="100%" alt="Poster case 3: observations"/></p>
 
 ---
 
@@ -233,8 +234,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-<a name="wind"></a>
-## 🌬️ 1 · Renewable & Green Energy: Wind Energy.
+## Wind and Renewable Energy
 
 <table>
 <tr>
@@ -287,8 +287,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-<a name="hydrogen"></a>
-## 💧 2 · Low-Carbon Energy Systems Design and Hydrogen Process.
+## Low-Carbon Process Design and Hydrogen
 
 <table>
 <tr>
@@ -311,7 +310,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 - **Hydrogen storage, thermal state estimation:** a deep-learning **hybrid POD-LSTM surrogate** that reconstructs natural-convection temperature fields in storage enclosures in real time.
 - **Hydrogen-material susceptibility (exploratory):** ML surrogates that estimate embrittlement indices of alloys from composition and processing features, replacing slow, costly experiments.
 - **Syngas (H₂/CO) chemical-looping combustion with CO₂ capture (EU DemoCLOCK, 500 kW):** a multiscale workflow in which 3D CFD-DEM of real pellet shapes (spheres, fluted rings, cylinders) supplies closures (Δp, heat and mass transfer, porosity) to a **1D multi-domain particle-reactor model**. This helps select oxygen-carrier shapes that minimise pressure drop, maximise conversion and avoid fuel slip.
-- **Towards green-H₂ metallurgy:** multiphase reactive CFD of smelting where CO/H₂ post-combustion drives reduction; see the HIsmelt work under [Process industry](#process).
+- **Towards green-H₂ metallurgy:** multiphase reactive CFD of smelting where CO/H₂ post-combustion drives reduction; see the HIsmelt work under [Process industry](#process-industry-and-oil-and-gas).
 
 <p align="center">
   <img src="assets/hydrogen/h2_storage_pod_lstm.png" height="220" alt="POD-LSTM temperature state estimation"/>
@@ -332,8 +331,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-<a name="greenhouse"></a>
-## 🌱 3 · Greenhouse Digital Twin
+## Digital Twin Enablers: Greenhouse Example
 
 <table>
 <tr>
@@ -373,8 +371,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-<a name="process"></a>
-## 🏭 4 · Process Industry and Oil & Gas
+## Process Industry and Oil and Gas
 
 <table>
 <tr>
@@ -404,7 +401,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 - **Multiphase and reactive CFD for design:** bubble columns, pump-mixers (LES with sub-grid-scale dispersion models), iron smelting, packed-bed reactors, CFD-DEM.
 - **Unsupervised ML on flow physics, since my PhD:** snapshot POD and hybrid **POD-wavelet** analysis to identify the dominant coherent structures that drive transport in process equipment.
 - **ML for materials:** tree-based, linear and neural models for discovering thermo-electric materials from sparse data.
-- **Agentic optimisation of aluminium electrolysis:** see the [Agentic AI flagship](#agentic).
+- **Agentic optimisation of aluminium electrolysis:** see the [Agentic AI flagship](#agentic-ai-and-hybrid-modelling-four-cases).
 
 <p align="center">
   <img src="assets/process/drilling_schematic.png" height="240" alt="Drilling cuttings transport schematic"/>
@@ -439,8 +436,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-<a name="aviation"></a>
-## ✈️ 5 · Aviation Safety
+## Aviation Safety and Defense
 
 <table>
 <tr>
@@ -481,8 +477,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-<a name="autonomy"></a>
-## 🚁🚢 6 · Transport Autonomy: Drones and Autonomous Ships
+## Drones and Autonomous Ships
 
 <table>
 <tr>
@@ -524,8 +519,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-<a name="smartcity"></a>
-## 🏙️ 7 · Smart City: Urban Climate, Mobility and Health
+## Smart City, Urban Climate, Mobility and Health
 
 <table>
 <tr>
@@ -558,6 +552,45 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 - **Tabib**, Midtbø, Rasheed, Kvamsdal, Skaslien, *A nested multi-scale model for assessing urban wind conditions: LES vs RANS at the finest scale*, J. Phys.: Conf. Ser. 2018, 012039 (2021). [![DOI](https://img.shields.io/badge/DOI-10.1088%2F1742--6596%2F2018%2F1%2F012039-blue?style=flat-square)](https://doi.org/10.1088/1742-6596/2018/1/012039)
 - **Tabib**, Rasheed, Uteng, *Methodology for assessing cycling comfort during a smart city development*, Energy Procedia 122 (2017). [🔎](https://scholar.google.com/scholar?q=%22Methodology+for+assessing+cycling+comfort+during+a+smart+city+development%22)
 - **Tabib**, Fonn, Rasheed, *A computational framework involving CFD and data mining tools for analyzing disease in carotid artery bifurcation*, Progress in Applied CFD, SINTEF Proceedings (2017). [🔎](https://scholar.google.com/scholar?q=%22CFD+and+data+mining+tools+for+analyzing+disease+in+carotid+artery+bifurcation%22)
+</details>
+
+---
+
+## Material Science
+
+**Discovering thermoelectric materials with machine learning + density functional theory (DFT)** *(MLFunc project, 2018; WP manager and lead researcher; SINTEF Digital with SINTEF Industry; SEP funding)*
+
+Thermoelectric (TE) materials turn waste heat directly into electricity, but finding new ones means searching an almost limitless space of chemical compounds with slow experiments or very expensive DFT. We combined **physics-based DFT (+ Boltzmann transport theory)** with **data-driven ML** to screen new candidates by their figure of merit **ZT**, and studied how well ML generalises when data is scarce.
+
+- **Data:** 115 DFT-computed compounds × 51 chemical potentials × 15 temperatures = **87,975 data points**, each with **50 descriptors** (atomic mass, radius, electronegativity, valence electrons, periodic-table features, crystal shape). The trained models then screened an unseen search space of **4,800 silicide compounds** (240,312 data points).
+- **Train/test design:** models were trained on some compounds and tested on *unseen compounds*. Three splits were compared: two random and one deterministic and balanced. The split changed generalisation strongly, even after cross-validation.
+- **Random Forest (RF) vs Deep Neural Network (DNN) on unseen compounds:**
+
+| Test R² (unseen compounds) | Case 1 (random) | Case 2 (random) | Case 3 (balanced) |
+|---|---|---|---|
+| **Random Forest** | 0.82 | 0.23 | **0.76** |
+| Deep neural network | 0.20 | −0.14 | 0.45 |
+
+- ✅ **With limited data, the simpler RF generalised better** than the DNN, which overfitted (train R² ≈ 0.97, test R² as low as −0.14) and sometimes gave physically unrealistic ZT profiles.
+- ✅ **Candidates found:** RF, trained on the balanced split, proposed simple silicides such as **Li₂MgSi**, close to the Mg₂LiSi family under experimental investigation, plus SrMgSi. The DNN preferred complex compounds (more than 3 elements) that are hard to make and verify. Both models identified BeSiIr₂.
+- ✅ **Computational saving:** DFT alone needs about **85 CPU-hours per compound** (≈ 408,000 CPU-hours for 4,800 compounds). Screening those 4,800 compounds takes the trained model **80 s (RF) or 132 s (DNN)**, and the whole DFT + ML workflow costs **about 2 %** of DFT alone.
+
+<p align="center">
+<img src="assets/materials/te_learning_curves.jpg" width="100%" alt="Learning curves: overfitting of the deep neural network versus the random forest"/><br/>
+<sub>Bias–variance check: DNN learning curve (left, train vs test R²) and Random Forest learning curve (right).</sub>
+</p>
+
+<p align="center">
+<img src="assets/materials/te_predicted_vs_actual.jpg" width="48%" alt="Predicted versus actual ZT for the three train/test splits, DNN (left) and random forest (right)"/>
+<img src="assets/materials/te_top_candidates.jpg" width="48%" alt="Best two thermoelectric candidates predicted by the DNN (left) and the random forest (right) for the three cases"/><br/>
+<sub>Left: predicted vs actual ZT on training and unseen test compounds for the three splits (DNN left column, RF right column). Right: best two candidate silicides found by DNN (left) and RF (right); ZT vs chemical potential (eV).</sub>
+</p>
+
+<details open>
+<summary><b>📚 Peer-reviewed evidence</b></summary>
+
+- **Tabib**, Løvvik, Johannessen, Rasheed, Sagvolden, Rustad, *Discovering thermo-electric materials using machine learning: Insights and challenges*, **Lecture Notes in Computer Science** 11139, pp. 392–401, Springer (ICANN 2018). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--030--01418--6__39-blue?style=flat-square)](https://doi.org/10.1007/978-3-030-01418-6_39)
+- *Related:* ML surrogates for hydrogen-material susceptibility (see [Low-Carbon Process Design and Hydrogen](#low-carbon-process-design-and-hydrogen)).
 </details>
 
 ---
