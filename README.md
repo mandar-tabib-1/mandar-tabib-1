@@ -694,6 +694,16 @@ I'm keen to work with **industry, universities and research partners** on:
   <sub>🔎 = find on Google Scholar · DOI badges link to the publisher version · results shown are from peer-reviewed papers, project deliverables and SINTEF posters/presentations.</sub>
 </p>
 
+---
+
+## Acknowledgement
+
+The author, Mandar Tabib, acknowledges the support of:
+
+1. **Funding agencies**, including the European Union (EU SESAR, EU EDF) and the Research Council of Norway, among others, for supporting his research.
+2. **His research collaborators**, who enabled his learning and tool development through data sharing and knowledge sharing. They have been duly acknowledged as co-authors in the joint publications referenced here.
+3. **His employer, SINTEF, and NTNU**, for providing the computational infrastructure for tool development.
+
 <p align="center">
   <sub>© Mandar Tabib / SINTEF. Figures and animations are shown to illustrate published and project research. Please do not reuse or redistribute them without permission; when referring to the work, cite the associated publications.</sub>
 </p>
