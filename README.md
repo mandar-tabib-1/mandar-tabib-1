@@ -703,6 +703,7 @@ The author, Mandar Tabib, acknowledges the support of:
 1. **Funding agencies**, including the European Union (EU SESAR, EU EDF) and the Research Council of Norway, among others, for supporting his research.
 2. **His research collaborators**, who enabled his learning and tool development through data sharing and knowledge sharing. They have been duly acknowledged as co-authors in the joint publications referenced here.
 3. **His employer, SINTEF, and NTNU**, for providing the computational infrastructure for tool development.
+4. **LLM Agents** like Claude for helping render this readme using his own published research.
 
 <p align="center">
   <sub>© Mandar Tabib / SINTEF. Figures and animations are shown to illustrate published and project research. Please do not reuse or redistribute them without permission; when referring to the work, cite the associated publications.</sub>
