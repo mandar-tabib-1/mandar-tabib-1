@@ -33,7 +33,8 @@
 ## 👋 About me
 
 ## About Me
-- **Purpose:** Facilitate **Research Collaborations and Knowledge Exchange** by Disseminating my peer-reviewed research involving AI + Physics in different Engineering and Scientific Domains. This README provides an overview of my research results with technical challenges faced, and the computational methods, tools developed for providing solution related to the application areas. My research involved fruitful collaborations as shown in publications and acknowledgements. 
+- **Purpose:** Facilitate **Research Collaborations and Knowledge Exchange** by Disseminating my peer-reviewed research involving AI + Physics in different Engineering and Scientific Domains. 
+- **Content:** This README provides an overview of my research results/figures and introduces me. The technical challenges faced, and the computational methods, tools developed for providing solutions in specific application areas is mentioned. My research involved fruitful collaborations as shown in publications and acknowledgements. 
 - **Position:** Senior Research Scientist, Computational Science and Engineering, **SINTEF Digital**, Trondheim, Norway.
 - **My Organisation:** SINTEF is one of Europe's largest independent research organisations, with **2,000+ employees**.
 - **Research experience:** Nearly **two decades of research experience**, including my Ph.D. and Master's research with AI and Physics.
@@ -41,8 +42,8 @@
   - **Artificial Intelligence (AI) and Machine Learning**
   - **Physics-based modelling and numerical simulation**
   - **Hybrid analytics and modelling**, combining data-driven and physics-based approaches to mitigate challenges related to Generalization, Interpretability, Sparse and Noisy data quality, Uncertainty Quantifications, Accuracy and Efficiency. Methods mentioned below.
-  - **Agentic AI and Generative AI**,
-- **Digital engineering:** Integration of these methods into **digital twins, simulation workflows, optimisation tools, and Industry 4.0 applications**.
+  - **Agentic AI in 2026, and Generative AI**,
+- **Digital engineering:** Integration of these methods into **digital twins, simulation workflows, optimisation, and Industry 4.0 applications**.
 - **Application domains:** My research has been applied across several domains, including:
   - Energy
   - Process industry, including chemical, oil & gas
