@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=1300&pause=1200&color=1F8FBF&center=true&vCenter=true&width=1160&height=34&lines=+1.Open+for+Collaborations+and+Joint+research+proposals+in+AI+and+Physics-based+models;+2.+See+my+Research+in%3A+Wind+Energy%2C+Aerospace+and+Marine+Autonomy+%28Drone%2C+Ship%2C+Safety%29%2C;2.+...Process+Industry%2C+Material+Science%2C+Health%2C+Digital+Twins+and+AI+Agents" alt="Typing SVG"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&duration=1300&pause=1200&color=1F8FBF&center=true&vCenter=true&width=1160&height=34&lines=+1.Open+for+Collaborations+and+Joint+research+proposals+in+AI+and+Physics-based+models;+2.+See+my+Research+applied+to+%3A+Wind+Energy%2C+Aerospace+and+Marine+Autonomy+%28Drone%2C+Ship%2C+Safety%29%2C;2.+...+and+in+Process+Industry%2C+Material+Science%2C+Health%2C+Digital+Twins+and+AI+Agents" alt="Typing SVG"/></a>
 </p>
 
 <p align="center">
