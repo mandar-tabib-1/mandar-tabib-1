@@ -33,7 +33,7 @@
 ## 👋 About me
 
 ## About Me
-- **Purpose:** Facilitate **Research Collaborations and Knowledge Exchange** by Disseminating my peer-reviewed research involving AI + Physics in several Engineering and Scientific Domains. This README provides an overview of my research results with challenges faced and computational methods, tools, and application areas. 
+- **Purpose:** Facilitate **Research Collaborations and Knowledge Exchange** by Disseminating my peer-reviewed research involving AI + Physics in different Engineering and Scientific Domains. This README provides an overview of my research results with technical challenges faced, and the computational methods, tools developed for providing solution related to the application areas. My research involved fruitful collaborations as shown in publications and acknowledgements. 
 - **Position:** Senior Research Scientist, Computational Science and Engineering, **SINTEF Digital**, Trondheim, Norway.
 - **My Organisation:** SINTEF is one of Europe's largest independent research organisations, with **2,000+ employees**.
 - **Research experience:** Nearly **two decades of research experience**, including my Ph.D. and Master's research with AI and Physics.
@@ -103,37 +103,6 @@
 </tr>
 </table>
 
-## Application Area, Tool Developed, Purpose and Challenges mitigated.
-
-<table>
-<tr><th width="18%">Section</th><th width="36%">Tools used (AI, hybrid, CFD, physics-based)</th><th width="30%">Benefit / purpose</th><th width="16%">Challenges (see key)</th></tr>
-<tr><td valign="top"><a href="#wind-and-renewable-energy"><b>Wind energy</b></a></td><td valign="top">LES / RANS CFD, actuator line, sliding mesh, FSI<br/>POD, conv-autoencoder + LSTM / Neural-ODE reduced-order models<br/>GAN super-resolution<br/>Safe RL (predictive safety filter)<br/>Gaussian processes<br/>Autoencoder + GMM + LSTM (SCADA)</td><td valign="top">1000–10,000× faster simulation<br/>State estimation and super-resolution<br/>Wake-steering optimisation and control<br/>Predictive maintenance<br/>Uncertainty quantification</td><td valign="top"><sub>A1 A2 A4 A6 A10<br/>P1 P2 P3 P7 P8</sub></td></tr>
-<tr><td rowspan="6" valign="top"><a href="#process-industry-and-oil-and-gas"><b>Process industry</b></a></td><td valign="top"><b>Industry 4.0 / agentic workflows</b><br/>LLM agents, RAG, tool calling<br/>Verifier / critic agents<br/>Physics models and surrogates as tools</td><td valign="top">Automation<br/>Optimisation<br/>Decision support</td><td valign="top"><sub>A8 A11<br/>P8</sub></td></tr>
-<tr><td valign="top"><b>Chemical / multiphase</b><br/>Euler–Euler, LES with sub-grid models<br/>CFD-DEM<br/>POD + wavelets</td><td valign="top">Closure models<br/>Flow-structure insight<br/>Equipment design</td><td valign="top"><sub>P3 P5 P7 P8 P9</sub></td></tr>
-<tr><td valign="top"><b>Aluminium electrolysis</b><br/>Physics ODE, neural and hybrid models (COSTA-SINDy, COSTA-DDM)<br/>LLM optimiser agent</td><td valign="top">Optimisation<br/>Simulator arbitration</td><td valign="top"><sub>A1 A11<br/>P3 P4</sub></td></tr>
-<tr><td valign="top"><b>Reactor design, low-carbon and H₂</b><br/>CFD-DEM + 1D multiscale particle-reactor model<br/>POD-LSTM surrogate</td><td valign="top">Closure relations<br/>Design choice<br/>Fast state estimation</td><td valign="top"><sub>A1 A4<br/>P3 P7 P8</sub></td></tr>
-<tr><td valign="top"><b>Oil &amp; gas drilling</b><br/>1D cuttings-transport model + LSTM / Transformer learned correction (intrusive and non-intrusive)<br/>Bayesian PINN<br/>Isolation Forest, LSTM autoencoder<br/>Continual learning</td><td valign="top">Closure in physics<br/>Parameter estimation<br/>Uncertainty quantification<br/>Anomaly detection<br/>Pore-pressure prediction</td><td valign="top"><sub>A2 A3 A4 A9 A12<br/>P1 P3 P4</sub></td></tr>
-<tr><td valign="top"><b>Greenhouse (digital-twin enabler)</b><br/>CFD, POD + QR sensor placement<br/>LSTM surrogate<br/>RL / MPC, LLM agents<br/>Unity 3D, IoT</td><td valign="top">State estimation from ~10 sensors<br/>Control<br/>What-if analysis</td><td valign="top"><sub>A1 A2<br/>P1 P6</sub></td></tr>
-<tr><td rowspan="3" valign="top"><a href="#drones-and-autonomous-ships"><b>Defense</b></a></td><td valign="top"><b>Drones</b><br/>Multiscale CFD (SIMRA, LES)<br/>Grassmann deep-learning ROM<br/>RL path planning</td><td valign="top">Real-time turbulence prediction<br/>Risk-aware path planning<br/>Control</td><td valign="top"><sub>A1 A10<br/>P1 P2 P7</sub></td></tr>
-<tr><td valign="top"><b>Autonomous vessels</b><br/>ML-Kalman sensor fusion<br/>RL + predictive safety filter<br/>LSTM remaining-useful-life<br/>Multi-agent LLM (ShipAgent)</td><td valign="top">Collision avoidance (COLREGS)<br/>Predictive maintenance<br/>RAMS trade-offs</td><td valign="top"><sub>A3 A10 A11</sub></td></tr>
-<tr><td valign="top"><b>Aviation safety</b><br/>Terrain / building CFD (LES, RANS)<br/>Galerkin ROM + EnKF + LSTM nudging</td><td valign="top">Hazard assessment<br/>Data assimilation<br/>Real-time vortex tracking</td><td valign="top"><sub>A2 A7<br/>P1 P2 P3 P6</sub></td></tr>
-<tr><td valign="top"><a href="#material-science"><b>Material science</b></a></td><td valign="top">DFT + Boltzmann transport<br/>Random Forest vs deep neural network</td><td valign="top">Screening of thermoelectric candidates at ~2 % of DFT cost<br/>Accelerated discovery</td><td valign="top"><sub>A1 A3 A4<br/>P8</sub></td></tr>
-<tr><td valign="top"><a href="#smart-city-urban-climate-mobility-and-health"><b>Smart city</b></a></td><td valign="top">LASSO / Ridge, SVR, Random Forest, ANN, LSTM<br/>CFD thermal comfort (PMV)<br/>Nested LES / RANS urban wind</td><td valign="top">Interpretable mobility drivers<br/>Planning of infrastructure<br/>Urban-wind assessment</td><td valign="top"><sub>A3 A4 A8<br/>P1 P2</sub></td></tr>
-<tr><td valign="top"><a href="#smart-city-urban-climate-mobility-and-health"><b>Health</b></a></td><td valign="top">CFD + unsupervised ML (POD) of carotid-artery flow</td><td valign="top">Insight into disease progression</td><td valign="top"><sub>A1<br/>P1 P2 P9</sub></td></tr>
-</table>
-
-<details open>
-<summary><b>🔑 Key to the challenge numbers</b></summary>
-
-**A: AI / data-driven challenges**
-**A1** sparse or limited data · **A2** noisy or uncertain data · **A3** imbalanced or biased data · **A4** bias vs variance, generalisation · **A5** hyper-parameter sensitivity · **A6** training instability / convergence (incl. GAN mode collapse) · **A7** physical consistency of predictions · **A8** interpretability and trust · **A9** data / concept drift · **A10** safety and reliability of learned control (RL) · **A11** LLM-agent latency, cost, reproducibility, context drift · **A12** multi-modal and multi-fidelity data fusion
-
-**P: physics-based-model challenges**
-**P1** uncertain initial / boundary conditions · **P2** geometry and meshing · **P3** incomplete physics and closure (turbulence, inter-phase forces) · **P4** unknown or uncalibrated parameters · **P5** stiffness, numerical stability and convergence · **P6** ill-posed inverse problems · **P7** multiscale / multi-physics coupling · **P8** computational cost (limits real-time use) · **P9** scarce validation data
-</details>
-
-<sub>Challenge numbers mark the ones most relevant to each piece of work, not an exhaustive list. Click a section name to jump to its results.</sub>
-
 ## 🧰Method toolbox: Hybrid Analysis & Modelling, and Agentic AI.
 
 <table>
@@ -158,6 +127,38 @@
 </table>
 
 > **Recent focus (2025–2026):** testing and integrating **Agentic AI and Generative AI with hybrid models / scientific ML**. LLM agents *orchestrate* physics models, surrogates, optimisers and verifiers, while the physics-based components remain authoritative.
+
+## Application Area, Tool Developed, Purpose and Challenges mitigated.
+
+<table>
+<tr><th width="18%">Section</th><th width="36%">Tools used (AI, Novel hybrid, CFD, physics-based)</th><th width="30%">Benefit / purpose</th><th width="16%">Challenges (see key)</th></tr>
+<tr><td valign="top"><a href="#wind-and-renewable-energy"><b>Wind energy</b></a></td><td valign="top"> CFD with actuator line, sliding mesh,<br/> AI tools: POD and conv-autoencoder + LSTM / Neural-ODE for reduced-order models<br/> GAN based super-resolution<br/> Reinforcement Learning  <br/>Gaussian processes<br/>Autoencoder + GMM + LSTM (on SCADA data)</td><td valign="top">1000–10,000× faster simulation<br/>State estimation and super-resolution<br/>Wake-steering optimisation and control<br/>Predictive maintenance<br/>Uncertainty quantification</td><td valign="top"><sub>A1 A2 A4 A6 A10<br/>P1 P2 P3 P7 P8</sub></td></tr>
+<tr><td rowspan="6" valign="top"><a href="#process-industry-and-oil-and-gas"><b>Process industry</b></a></td><td valign="top"><b>Industry 4.0 / agentic workflows</b><br/>LLM agents, RAG, tool calling<br/>Verifier / critic agents<br/>Physics models and surrogates as tools</td><td valign="top">Automation<br/>Optimisation<br/>Decision support</td><td valign="top"><sub>A8 A11<br/>P8</sub></td></tr>
+<tr><td valign="top"><b>Chemical / multiphase</b><br/>Multiphase CFD: Euler–Euler involving LES with sub-grid models<br/>CFD-DEM<br/> Data Analysis: POD + wavelets</td><td valign="top">Closure models<br/>Flow-structure insight<br/>Equipment design</td><td valign="top"><sub>P3 P5 P7 P8 P9</sub></td></tr>
+<tr><td valign="top"><b>Aluminium electrolysis</b><br/> Solving ODEs and Hybrid models (COSTA-SINDy, COSTA-DDM)<br/>LLM optimiser agent</td><td valign="top">Optimisation<br/>Simulator arbitration</td><td valign="top"><sub>A1 A11<br/>P3 P4</sub></td></tr>
+<tr><td valign="top"><b>Reactor design, low-carbon and H₂</b><br/>Physics: CFD-DEM + 1D multiscale particle-reactor model<br/>AI: POD-LSTM surrogate</td><td valign="top">Closure relations<br/>Design choice<br/>Fast state estimation</td><td valign="top"><sub>A1 A4<br/>P3 P7 P8</sub></td></tr>
+<tr><td valign="top"><b>Oil &amp; gas drilling</b><br/>1D cuttings-transport model + LSTM / Transformer learned correction (intrusive and non-intrusive)<br/>Bayesian PINN<br/>Isolation Forest, LSTM autoencoder<br/>Continual learning</td><td valign="top">Closure in physics<br/>Parameter estimation<br/>Uncertainty quantification<br/>Anomaly detection<br/>Pore-pressure prediction</td><td valign="top"><sub>A2 A3 A4 A9 A12<br/>P1 P3 P4</sub></td></tr>
+<tr><td valign="top"><b>Greenhouse (digital-twin enabler)</b><br/>CFD, POD + QR sensor placement<br/>LSTM surrogate<br/>RL / MPC, LLM agents<br/>Unity 3D, IoT</td><td valign="top">State estimation from ~10 sensors<br/>Control<br/>What-if analysis</td><td valign="top"><sub>A1 A2<br/>P1 P6</sub></td></tr>
+<tr><td rowspan="3" valign="top"><a href="#drones-and-autonomous-ships"><b>Defense</b></a></td><td valign="top"><b>Drones</b><br/>Multiscale CFD (SIMRA, LES)<br/>Grassmann deep-learning ROM<br/>RL path planning</td><td valign="top">Real-time turbulence prediction<br/>Risk-aware path planning<br/>Control</td><td valign="top"><sub>A1 A10<br/>P1 P2 P7</sub></td></tr>
+<tr><td valign="top"><b>Autonomous vessels</b><br/>ML-Kalman sensor fusion<br/>RL + predictive safety filter<br/>LSTM remaining-useful-life<br/>Multi-agent LLM (ShipAgent)</td><td valign="top">Collision avoidance (COLREGS)<br/>Predictive maintenance<br/>RAMS trade-offs</td><td valign="top"><sub>A3 A10 A11</sub></td></tr>
+<tr><td valign="top"><b>Aviation safety</b><br/>Terrain / building CFD (LES, RANS)<br/>Galerkin ROM + EnKF + LSTM nudging</td><td valign="top">Hazard assessment<br/>Data assimilation<br/>Real-time vortex tracking</td><td valign="top"><sub>A2 A7<br/>P1 P2 P3 P6</sub></td></tr>
+<tr><td valign="top"><a href="#material-science"><b>Material science</b></a></td><td valign="top">Random Forest vs deep neural network on DFT dataset </td><td valign="top">Accelerated Screening of thermoelectric candidates at ~2 % of DFT cost<br/>Accelerated discovery</td><td valign="top"><sub>A1 A3 A4<br/>P8</sub></td></tr>
+<tr><td valign="top"><a href="#smart-city-urban-climate-mobility-and-health"><b>Smart city</b></a></td><td valign="top">LASSO / Ridge, SVR, Random Forest, ANN, LSTM<br/>CFD thermal comfort (PMV)<br/>Nested LES / RANS urban wind</td><td valign="top">Interpretable mobility drivers<br/>Planning of infrastructure<br/>Urban-wind assessment</td><td valign="top"><sub>A3 A4 A8<br/>P1 P2</sub></td></tr>
+<tr><td valign="top"><a href="#smart-city-urban-climate-mobility-and-health"><b>Health</b></a></td><td valign="top">CFD + unsupervised ML (POD) of carotid-artery flow</td><td valign="top">Insight into disease progression</td><td valign="top"><sub>A1<br/>P1 P2 P9</sub></td></tr>
+</table>
+
+<details open>
+<summary><b>🔑 Key to the challenge numbers</b></summary>
+
+**A: AI / data-driven challenges**
+**A1** sparse or limited data · **A2** noisy or uncertain data · **A3** imbalanced or biased data · **A4** bias vs variance, generalisation · **A5** hyper-parameter sensitivity · **A6** training instability / convergence (incl. GAN mode collapse) · **A7** physical consistency of predictions · **A8** interpretability and trust · **A9** data / concept drift · **A10** safety and reliability of learned control (RL) · **A11** LLM-agent latency, cost, reproducibility, context drift · **A12** multi-modal and multi-fidelity data fusion
+
+**P: physics-based-model challenges**
+**P1** uncertain initial / boundary conditions · **P2** geometry and meshing · **P3** incomplete physics and closure (turbulence, inter-phase forces) · **P4** unknown or uncalibrated parameters · **P5** stiffness, numerical stability and convergence · **P6** ill-posed inverse problems · **P7** multiscale / multi-physics coupling · **P8** computational cost (limits real-time use) · **P9** scarce validation data
+</details>
+
+<sub>Challenge numbers mark the ones most relevant to each piece of work, not an exhaustive list. Click a section name to jump to its results.</sub>
+
 
 <p align="center">
   <img src="assets/methods/ham_physics_vs_data.png" width="80%" alt="Hybrid Analysis and Modelling combines the strengths of physics-based and data-driven modelling"/>
