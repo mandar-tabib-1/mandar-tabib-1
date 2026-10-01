@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=1300&pause=1200&color=1F8FBF&center=true&vCenter=true&width=1160&height=34&lines=+1.Open+for+Collaborations+and+Joint+research+proposals+in+AI+and+Physics-based+models;+2.+See+my+Research+applied+to+%3A+Wind+Energy%2C+Aerospace+and+Marine+Autonomy+Safety%28Drone%2C+Ship%2C%29%2C;2.+..+and+in+Process+Industry%2C+Material+Science+%2C+Digital+Twins+and+AI+Agents" alt="Typing SVG"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&duration=1300&pause=1200&color=1F8FBF&center=true&vCenter=true&width=1160&height=34&lines=+1.Open+for+Collaborations+and+Joint+research+proposals+in+AI+and+Physics-based+models.;+2.+See+my+Research+applied+to+%3A+Wind+Energy%2C+Aerospace+and+Marine+Autonomy+Safety%28Drone%2C+Ship29%2C;2.+..+and+in+Process+Industry%2C+Material+Science+%2C+Digital+Twins+and+AI+Agents." alt="Typing SVG"/></a>
 </p>
 
 <p align="center">
@@ -34,7 +34,7 @@
 
 ## About Me
 - **Purpose:** Facilitate **Research Collaborations and Knowledge Exchange** by Disseminating my peer-reviewed research involving AI + Physics in different Engineering and Scientific Domains. 
-- **Content:** This README provides an overview of my research results/figures and introduces me. The computational methods/tolls developed, and technical challenges faced while providing solutions in specific application areas are mentioned below. My research involved fruitful collaborations as shown in publications and acknowledgements. 
+- **Content:** This README provides an overview of my research areas and results, and introduces me. The computational tools developed, and the technical challenges faced while providing solutions in the specific application areas are mentioned. My research involved fruitful collaborations as shown in publications and acknowledgements. 
 - **Position:** Senior Research Scientist, Computational Science and Engineering, **SINTEF Digital**, Trondheim, Norway.
 - **My Organisation:** SINTEF is one of Europe's largest independent research organisations, with **2,000+ employees**.
 - **Research experience:** Nearly **two decades of research experience**, including my Ph.D. and Master's research with AI and Physics.
