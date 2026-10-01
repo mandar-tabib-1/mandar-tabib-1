@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=23&duration=1200&pause=1000&color=1F8FBF&center=true&vCenter=true&width=1160&height=34&lines=+1.Open+for+collaboration+and+joint+research+proposals+in+AI+and+Physics-based+models;+2.My+research+applied+in%3A+Energy%2C+Defense-related+%28Drones%2C+Ships%2C+Aviation+Safety%29%2C;2.+...Process+Industry%2C+Material+Science%2C+Health%2C+Digital+Twins+and+AI+Agents" alt="Typing SVG"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=23&duration=1200&pause=1000&color=1F8FBF&center=true&vCenter=true&width=1160&height=34&lines=+1.Open+for+collaborations+and+joint+research+proposals+in+AI+and+Physics-based+models;+2.See+my+research+applied+in%3A+Wind Energy%2C+Aerospace and Marine Autonomy+%28Drones%2C+Ships%2C+Aviation+Safety%29%2C;2.+..Process+Industry%2C+Material+Science%2C+Health%2C+Digital+Twins+and+AI+Agents" alt="Typing SVG"/></a>
 </p>
 
 <p align="center">
@@ -120,7 +120,7 @@
 | **Parametric ROM**: POD / autoencoder + LSTM / Neural ODE / Grassmann | Wind energy, Urban flow - Smart City, H₂ storage |
 | **Equation discovery**: SINDy, symbolic regression | Aluminium process (COSTA-SINDy), Turbine noise |
 | **Sparse sensing** & optimal sensor placement | Greenhouse, Ship engine |
-| **Safe RL** with predictive safety filters | Drone path planning, Autonomous Vessels, Defense |
+| **Safe RL** with predictive safety filters | Drone path planning, Autonomous Vessels |
 | **Generative AI** super-resolution (GAN, diffusion) | Wind-field state estimation |
 | **ML data assimilation**: EnKF + nudging | Aviation wake vortices |
 </td>
@@ -140,7 +140,7 @@
 <tr><td valign="top"><b>Reactor design, low-carbon and H₂</b><br/>Physics: CFD-DEM + 1D multiscale particle-reactor model<br/>AI: POD-LSTM surrogate</td><td valign="top">Closure relations<br/>Design choice<br/>Fast state estimation</td><td valign="top"><sub>A1 A4<br/>P3 P7 P8</sub></td></tr>
 <tr><td valign="top"><b>Oil &amp; gas drilling</b><br/>1D cuttings-transport model + LSTM / Transformer learned correction (intrusive and non-intrusive)<br/>Bayesian PINN<br/>Isolation Forest, LSTM autoencoder<br/>Continual learning</td><td valign="top">Closure in physics<br/>Parameter estimation<br/>Uncertainty quantification<br/>Anomaly detection<br/>Pore-pressure prediction</td><td valign="top"><sub>A2 A3 A4 A9 A12<br/>P1 P3 P4</sub></td></tr>
 <tr><td valign="top"><b>Greenhouse (digital-twin enabler)</b><br/>CFD, POD + QR sensor placement<br/>LSTM surrogate<br/>RL / MPC, LLM agents<br/>Unity 3D, IoT</td><td valign="top">State estimation from ~10 sensors<br/>Control<br/>What-if analysis</td><td valign="top"><sub>A1 A2<br/>P1 P6</sub></td></tr>
-<tr><td rowspan="3" valign="top"><a href="#drones-and-autonomous-ships"><b>Defense</b></a></td><td valign="top"><b>Drones</b><br/>Multiscale CFD (SIMRA, LES)<br/>Grassmann deep-learning ROM<br/>RL path planning</td><td valign="top">Real-time turbulence prediction<br/>Risk-aware path planning<br/>Control</td><td valign="top"><sub>A1 A10<br/>P1 P2 P7</sub></td></tr>
+<tr><td rowspan="3" valign="top"><a href="#drones-and-autonomous-ships"><b>Aerospace and Marine Autonomy</b></a></td><td valign="top"><b>Drones</b><br/>Multiscale CFD (SIMRA, LES)<br/>Grassmann deep-learning ROM<br/>RL path planning</td><td valign="top">Real-time turbulence prediction<br/>Risk-aware path planning<br/>Control</td><td valign="top"><sub>A1 A10<br/>P1 P2 P7</sub></td></tr>
 <tr><td valign="top"><b>Autonomous vessels</b><br/>ML-Kalman sensor fusion<br/>RL + predictive safety filter<br/>LSTM remaining-useful-life<br/>Multi-agent LLM (ShipAgent)</td><td valign="top">Collision avoidance (COLREGS)<br/>Predictive maintenance<br/>RAMS trade-offs</td><td valign="top"><sub>A3 A10 A11</sub></td></tr>
 <tr><td valign="top"><b>Aviation safety</b><br/>Terrain / building CFD (LES, RANS)<br/>Galerkin ROM + EnKF + LSTM nudging</td><td valign="top">Hazard assessment<br/>Data assimilation<br/>Real-time vortex tracking</td><td valign="top"><sub>A2 A7<br/>P1 P2 P3 P6</sub></td></tr>
 <tr><td valign="top"><a href="#material-science"><b>Material science</b></a></td><td valign="top">Random Forest vs deep neural network on DFT dataset </td><td valign="top">Accelerated Screening of thermoelectric candidates at ~2 % of DFT cost<br/>Accelerated discovery</td><td valign="top"><sub>A1 A3 A4<br/>P8</sub></td></tr>
@@ -179,7 +179,7 @@
 <td align="center" width="20%"><a href="#process-industry-and-oil-and-gas">🏭<br/><b>Process Industry &amp; Oil-Gas</b></a></td>
 </tr>
 <tr>
-<td align="center" width="20%"><a href="#aviation-safety-and-defense">✈️<br/><b>Aviation Safety &amp; Defense</b></a></td>
+<td align="center" width="20%"><a href="#aviation-safety-and-defense">✈️<br/><b>Aviation Safety &amp;Aerospace and Marine Autonomy</b></a></td>
 <td align="center" width="20%"><a href="#drones-and-autonomous-ships">🚁🚢<br/><b>Drones &amp; Autonomous Ships</b></a></td>
 <td align="center" width="20%"><a href="#smart-city-urban-climate-mobility-and-health">🏙️<br/><b>Smart City &amp; Health</b></a></td>
 <td align="center" width="20%"><a href="#material-science">🔬<br/><b>Material Science</b></a></td>
@@ -512,7 +512,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-## Aviation Safety and Defense
+## Aviation Safety 
 
 <table>
 <tr>
