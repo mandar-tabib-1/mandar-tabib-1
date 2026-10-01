@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=16&pause=2200&color=1F8FBF&center=true&vCenter=true&width=846&height=30&lines=1.+Open+for+collaboration+and+joint+research+proposals+in+AI+and+Physics-based+models;2.+See+my+results+below+in%3A+Energy%2C+Defense+%28Drones%2C+Ships%2C+Aviation+Safety%29%2C;2.+...Process+Industry%2C+Material+Science%2C+Health%2C+Digital+Twins+and+AI+Agents" alt="Typing SVG"/></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=22&pause=2200&color=1F8FBF&center=true&vCenter=true&width=1160&height=34&lines=1.+Open+for+collaboration+and+joint+research+proposals+in+AI+and+Physics-based+models;2.+See+my+results+below+in%3A+Energy%2C+Defense+%28Drones%2C+Ships%2C+Aviation+Safety%29%2C;2.+...Process+Industry%2C+Material+Science%2C+Health%2C+Digital+Twins+and+AI+Agents" alt="Typing SVG"/></a>
 </p>
 
 <p align="center">
-   <a href="https://orcid.org/0000-0002-5836-9201"><img src="https://img.shields.io/badge/ORCID-0000--0002--5836--9201-A6CE39?style=for-the-badge&logo=orcid&logoColor=white" alt="ORCID"/></a>
+   <a href="https://orcid.org/0000-0002-5836-9201"><img src="https://img.shields.io/badge/ORCID-0000--0002--5836--9201-A6CE39?style=flat-square&logo=orcid&logoColor=white" alt="ORCID"/></a>
    <!--
   <a href="https://www.youtube.com/@tabibmandar/videos"><img src="https://img.shields.io/badge/YouTube-Research%20videos-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/></a> -->
-  <a href="mailto:mandar.tabib@sintef.no"><img src="https://img.shields.io/badge/Email-mandar.tabib%40sintef.no-0A66C2?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"/></a>
+  <a href="mailto:mandar.tabib@sintef.no"><img src="https://img.shields.io/badge/Email-mandar.tabib%40sintef.no-0A66C2?style=flat-square&logo=maildotru&logoColor=white" alt="Email"/></a>
 </p>
 
 <p align="center">
@@ -32,33 +32,77 @@
 
 ## 👋 About me
 
-I am a Senior Research Scientist in the *Computational Science and Engineering* group at **[SINTEF Digital](https://www.sintef.no/en/)**, Trondheim, Norway.  SINTEF ¨(my workplace) is one of Europe's largest independent research organisations with more than 2000 employees.  
-
-**My research results presented here are mostly published:**: For nearly two decades (including my Ph.D. and my Master's thesis), I have worked on numerical tools involving either artificial intelligence or physics-based models or combining both in novel ways (Hybrid analytics and modelling) while integrating new methods like Agentic AI (in 2026) and Generative AI in workflows and tools for digital twins and industry 4.0 . As disseminated below, I have applied these methods across domains like energy, defense, process industry (chemical, oil and gas), aviation, autonomous systems, smart cities and health sector.  
-
-
-**My research** presented here is mostly published in scientific peer-reviewed journal publications <u>as cited below in the accompanying references</u>. The purpose of this Readme is to enable Research collaborations. 
-<u>Note</u>: Claude had been given access to all my publications and presentations in order to generate this readme.md.  
-
-
-**To summarize**, my research develops <u>computational tools</u> in three connected areas, with tables below giving some ideas on the tools used and the <u>domain areas</u> where it is applied.
+## About Me
+- **Purpose:** Facilitate **Research Collaborations and Knowledge Exchange** by Disseminating my research involving AI + Physics in several Engineering and Scientific Domains. This README provides an overview of my research results below, computational methods, tools, and application areas. 
+- **Position:** Senior Research Scientist, Computational Science and Engineering, **SINTEF Digital**, Trondheim, Norway.
+- **My Organisation:** SINTEF is one of Europe's largest independent research organisations, with **2,000+ employees**.
+- **Research experience:** Nearly **two decades of research experience**, including my Ph.D. and Master's research with AI and Physics.
+- **Core focus:** Development of computational tools that combine:
+  - **Artificial Intelligence (AI) and Machine Learning**
+  - **Physics-based modelling and numerical simulation**
+  - **Hybrid analytics and modelling**, combining data-driven and physics-based approaches to mitigate challenges related to Generalization, Interpretability, Sparse and Noisy data quality, Uncertainty Quantifications, Accuracy and Efficiency. Methods mentioned below.
+  - **Agentic AI and Generative AI**,
+- **Digital engineering:** Integration of these methods into **digital twins, simulation workflows, optimisation tools, and Industry 4.0 applications**.
+- **Application domains:** My research has been applied across several domains, including:
+  - Energy
+  - Process industry, including chemical, oil & gas
+  - Defence and Aviation Safety
+  - Autonomous systems (Drones and Ships)
+  - Material Science (Material Discovery)
+  - Smart cities
+  - Health
+- **Research outputs:** The work presented here is predominantly based on my **peer-reviewed scientific publications**, with references provided throughout this repository.
+- **Research overview:** My current research can broadly be organised into **three interconnected areas**, described in the following sections together with examples of the computational tools, methods, and domains in which they have been applied.
 
 <table>
 <tr>
-<td width="33%" valign="top" align="center">
-<h3>🧠 Artificial Intelligence</h3>
-Deep learning (CNN, LSTM, Transformers, GANs, diffusion) · Reinforcement learning with safety filters · Gaussian processes & uncertainty-aware AI · Explainable AI (SHAP) · <b>Recently, Agentic AI & LLMs</b> for scientific workflows
+<td width="33%" valign="top">
+<h3 align="center">🧠 Artificial Intelligence</h3>
+<small>
+  <ul>
+    <li>From Traditional machine learning (Regression with Regularizations, Random Forest, SVM)</li>
+    <li>To Modern Deep learning (CNN, LSTM, Transformers, GANs, Diffusion)</li>
+    <li>Reinforcement learning with safety filters</li>
+    <li>Gaussian processes & uncertainty-aware AI</li>
+    <li>Explainable AI (SHAP)</li>
+    <li><b>Recently, Agentic AI & LLMs</b> for scientific workflows</li>
+  </ul>
+</small>
 </td>
-<td width="33%" valign="top" align="center">
-<h3>⚛️ Hybrid Modelling (Physics + AI)</h3>
-Physics-informed NNs · Learned corrections of imperfect physics · Parametric reduced-order models (POD, autoencoders, Grassmann manifolds) · Equation discovery (SINDy, symbolic regression) · Combining ML and data assimilation · Optimal sensor placement. 
+<td width="33%" valign="top">
+<h3 align="center">⚛️ Hybrid Modelling (Physics + AI)</h3>
+<small>
+  <ul>
+    <li>Physics-informed NNs for inductive bias</li>
+    <li>Learned corrections of imperfect physics</li>
+    <li>Learned Low-Dimensional Manifolds and Parametric reduced-order models (POD, autoencoders, Grassmann manifolds)</li>
+    <li>Equation discovery (SINDy, symbolic regression)</li>
+    <li>Combining ML with traditional data assimilation (Kalman Filters)</li>
+    <li>Optimal sensor placements</li>
+    <li>Uncertainty Quantification</li>
+  </ul>
+</small>
 </td>
-<td width="33%" valign="top" align="center">
-<h3>🌊 Numerical methods and Computational Fluid Dynamics</h3>
-LES / RANS turbulence · Multiphase & reactive flows · CFD-DEM · Actuator-line & sliding-mesh wind turbines · Multiscale (meso-to-micro) atmospheric flows · 
+<td width="33%" valign="top">
+<h3 align="center">🌊 Numerical methods and Computational Fluid Dynamics</h3>
+<small>
+  <ul>
+    <li>LES / RANS turbulence modelling</li>
+    <li>Multiphase & reactive flow modelling</li>
+    <li>Discrete Element Modelling</li>
+    <li>Turbine models: Actuator-line & sliding-mesh wind turbines</li>
+    <li>Multiscale (meso-to-micro) modelling applied to:
+      <ul>
+        <li>Atmospheric flows</li>
+        <li>Reactor design</li>
+      </ul>
+    </li>
+  </ul>
+</small>
 </td>
 </tr>
 </table>
+
 
 ## 🧰Method toolbox: Hybrid Analysis & Modelling, and Agentic AI.
 
