@@ -104,85 +104,21 @@
 </tr>
 </table>
 
-## 🧰Method toolbox: Hybrid Analysis & Modelling, and Agentic AI.
-
-<table>
-<tr>
-<td width="42%" align="center"><img src="assets/methods/ham_venn.png" width="100%" alt="HAM at the intersection of physics, big data and data-driven models"/></td>
-<td width="58%" valign="top">
-
-| HAM method | Where I've used it |
-|---|---|
-|**Agentic AI**: LLM orchestration + verifiers | Wind farm, Aluminium Industry, Autonomous Ships, **Agentic CFD (OpenFOAM)** |
-| Physics-guided ML and Physics-informed Neural Networks |  Wind energy |
-| Uncertainty Quantification in ML (incl. Bayesian UQ) |  Pore pressure prediction|
-| **Learned correction** of imperfect physics | Drilling models , Aviation: Wake-vortex models. |
-| **Parametric ROM**: POD / autoencoder + LSTM / Neural ODE / Grassmann | Wind energy, Urban flow - Smart City, H₂ storage |
-| **Equation discovery**: SINDy, symbolic regression | Aluminium process (COSTA-SINDy), Turbine noise |
-| **Sparse sensing** & optimal sensor placement | Greenhouse, Ship engine |
-| **Safe RL** with predictive safety filters | Drone path planning, Autonomous Vessels |
-| **Generative AI** super-resolution (GAN, diffusion) | Wind-field state estimation |
-| **ML data assimilation**: EnKF + nudging | Aviation wake vortices |
-</td>
-</tr>
-</table>
-
-> **Recent focus (2025–2026):** testing and integrating **Agentic AI and Generative AI with hybrid models / scientific ML**. LLM agents *orchestrate* physics models, surrogates, optimisers and verifiers, while the physics-based components remain authoritative.
-
-## Application Area, Tool Developed, Purpose and Challenges mitigated.
-
-<table>
-<tr><th width="18%">Section</th><th width="36%">Tools used (AI, Novel hybrid, CFD, physics-based)</th><th width="30%">Benefit / purpose</th><th width="16%">Challenges (see key)</th></tr>
-<tr><td valign="top"><a href="#wind-and-renewable-energy"><b>Wind energy</b></a></td><td valign="top"> CFD with actuator line, sliding mesh,<br/> AI tools: POD and conv-autoencoder + LSTM / Neural-ODE for reduced-order models<br/> GAN based super-resolution<br/> Reinforcement Learning  <br/>Gaussian processes<br/>Autoencoder + GMM + LSTM (on SCADA data)</td><td valign="top">1000–10,000× faster simulation<br/>State estimation and super-resolution<br/>Wake-steering optimisation and control<br/>Predictive maintenance<br/>Uncertainty quantification</td><td valign="top"><sub>A1 A2 A4 A6 A10<br/>P1 P2 P3 P7 P8</sub></td></tr>
-<tr><td rowspan="6" valign="top"><a href="#process-industry-and-oil-and-gas"><b>Process industry</b></a></td><td valign="top"><b>Industry 4.0 / agentic workflows</b><br/>LLM agents, RAG, tool calling<br/>Verifier / critic agents<br/>Physics models and surrogates as tools</td><td valign="top">Automation<br/>Optimisation<br/>Decision support</td><td valign="top"><sub>A8 A11<br/>P8</sub></td></tr>
-<tr><td valign="top"><b>Chemical / multiphase</b><br/>Multiphase CFD: Euler–Euler involving LES with sub-grid models<br/>CFD-DEM<br/> Data Analysis: POD + wavelets</td><td valign="top">Closure models<br/>Flow-structure insight<br/>Equipment design</td><td valign="top"><sub>P3 P5 P7 P8 P9</sub></td></tr>
-<tr><td valign="top"><b>Aluminium electrolysis</b><br/> Solving ODEs and Hybrid models (COSTA-SINDy, COSTA-DDM)<br/>LLM optimiser agent</td><td valign="top">Optimisation<br/>Simulator arbitration</td><td valign="top"><sub>A1 A11<br/>P3 P4</sub></td></tr>
-<tr><td valign="top"><b>Reactor design, low-carbon and H₂</b><br/>Physics: CFD-DEM + 1D multiscale particle-reactor model<br/>AI: POD-LSTM surrogate</td><td valign="top">Closure relations<br/>Design choice<br/>Fast state estimation</td><td valign="top"><sub>A1 A4<br/>P3 P7 P8</sub></td></tr>
-<tr><td valign="top"><b>Oil &amp; gas drilling</b><br/>1D cuttings-transport model + LSTM / Transformer learned correction (intrusive and non-intrusive)<br/>Bayesian PINN<br/>Isolation Forest, LSTM autoencoder<br/>Continual learning</td><td valign="top">Closure in physics<br/>Parameter estimation<br/>Uncertainty quantification<br/>Anomaly detection<br/>Pore-pressure prediction</td><td valign="top"><sub>A2 A3 A4 A9 A12<br/>P1 P3 P4</sub></td></tr>
-<tr><td valign="top"><b>Greenhouse (digital-twin enabler)</b><br/>CFD, POD + QR sensor placement<br/>LSTM surrogate<br/>RL / MPC, LLM agents<br/>Unity 3D, IoT</td><td valign="top">State estimation from ~10 sensors<br/>Control<br/>What-if analysis</td><td valign="top"><sub>A1 A2<br/>P1 P6</sub></td></tr>
-<tr><td rowspan="3" valign="top"><a href="#drones-and-autonomous-ships"><b>Aerospace and Marine Autonomy</b></a></td><td valign="top"><b>Drones</b><br/>Multiscale CFD (SIMRA, LES)<br/>Grassmann deep-learning ROM<br/>RL path planning</td><td valign="top">Real-time turbulence prediction<br/>Risk-aware path planning<br/>Control</td><td valign="top"><sub>A1 A10<br/>P1 P2 P7</sub></td></tr>
-<tr><td valign="top"><b>Autonomous vessels</b><br/>ML-Kalman sensor fusion<br/>RL + predictive safety filter<br/>LSTM remaining-useful-life<br/>Multi-agent LLM (ShipAgent)</td><td valign="top">Collision avoidance (COLREGS)<br/>Predictive maintenance<br/>RAMS trade-offs</td><td valign="top"><sub>A3 A10 A11</sub></td></tr>
-<tr><td valign="top"><b>Aviation safety</b><br/>Terrain / building CFD (LES, RANS)<br/>Galerkin ROM + EnKF + LSTM nudging</td><td valign="top">Hazard assessment<br/>Data assimilation<br/>Real-time vortex tracking</td><td valign="top"><sub>A2 A7<br/>P1 P2 P3 P6</sub></td></tr>
-<tr><td valign="top"><a href="#material-science"><b>Material science</b></a></td><td valign="top">Random Forest vs deep neural network on DFT dataset </td><td valign="top">Accelerated Screening of thermoelectric candidates at ~2 % of DFT cost<br/>Accelerated discovery</td><td valign="top"><sub>A1 A3 A4<br/>P8</sub></td></tr>
-<tr><td valign="top"><a href="#smart-city-urban-climate-mobility-and-health"><b>Smart city</b></a></td><td valign="top">LASSO / Ridge, SVR, Random Forest, ANN, LSTM<br/>CFD thermal comfort (PMV)<br/>Nested LES / RANS urban wind</td><td valign="top">Interpretable mobility drivers<br/>Planning of infrastructure<br/>Urban-wind assessment</td><td valign="top"><sub>A3 A4 A8<br/>P1 P2</sub></td></tr>
-<tr><td valign="top"><a href="#smart-city-urban-climate-mobility-and-health"><b>Health</b></a></td><td valign="top">CFD + unsupervised ML (POD) of carotid-artery flow</td><td valign="top">Insight into disease progression</td><td valign="top"><sub>A1<br/>P1 P2 P9</sub></td></tr>
-</table>
-
-<details open>
-<summary><b>🔑 Key to the challenge numbers</b></summary>
-
-**A: AI / data-driven challenges**
-**A1** sparse or limited data · **A2** noisy or uncertain data · **A3** imbalanced or biased data · **A4** bias vs variance, generalisation · **A5** hyper-parameter sensitivity · **A6** training instability / convergence (incl. GAN mode collapse) · **A7** physical consistency of predictions · **A8** interpretability and trust · **A9** data / concept drift · **A10** safety and reliability of learned control (RL) · **A11** LLM-agent latency, cost, reproducibility, context drift · **A12** multi-modal and multi-fidelity data fusion
-
-**P: physics-based-model challenges**
-**P1** uncertain initial / boundary conditions · **P2** geometry and meshing · **P3** incomplete physics and closure (turbulence, inter-phase forces) · **P4** unknown or uncalibrated parameters · **P5** stiffness, numerical stability and convergence · **P6** ill-posed inverse problems · **P7** multiscale / multi-physics coupling · **P8** computational cost (limits real-time use) · **P9** scarce validation data
-</details>
-
-<sub>Challenge numbers mark the ones most relevant to each piece of work, not an exhaustive list. Click a section name to jump to its results.</sub>
-
-
-<p align="center">
-  <img src="assets/methods/ham_physics_vs_data.png" width="80%" alt="Hybrid Analysis and Modelling combines the strengths of physics-based and data-driven modelling"/>
-  <br/><sub><i>Hybrid Analysis & Modelling (HAM): generalisable and trustworthy like physics, efficient and self-adapting like AI (after Rasheed et al. 2020).</i></sub>
-</p>
-
----
-
-## 🧭 Application domains: jump to the results
+## Application Domains: Click Hyperlink to Jump to Results
 
 <table align="center">
 <tr>
 <td align="center" width="20%"><a href="#agentic-ai-and-hybrid-modelling-four-cases">🤖<br/><b>Agentic AI &amp; Hybrid Modelling</b></a></td>
 <td align="center" width="20%"><a href="#wind-and-renewable-energy">🌬️<br/><b>Wind &amp; Renewable Energy</b></a></td>
-<td align="center" width="20%"><a href="#low-carbon-process-design-and-hydrogen">💧<br/><b>Low-Carbon Process Design &amp; Hydrogen</b></a></td>
-<td align="center" width="20%"><a href="#digital-twin-enablers-greenhouse-example">🌱<br/><b>Digital Twin Enablers (Greenhouse)</b></a></td>
-<td align="center" width="20%"><a href="#process-industry-and-oil-and-gas">🏭<br/><b>Process Industry &amp; Oil-Gas</b></a></td>
+<td align="center" width="20%"><a href="#drones-and-autonomous-ships">🚁🚢<br/><b>Drones &amp; Autonomous Ships</b></a></td>
 </tr>
 <tr>
 <td align="center" width="20%"><a href="#aviation-safety-and-defense">✈️<br/><b>Aviation Safety &amp;Aerospace and Marine Autonomy</b></a></td>
-<td align="center" width="20%"><a href="#drones-and-autonomous-ships">🚁🚢<br/><b>Drones &amp; Autonomous Ships</b></a></td>
+<td align="center" width="20%"><a href="#digital-twin-enablers-greenhouse-example">🌱<br/><b>Digital Twin Enablers (Greenhouse)</b></a></td>
+<td align="center" width="20%"><a href="#process-industry-and-oil-and-gas">🏭<br/><b>Process Industry &amp; Oil-Gas</b></a></td>
 <td align="center" width="20%"><a href="#smart-city-urban-climate-mobility-and-health">🏙️<br/><b>Smart City &amp; Health</b></a></td>
 <td align="center" width="20%"><a href="#material-science">🔬<br/><b>Material Science</b></a></td>
+<td align="center" width="20%"><a href="#low-carbon-process-design-and-hydrogen">💧<br/><b>Low-Carbon Process Design &amp; Hydrogen</b></a></td>
 </tr>
 </table>
   <!--
@@ -216,7 +152,6 @@ flowchart LR
 -->
 
 ## Agentic AI and Hybrid Modelling: Four Cases
-
 **Question:** *Can LLM-based agents automate physics-based engineering workflows, and can local open-weight LLMs replace costly closed models?*
 We tested this on four cases, from industrial operations to fully agentic CFD simulation, all following a **propose → verify → constrain** pattern.
 
@@ -224,8 +159,7 @@ We tested this on four cases, from industrial operations to fully agentic CFD si
 
 <sub>The figures for Cases 1–3 are panels cut from the A1 poster *"Testing Agentic AI and Hybrid Modelling for Optimization and Predictive Maintenance in Engineering"*. **Click any panel to enlarge it.**</sub>
 
-### Case 1 · Wind farm: optimisation and predictive maintenance
-
+### Case 1 · Testing AI Agents for Wind farm optimisation and predictive maintenance.
 A nine-module pipeline: live weather data (yr.no API + BM25/RAG search) → critical turbine pairs → **parametric ROM of the wake (10,000× faster than CFD)** → **Gaussian-process power prediction with confidence bounds** → wake-steering optimisation, with an LLM choosing and iterating the optimiser via tool calls.
 - ✅ Classical ML pipeline (Autoencoder + GMM health states + gradient-boosting classifier + RNN RUL + SHAP) **outperformed a local LLM with tools** for SCADA fault diagnosis
 - ✅ LLM used as Orchestrator, recommendor, critic agents that are run in advisory or blocking mode with physics checks.
@@ -240,12 +174,11 @@ A nine-module pipeline: live weather data (yr.no API + BM25/RAG search) → crit
 
 **Agents in predictive maintenance.** **LLM-4-PdM-Code** writes its own diagnostic code (its own tool) from the SCADA data. **LLM-4-PdM-Tool** uses external tools we provide: a persistence test, decision-boundary instability analysis, feature-level analysis and a SHAP consistency check. The LLM's reasoning is logged for audit.
 
-
 ---
 
-### Case 2 · Aluminium electrolysis: agentic process optimisation
+### Case 2 · Agentic Process Optimization. Case study: Aluminium electrolysis. 
 
-An LLM agent sets the anode–cathode distance to minimise energy while keeping the process stable. It chooses between four simulators: physics ODE, neural, and two hybrids (COSTA-SINDy and COSTA-DDM).
+An LLM agent uses reasoning and past optimization performance to switch between different optimizers and helps to set the anode–cathode distance to minimise energy usage for electrolysis while keeping the process stable. LLM Agent also acts as a critic to choose between four process simulators: physics-based ODEs simulator, pure data-driven simulator, and two hybrids (COSTA-SINDy and COSTA-DDM).
 - ✅ Modest accuracy gain and **~10× lower run-to-run variance** than rule-based search
 - ⚠️ **~800× longer wall-clock** (275 s vs 0.3 s per run), mostly from LLM latency. This is an honest lesson on where agents pay off.
 
@@ -255,7 +188,7 @@ An LLM agent sets the anode–cathode distance to minimise energy while keeping 
 
 ---
 
-### Case 3 · ShipAgent: Multi-agent RAMS for autonomous vessels
+### Case 3 · Agentic Safety with ShipAgent: Multi-agent AI for autonomous vessels
 
 An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintainability and Safety agents over an ML-Kalman sensor-fusion layer. Collision avoidance combines a **COLREGS rule lookup** with an **RL policy guarded by a Predictive Safety Filter**, which escalates from speed reduction to steering correction, then override, then emergency stop.
 
@@ -309,7 +242,6 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </details>
 
 ---
-
 ## Wind and Renewable Energy
 
 <table>
@@ -325,9 +257,12 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I did**
-- **Develop Digital-twin enablers for offshore wind farms (FME NorthWind, WP4 lead researcher):** semi-supervised predictive maintenance on SCADA data (Autoencoder + GMM + LSTM); **safe RL with safety filters** for wake-steering power optimisation; **physics-informed generative AI (GANs) for super-resolved wind states**; hybrid surrogates for wake prediction (PCA / conv-autoencoders + RNN / Neural ODE latent dynamics).  
- Note: The Unity Digital Twin User-interface was developed in NTNU by Florian and Adil, and my enablers were developed for this digital twin. 
+**What I was involved in: (FME NorthWind, WP4 lead researcher)**
+- **AI based Predictive Maintenance in  Digital-twins for offshore wind farms :** A Semi-supervised predictive maintenance tool involving (Autoencoder + GMM + LSTM) on the SCADA data.  
+  **Reinforcement learning** for wake-steering power optimisation; 
+  **Physics-informed Generative AI (GANs) for super-resolved wind states**; 
+  Hybrid surrogates for wake prediction (PCA / conv-autoencoders + RNN / Neural ODE latent dynamics).  
+ Note: The Unity User-interface was developed in NTNU by Florian and Adil, and my enablers were developed for this digital twin. 
 - **High-fidelity CFD of rotating turbines and real wind farms:** LES/RANS of the industrial-scale **Bessaker wind farm** (terrain, wakes, atmospheric stability); actuator-line vs sliding-mesh vs MRF comparisons; NREL 5 MW and marine-boundary-layer interaction; FSI (NOWITECH FME, KPN FSI-WT).
 - **Reduced-order models:** POD-based data mining of near wakes and parametric ROMs of flow around blades.
 - **Now:** *PreWinT* (2026–2028): an AI-enabled digital twin for **wind-turbine noise**, correcting low-order aero-acoustic models with symbolic regression.
@@ -362,47 +297,44 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </details>
 
 ---
-
-## Low-Carbon Process Design and Hydrogen
+## Drones and Autonomous Ships
 
 <table>
 <tr>
-<td width="34%" align="center">
-<img src="assets/hydrogen/dem_particle_packing.gif" width="100%" alt="DEM particle packing"/><br/>
-<sub><b>CFD-DEM:</b> building industrial-scale packed beds particle by particle.</sub>
+<td width="50%" align="center">
+<img src="assets/smartcity/urban_wind_city.gif" width="100%" alt="AI-predicted urban wind and turbulence"/><br/>
+<sub><b>① AI predicts urban wind and turbulence in seconds</b> (ML reduced-order model trained on multiscale CFD).</sub>
 </td>
-<td width="22%" align="center">
-<img src="assets/hydrogen/packed_bed_flow.gif" width="100%" alt="Flow through packed bed"/><br/>
-<sub>Resolved flow through the DEM-generated bed.</sub>
-</td>
-<td width="44%" align="center">
-<img src="assets/hydrogen/clc_reduction_reaction.gif" width="100%" alt="Chemical looping redox cycle with H2 and CO"/><br/>
-<sub><b>Chemical looping combustion:</b> oxygen carrier cycles between reduction by syngas (H₂/CO) and oxidation, with inherent CO₂ capture.</sub>
+<td width="50%" align="center">
+<img src="assets/autonomy/drone_rl_path_planning.gif" width="100%" alt="RL drone path planning through urban turbulence"/><br/>
+<sub><b>② A reinforcement-learning drone plans a path</b> that avoids the high-turbulence zones and obstacles.</sub>
 </td>
 </tr>
 </table>
 
-**What I did**
-- **Hydrogen storage, thermal state estimation:** a deep-learning **hybrid POD-LSTM surrogate** that reconstructs natural-convection temperature fields in storage enclosures in real time.
-- **Hydrogen-material susceptibility (exploratory):** ML surrogates that estimate embrittlement indices of alloys from composition and processing features, replacing slow, costly experiments.
-- **Syngas (H₂/CO) chemical-looping combustion with CO₂ capture (EU DemoCLOCK, 500 kW):** a multiscale workflow in which 3D CFD-DEM of real pellet shapes (spheres, fluted rings, cylinders) supplies closures (Δp, heat and mass transfer, porosity) to a **1D multi-domain particle-reactor model**. This helps select oxygen-carrier shapes that minimise pressure drop, maximise conversion and avoid fuel slip.
-- **Towards green-H₂ metallurgy:** multiphase reactive CFD of smelting where CO/H₂ post-combustion drives reduction; see the HIsmelt work under [Process industry](#process-industry-and-oil-and-gas).
+<p align="center">
+<img src="assets/autonomy/drone_urban_workflow.png" height="260" alt="Workflow from multiscale CFD to ML turbulence prediction"/><br/>
+<sub>Multiscale CFD (HARMONIE → SIMRA → building-resolved) → <b>ML reduced-order model</b> → turbulence along flight paths (hospital drone logistics).</sub>
+</p>
+
+**What I did:**
+- In EU AI4HyDROP project (EU SESAR, 2023–2025, SINTEF lead) :  Developed an **AI safety framework for urban drone operations**. It involved an AI based Reduced-order flow models that computes urban turbulence in seconds**, which feeds **risk-aware RL path planning** and model-free control of drones in urban cities.
+- In ATB, drones for medical transport between hospitals (RCN, WP manager): **Hybrid analytics (ML + CFD)** for real-time parametric urban wind prediction, using a **Grassmann-manifold deep-learning ROM**.
+- For **Autonomous vessels (EU EDF dThor, 2022–2025):** ML-enhanced Kalman sensor fusion with adaptive noise, **RL + Predictive Safety Filter for COLREGS-compliant collision avoidance**, and LSTM remaining-useful-life for propulsion health. This is now extended into the **ShipAgent** multi-agent RAMS framework ([repo](https://github.com/mandar-tabib-1/ShipAgent-RAMS)).
 
 <p align="center">
-  <img src="assets/hydrogen/h2_storage_pod_lstm.png" height="220" alt="POD-LSTM temperature state estimation"/>
-  <img src="assets/hydrogen/oxygen_carrier_pellets.jpg" height="220" alt="Oxygen carrier pellets"/>
-  <br/>
-  <img src="assets/hydrogen/h2_embrittlement_ml.png" width="85%" alt="ML for hydrogen embrittlement susceptibility"/>
+  <a href="https://www.youtube.com/watch?v=00EQJdHGcxs"><img src="https://img.youtube.com/vi/00EQJdHGcxs/hqdefault.jpg" width="42%" alt="Conference presentation: AI for wind and turbulence"/></a>
+  <a href="https://www.youtube.com/watch?v=DOWOsiUe9uw"><img src="https://img.youtube.com/vi/DOWOsiUe9uw/hqdefault.jpg" width="42%" alt="Deep learning based parametric ROM: urban flow"/></a>
+  <br/><sub>▶️ <b>AI for wind & turbulence</b> (conference talk, 2025) · ▶️ <b>Deep-learning parametric ROM for urban flow</b></sub>
 </p>
 
 <details open>
 <summary><b>📚 Peer-reviewed evidence</b></summary>
 
-- Ganguli, **Tabib**, Deshpande, Raval, *Deep learning-based hybrid POD-LSTM framework for laminar natural convection flow in a rectangular enclosure*, Chemical Product and Process Modeling 20(2) (2025). [🔎](https://scholar.google.com/scholar?q=%22Deep+learning-based+hybrid+POD-LSTM+framework+for+laminar+natural+convection+flow%22)
-- Ganguli, **Tabib**, Deshpande, Dhotre, *Role of mathematical modeling in advanced power generation systems*, **Frontiers in Energy Research** 11, 1301851 (2023). [🔎](https://scholar.google.com/scholar?q=%22Role+of+mathematical+modeling+in+advanced+power+generation+systems%22)
-- **Tabib**, Johansen, Amini, *A 3D CFD-DEM methodology for simulating industrial scale packed bed chemical looping combustion reactors*, **Ind. Eng. Chem. Res.** 52(34) (2013). [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie302028s-blue?style=flat-square)](https://doi.org/10.1021/ie302028s)
-- **Tabib**, Morud, Johansen, Amini, *A multi-domain 1D particle-reactor model for packed bed reactor applications*, Progress in Applied CFD, SINTEF Proceedings (2015). [🔎](https://scholar.google.com/scholar?q=%22multi-domain+1D+particle-reactor+model+for+packed+bed%22)
-- Stephens, **Tabib**, Schwarz, Davis, *CFD simulation of bath dynamics in the HIsmelt smelt reduction vessel for iron production*, Progress in CFD 12(2/3) (2012). [🔎](https://scholar.google.com/scholar?q=%22CFD+simulation+of+bath+dynamics+in+the+HIsmelt+smelt+reduction+vessel%22)
+- Larsen, **Tabib**, Rasheed, *Resource-constrained dynamic planning and model-free control in turbulent urban environments*, **Robotics and Autonomous Systems**, 105130 (2025). [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.robot.2025.105130-blue?style=flat-square)](https://doi.org/10.1016/j.robot.2025.105130)
+- **Tabib**, Rasheed, *Machine learning based wind and turbulence prediction at urban-scale for drone operations*, Big Data & AI (BDA 2025), LNCS, Springer (2026). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--032--15134--6__20-blue?style=flat-square)](https://doi.org/10.1007/978-3-032-15134-6_20)
+- **Tabib**, Pawar, Ahmed, Rasheed, San, *A non-intrusive parametric reduced order model for urban wind flow using deep learning and Grassmann manifold*, J. Phys.: Conf. Ser. 2018, 012038 (2021). [![DOI](https://img.shields.io/badge/DOI-10.1088%2F1742--6596%2F2018%2F1%2F012038-blue?style=flat-square)](https://doi.org/10.1088/1742-6596/2018/1/012038)
+- **Tabib**, Midtbø, Skaslien, Rasheed, Kvamsdal, *Towards understanding wind impact for drone operations: comparison of wind models on different scales in a nested multiscale set-up*, CFD 2020, SINTEF Proceedings (2020). [🔎](https://scholar.google.com/scholar?q=%22Towards+understanding+wind+impact+for+drone+operations%22)
 </details>
 
 ---
@@ -446,72 +378,6 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </details>
 
 ---
-
-## Process Industry and Oil and Gas
-
-<table>
-<tr>
-<td width="62%" align="center">
-<img src="assets/process/pump_mixer_les.gif" width="100%" alt="LES of a solvent-extraction pump-mixer"/><br/>
-<sub><b>Large-eddy simulation of a solvent-extraction pump-mixer</b> (Cu/Ni/Co hydrometallurgy): impeller-driven vortices and turbulence.</sub>
-</td>
-<td width="38%" align="center">
-<img src="assets/process/hismelt_smelter.gif" width="100%" alt="HIsmelt smelt reduction vessel"/><br/>
-<sub><b>HIsmelt iron smelting (Rio Tinto)</b>: gas–liquid–solid reactive bath dynamics at 1450 °C.</sub>
-</td>
-</tr>
-<tr>
-<td width="62%" align="center">
-<img src="assets/process/smelter_coal_particles.gif" width="100%" alt="Coal particle injection into smelter"/><br/>
-<sub>Euler–Euler + Lagrangian particles + free surface: coal injection and CO generation.</sub>
-</td>
-<td width="38%" align="center">
-<img src="assets/process/bubble_column.gif" width="60%" alt="Bubble column CFD"/><br/>
-<sub>Gas–liquid <b>bubble column</b>: inter-phase forces and turbulence models.</sub>
-</td>
-</tr>
-</table>
-
-**What I did**
-- **Hybrid AI for drilling (KPN Hole Cleaning, Big Pressure; WP manager):** *learned corrections* of a physics-based 1D multiphase cuttings-transport model using along-string sensor data, both **intrusive (in-code)** and non-intrusive, **with uncertainty quantification**. In our comparison **LSTM (MSE 2.1×10⁻⁶) beat a Transformer (20.1×10⁻⁶)** for bottom-hole ECD correction. The work also covers real-time anomaly detection (Isolation Forest to LSTM-autoencoders), continual learning and drift monitoring, and **Bayesian PINNs for pore-pressure prediction** (multi-modal well logs + simulations).
-- **Multiphase and reactive CFD for design:** bubble columns, pump-mixers (LES with sub-grid-scale dispersion models), iron smelting, packed-bed reactors, CFD-DEM.
-- **Unsupervised ML on flow physics, since my PhD:** snapshot POD and hybrid **POD-wavelet** analysis to identify the dominant coherent structures that drive transport in process equipment.
-- **ML for materials:** tree-based, linear and neural models for discovering thermo-electric materials from sparse data.
-- **Agentic optimisation of aluminium electrolysis:** see the [Agentic AI flagship](#agentic-ai-and-hybrid-modelling-four-cases).
-
-<p align="center">
-  <img src="assets/process/drilling_schematic.png" height="240" alt="Drilling cuttings transport schematic"/>
-  <img src="assets/process/drilling_ham_uncertainty.jpg" height="240" alt="Hybrid learned-correction ECD predictions with 95% CI"/>
-  <br/><sub>Wellbore cuttings transport · 1D-physics prediction vs <b>ML-corrected hybrid</b> vs measurement, with 95 % confidence band.</sub>
-</p>
-
-<details open>
-<summary><b>📚 Peer-reviewed evidence (selected)</b></summary>
-
-*Oil & gas / drilling (hybrid AI)*
-- **Tabib**, Nivlet, Steinar, Skogestad, Nybø, Rasheed, *An intrusive hybrid-analytics and modelling with deep learning for efficient and accurate predictions of hole-cleaning during wellbore drilling simulations*, SPE EuropEC (2023). [![DOI](https://img.shields.io/badge/DOI-10.2118%2F214369--MS-blue?style=flat-square)](https://doi.org/10.2118/214369-MS)
-- **Tabib**, Rasheed, *Multivariate time-series methods with uncertainty estimation for correcting physics-based model: comparisons and generalization for industrial drilling process*, AIAI 2024, IFIP AICT, Springer (2024). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--031--63219--8__9-blue?style=flat-square)](https://doi.org/10.1007/978-3-031-63219-8_9)
-- Altindal, Nivlet, **Tabib**, Rasheed et al., *Anomaly detection in multivariate time series of drilling data*, **Geoenergy Science and Engineering** 237 (2024). [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.geoen.2024.212778-blue?style=flat-square)](https://doi.org/10.1016/j.geoen.2024.212778)
-- **Tabib** et al., *A hybrid approach to detect bad hole cleaning*, ASME OMAE (2023). [![DOI](https://img.shields.io/badge/DOI-10.1115%2FOMAE2023--108151-blue?style=flat-square)](https://doi.org/10.1115/OMAE2023-108151)
-- Nivlet et al., *Towards real-time bad hole cleaning problem detection through adaptive deep learning models*, MEOS GEO (2023). [![DOI](https://img.shields.io/badge/DOI-10.2118%2F213643--MS-blue?style=flat-square)](https://doi.org/10.2118/213643-MS)
-- Altindal, Rasheed, **Tabib**, Nybø, *Online parameter calibration in drilling hydraulics model*, SPE Gas & Oil Technology (2025). · **Tabib**, Rasheed, Fuchs, *Unsteady hydrodynamics of vortex-induced vibrations on a bluff-bodied offshore structure*, OMAE (2017).
-
-*Process industry (CFD + unsupervised ML)*
-- **Tabib**, Roy, Joshi, *CFD simulation of bubble column: an analysis of interphase forces and turbulence models*, **Chem. Eng. J.** 139(3) (2008), 100+ citations. [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cej.2007.09.015-blue?style=flat-square)](https://doi.org/10.1016/j.cej.2007.09.015)
-- Joshi, **Tabib**, Deshpande, Mathpati, *Dynamics of flow structures and transport phenomena, 1 & 2*, **Ind. Eng. Chem. Res.** 48(17) (2009). [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie8012506-blue?style=flat-square)](https://doi.org/10.1021/ie8012506) [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie900396k-blue?style=flat-square)](https://doi.org/10.1021/ie900396k)
-- **Tabib**, Schwarz, *Quantifying sub-grid scale turbulent dispersion force using one-equation SGS LES in gas–liquid and liquid–liquid systems*, **Chem. Eng. Sci.** 66(14) (2011). [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.ces.2011.03.058-blue?style=flat-square)](https://doi.org/10.1016/j.ces.2011.03.058)
-- **Tabib**, Lane, Yang, Schwarz, *CFD study of single-phase and multiphase (liquid–liquid) pump-mixer*, **Chem. Eng. Sci.** 80 (2012). [🔎](https://scholar.google.com/scholar?q=%22CFD+study+of+single+phase+and+multiphase+%28liquid-liquid%29+pump-mixer%22)
-- **Tabib**, Sathe, Deshpande, Joshi, *A hybridized snapshot POD–discrete wavelet transform technique for the analysis of flow structures*, **Chem. Eng. Sci.** 64(21) (2009). [🔎](https://scholar.google.com/scholar?q=%22hybridized+snapshot+proper+orthogonal+decomposition-discrete+wavelet+transform%22)
-- **Tabib**, Joshi, *Analysis of dominant flow structures in chemical process equipment using snapshot POD*, **Chem. Eng. Sci.** 63(14) (2008). [🔎](https://scholar.google.com/scholar?q=%22Analysis+of+dominant+flow+structures+and+their+flow+dynamics+in+chemical+process+equipment%22)
-- Dhotre, Nere, Vedantam, **Tabib**, *Advances in computational fluid dynamics*, Int. J. Chem. Eng. (2013). [![DOI](https://img.shields.io/badge/DOI-10.1155%2F2013%2F917373-blue?style=flat-square)](https://doi.org/10.1155/2013/917373)
-- **Tabib** et al., *Discovering thermo-electric materials using machine learning: insights and challenges*, LNCS 11139, Springer (2018). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--030--01418--6__39-blue?style=flat-square)](https://doi.org/10.1007/978-3-030-01418-6_39)
-- *Also:* Deshpande, **Tabib** et al., J. Turbulence 11 (2010) · **Tabib** et al., J. Computational Multiphase Flows 2(3) (2010).
-
-**Partners:** Aker BP · Equinor · Rio Tinto / CSIRO Minerals · RCN KPN projects.
-</details>
-
----
-
 ## Aviation Safety 
 
 <table>
@@ -553,44 +419,112 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-## Drones and Autonomous Ships
+## Process Industry and Oil and Gas
 
 <table>
 <tr>
-<td width="50%" align="center">
-<img src="assets/smartcity/urban_wind_city.gif" width="100%" alt="AI-predicted urban wind and turbulence"/><br/>
-<sub><b>① AI predicts urban wind and turbulence in seconds</b> (ML reduced-order model trained on multiscale CFD).</sub>
+<td width="62%" align="center">
+<img src="assets/process/pump_mixer_les.gif" width="100%" alt="LES of a solvent-extraction pump-mixer"/><br/>
+<sub><b>Large-eddy simulation of a solvent-extraction pump-mixer</b> (Cu/Ni/Co hydrometallurgy): impeller-driven vortices and turbulence.</sub>
 </td>
-<td width="50%" align="center">
-<img src="assets/autonomy/drone_rl_path_planning.gif" width="100%" alt="RL drone path planning through urban turbulence"/><br/>
-<sub><b>② A reinforcement-learning drone plans a path</b> that avoids the high-turbulence zones and obstacles.</sub>
+<td width="38%" align="center">
+<img src="assets/process/hismelt_smelter.gif" width="100%" alt="HIsmelt smelt reduction vessel"/><br/>
+<sub><b>HIsmelt iron smelting (Rio Tinto)</b>: gas–liquid–solid reactive bath dynamics at 1450 °C.</sub>
+</td>
+</tr>
+<tr>
+<td width="62%" align="center">
+<img src="assets/process/smelter_coal_particles.gif" width="100%" alt="Coal particle injection into smelter"/><br/>
+<sub>Euler–Euler + Lagrangian particles + free surface: coal injection and CO generation.</sub>
+</td>
+<td width="38%" align="center">
+<img src="assets/process/bubble_column.gif" width="60%" alt="Bubble column CFD"/><br/>
+<sub>Gas–liquid <b>bubble column</b>: inter-phase forces and turbulence models.</sub>
 </td>
 </tr>
 </table>
 
+**What I did**
+- **Hybrid AI for drilling (KPN Hole Cleaning, Big Pressure; WP manager):** *learned corrections* of a physics-based 1D multiphase cuttings-transport model using along-string sensor data, both **intrusive (in-code)** and non-intrusive, **with uncertainty quantification**. In our comparison **LSTM (MSE 2.1×10⁻⁶) beat a Transformer (20.1×10⁻⁶)** for bottom-hole ECD correction. 
+--  Real-time anomaly detection (Isolation Forest to LSTM-autoencoders), 
+-- **Uncertainty Quantification for pore-pressure prediction** (multi-modal well logs + simulations).
+- **Multiphase and reactive CFD for design:** bubble columns, pump-mixers (LES with sub-grid-scale dispersion models), iron smelting, packed-bed reactors, CFD-DEM.
+- **Unsupervised ML on flow physics, since my PhD:** snapshot POD and hybrid **POD-wavelet** analysis to identify the dominant coherent structures that drive transport in process equipment.
+- **ML for materials:** tree-based, linear and neural models for discovering thermo-electric materials from sparse data.
+- **Agentic optimisation of aluminium electrolysis:** see the [Agentic AI flagship](#agentic-ai-and-hybrid-modelling-four-cases).
+
 <p align="center">
-<img src="assets/autonomy/drone_urban_workflow.png" height="260" alt="Workflow from multiscale CFD to ML turbulence prediction"/><br/>
-<sub>Multiscale CFD (HARMONIE → SIMRA → building-resolved) → <b>ML reduced-order model</b> → turbulence along flight paths (hospital drone logistics).</sub>
+  <img src="assets/process/drilling_schematic.png" height="240" alt="Drilling cuttings transport schematic"/>
+  <img src="assets/process/drilling_ham_uncertainty.jpg" height="240" alt="Hybrid learned-correction ECD predictions with 95% CI"/>
+  <br/><sub>Wellbore cuttings transport · 1D-physics prediction vs <b>ML-corrected hybrid</b> vs measurement, with 95 % confidence band.</sub>
 </p>
 
+<details open>
+<summary><b>📚 Peer-reviewed evidence (selected)</b></summary>
+
+*Oil & gas / drilling (hybrid AI)*
+- **Tabib**, Nivlet, Steinar, Skogestad, Nybø, Rasheed, *An intrusive hybrid-analytics and modelling with deep learning for efficient and accurate predictions of hole-cleaning during wellbore drilling simulations*, SPE EuropEC (2023). [![DOI](https://img.shields.io/badge/DOI-10.2118%2F214369--MS-blue?style=flat-square)](https://doi.org/10.2118/214369-MS)
+- **Tabib**, Rasheed, *Multivariate time-series methods with uncertainty estimation for correcting physics-based model: comparisons and generalization for industrial drilling process*, AIAI 2024, IFIP AICT, Springer (2024). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--031--63219--8__9-blue?style=flat-square)](https://doi.org/10.1007/978-3-031-63219-8_9)
+- Altindal, Nivlet, **Tabib**, Rasheed et al., *Anomaly detection in multivariate time series of drilling data*, **Geoenergy Science and Engineering** 237 (2024). [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.geoen.2024.212778-blue?style=flat-square)](https://doi.org/10.1016/j.geoen.2024.212778)
+- **Tabib** et al., *A hybrid approach to detect bad hole cleaning*, ASME OMAE (2023). [![DOI](https://img.shields.io/badge/DOI-10.1115%2FOMAE2023--108151-blue?style=flat-square)](https://doi.org/10.1115/OMAE2023-108151)
+- Nivlet et al., *Towards real-time bad hole cleaning problem detection through adaptive deep learning models*, MEOS GEO (2023). [![DOI](https://img.shields.io/badge/DOI-10.2118%2F213643--MS-blue?style=flat-square)](https://doi.org/10.2118/213643-MS)
+- Altindal, Rasheed, **Tabib**, Nybø, *Online parameter calibration in drilling hydraulics model*, SPE Gas & Oil Technology (2025). · **Tabib**, Rasheed, Fuchs, *Unsteady hydrodynamics of vortex-induced vibrations on a bluff-bodied offshore structure*, OMAE (2017).
+
+*Process industry (CFD + unsupervised ML)*
+- **Tabib**, Roy, Joshi, *CFD simulation of bubble column: an analysis of interphase forces and turbulence models*, **Chem. Eng. J.** 139(3) (2008), 100+ citations. [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cej.2007.09.015-blue?style=flat-square)](https://doi.org/10.1016/j.cej.2007.09.015)
+- Joshi, **Tabib**, Deshpande, Mathpati, *Dynamics of flow structures and transport phenomena, 1 & 2*, **Ind. Eng. Chem. Res.** 48(17) (2009). [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie8012506-blue?style=flat-square)](https://doi.org/10.1021/ie8012506) [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie900396k-blue?style=flat-square)](https://doi.org/10.1021/ie900396k)
+- **Tabib**, Schwarz, *Quantifying sub-grid scale turbulent dispersion force using one-equation SGS LES in gas–liquid and liquid–liquid systems*, **Chem. Eng. Sci.** 66(14) (2011). [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.ces.2011.03.058-blue?style=flat-square)](https://doi.org/10.1016/j.ces.2011.03.058)
+- **Tabib**, Lane, Yang, Schwarz, *CFD study of single-phase and multiphase (liquid–liquid) pump-mixer*, **Chem. Eng. Sci.** 80 (2012). [🔎](https://scholar.google.com/scholar?q=%22CFD+study+of+single+phase+and+multiphase+%28liquid-liquid%29+pump-mixer%22)
+- **Tabib**, Sathe, Deshpande, Joshi, *A hybridized snapshot POD–discrete wavelet transform technique for the analysis of flow structures*, **Chem. Eng. Sci.** 64(21) (2009). [🔎](https://scholar.google.com/scholar?q=%22hybridized+snapshot+proper+orthogonal+decomposition-discrete+wavelet+transform%22)
+- **Tabib**, Joshi, *Analysis of dominant flow structures in chemical process equipment using snapshot POD*, **Chem. Eng. Sci.** 63(14) (2008). [🔎](https://scholar.google.com/scholar?q=%22Analysis+of+dominant+flow+structures+and+their+flow+dynamics+in+chemical+process+equipment%22)
+- Dhotre, Nere, Vedantam, **Tabib**, *Advances in computational fluid dynamics*, Int. J. Chem. Eng. (2013). [![DOI](https://img.shields.io/badge/DOI-10.1155%2F2013%2F917373-blue?style=flat-square)](https://doi.org/10.1155/2013/917373)
+- **Tabib** et al., *Discovering thermo-electric materials using machine learning: insights and challenges*, LNCS 11139, Springer (2018). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--030--01418--6__39-blue?style=flat-square)](https://doi.org/10.1007/978-3-030-01418-6_39)
+- *Also:* Deshpande, **Tabib** et al., J. Turbulence 11 (2010) · **Tabib** et al., J. Computational Multiphase Flows 2(3) (2010).
+
+**Partners:** Aker BP · Equinor · Rio Tinto / CSIRO Minerals · RCN KPN projects.
+</details>
+
+---
+## Low-Carbon Process Design and Hydrogen
+
+<table>
+<tr>
+<td width="34%" align="center">
+<img src="assets/hydrogen/dem_particle_packing.gif" width="100%" alt="DEM particle packing"/><br/>
+<sub><b>CFD-DEM:</b> building industrial-scale packed beds particle by particle.</sub>
+</td>
+<td width="22%" align="center">
+<img src="assets/hydrogen/packed_bed_flow.gif" width="100%" alt="Flow through packed bed"/><br/>
+<sub>Resolved flow through the DEM-generated bed.</sub>
+</td>
+<td width="44%" align="center">
+<img src="assets/hydrogen/clc_reduction_reaction.gif" width="100%" alt="Chemical looping redox cycle with H2 and CO"/><br/>
+<sub><b>Chemical looping combustion:</b> oxygen carrier cycles between reduction by syngas (H₂/CO) and oxidation, with inherent CO₂ capture.</sub>
+</td>
+</tr>
+</table>
+
 **What I did**
-- **AI4HyDROP (EU SESAR, 2023–2025, SINTEF lead):** an AI safety framework for urban drone operations. **Physics-informed ML flow models compute urban turbulence in seconds**, which feeds **risk-aware RL path planning** and model-free control in turbulent cities.
-- **ATB, drones for medical transport between hospitals (RCN, WP manager):** hybrid analytics (ML + CFD) for real-time parametric urban wind prediction, using a **Grassmann-manifold deep-learning ROM**.
-- **Autonomous vessels (EU EDF dThor, 2022–2025):** ML-enhanced Kalman sensor fusion with adaptive noise, **RL + Predictive Safety Filter for COLREGS-compliant collision avoidance**, and LSTM remaining-useful-life for propulsion health. This is now extended into the **ShipAgent** multi-agent RAMS framework ([repo](https://github.com/mandar-tabib-1/ShipAgent-RAMS)).
+- **Hydrogen storage, thermal state estimation:** a deep-learning **hybrid POD-LSTM surrogate** that reconstructs natural-convection temperature fields in storage enclosures in real time.
+- **Hydrogen-material susceptibility (exploratory):** ML surrogates that estimate embrittlement indices of alloys from composition and processing features, replacing slow, costly experiments.
+- **Syngas (H₂/CO) chemical-looping combustion with CO₂ capture (EU DemoCLOCK, 500 kW):** a multiscale workflow in which 3D CFD-DEM of real pellet shapes (spheres, fluted rings, cylinders) supplies closures (Δp, heat and mass transfer, porosity) to a **1D multi-domain particle-reactor model**. This helps select oxygen-carrier shapes that minimise pressure drop, maximise conversion and avoid fuel slip.
+- **Towards green-H₂ metallurgy:** multiphase reactive CFD of smelting where CO/H₂ post-combustion drives reduction; see the HIsmelt work under [Process industry](#process-industry-and-oil-and-gas).
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=00EQJdHGcxs"><img src="https://img.youtube.com/vi/00EQJdHGcxs/hqdefault.jpg" width="42%" alt="Conference presentation: AI for wind and turbulence"/></a>
-  <a href="https://www.youtube.com/watch?v=DOWOsiUe9uw"><img src="https://img.youtube.com/vi/DOWOsiUe9uw/hqdefault.jpg" width="42%" alt="Deep learning based parametric ROM: urban flow"/></a>
-  <br/><sub>▶️ <b>AI for wind & turbulence</b> (conference talk, 2025) · ▶️ <b>Deep-learning parametric ROM for urban flow</b></sub>
+  <img src="assets/hydrogen/h2_storage_pod_lstm.png" height="220" alt="POD-LSTM temperature state estimation"/>
+  <img src="assets/hydrogen/oxygen_carrier_pellets.jpg" height="220" alt="Oxygen carrier pellets"/>
+  <br/>
+  <img src="assets/hydrogen/h2_embrittlement_ml.png" width="85%" alt="ML for hydrogen embrittlement susceptibility"/>
 </p>
 
 <details open>
 <summary><b>📚 Peer-reviewed evidence</b></summary>
 
-- Larsen, **Tabib**, Rasheed, *Resource-constrained dynamic planning and model-free control in turbulent urban environments*, **Robotics and Autonomous Systems**, 105130 (2025). [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.robot.2025.105130-blue?style=flat-square)](https://doi.org/10.1016/j.robot.2025.105130)
-- **Tabib**, Rasheed, *Machine learning based wind and turbulence prediction at urban-scale for drone operations*, Big Data & AI (BDA 2025), LNCS, Springer (2026). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--032--15134--6__20-blue?style=flat-square)](https://doi.org/10.1007/978-3-032-15134-6_20)
-- **Tabib**, Pawar, Ahmed, Rasheed, San, *A non-intrusive parametric reduced order model for urban wind flow using deep learning and Grassmann manifold*, J. Phys.: Conf. Ser. 2018, 012038 (2021). [![DOI](https://img.shields.io/badge/DOI-10.1088%2F1742--6596%2F2018%2F1%2F012038-blue?style=flat-square)](https://doi.org/10.1088/1742-6596/2018/1/012038)
-- **Tabib**, Midtbø, Skaslien, Rasheed, Kvamsdal, *Towards understanding wind impact for drone operations: comparison of wind models on different scales in a nested multiscale set-up*, CFD 2020, SINTEF Proceedings (2020). [🔎](https://scholar.google.com/scholar?q=%22Towards+understanding+wind+impact+for+drone+operations%22)
+- Ganguli, **Tabib**, Deshpande, Raval, *Deep learning-based hybrid POD-LSTM framework for laminar natural convection flow in a rectangular enclosure*, Chemical Product and Process Modeling 20(2) (2025). [🔎](https://scholar.google.com/scholar?q=%22Deep+learning-based+hybrid+POD-LSTM+framework+for+laminar+natural+convection+flow%22)
+- Ganguli, **Tabib**, Deshpande, Dhotre, *Role of mathematical modeling in advanced power generation systems*, **Frontiers in Energy Research** 11, 1301851 (2023). [🔎](https://scholar.google.com/scholar?q=%22Role+of+mathematical+modeling+in+advanced+power+generation+systems%22)
+- **Tabib**, Johansen, Amini, *A 3D CFD-DEM methodology for simulating industrial scale packed bed chemical looping combustion reactors*, **Ind. Eng. Chem. Res.** 52(34) (2013). [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie302028s-blue?style=flat-square)](https://doi.org/10.1021/ie302028s)
+- **Tabib**, Morud, Johansen, Amini, *A multi-domain 1D particle-reactor model for packed bed reactor applications*, Progress in Applied CFD, SINTEF Proceedings (2015). [🔎](https://scholar.google.com/scholar?q=%22multi-domain+1D+particle-reactor+model+for+packed+bed%22)
+- Stephens, **Tabib**, Schwarz, Davis, *CFD simulation of bath dynamics in the HIsmelt smelt reduction vessel for iron production*, Progress in CFD 12(2/3) (2012). [🔎](https://scholar.google.com/scholar?q=%22CFD+simulation+of+bath+dynamics+in+the+HIsmelt+smelt+reduction+vessel%22)
 </details>
 
 ---
@@ -668,6 +602,69 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
 - **Tabib**, Løvvik, Johannessen, Rasheed, Sagvolden, Rustad, *Discovering thermo-electric materials using machine learning: Insights and challenges*, **Lecture Notes in Computer Science** 11139, pp. 392–401, Springer (ICANN 2018). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--030--01418--6__39-blue?style=flat-square)](https://doi.org/10.1007/978-3-030-01418-6_39)
 - *Related:* ML surrogates for hydrogen-material susceptibility (see [Low-Carbon Process Design and Hydrogen](#low-carbon-process-design-and-hydrogen)).
 </details>
+
+---
+## 🧰Method toolbox: Hybrid Analysis & Modelling, and Agentic AI.
+
+<table>
+<tr>
+<td width="42%" align="center"><img src="assets/methods/ham_venn.png" width="100%" alt="HAM at the intersection of physics, big data and data-driven models"/></td>
+<td width="58%" valign="top">
+
+| HAM method | Where I've used it |
+|---|---|
+|**Agentic AI**: LLM orchestration + verifiers | Wind farm, Aluminium Industry, Autonomous Ships, **Agentic CFD (OpenFOAM)** |
+| Physics-guided ML and Physics-informed Neural Networks |  Wind energy |
+| Uncertainty Quantification in ML (incl. Bayesian UQ) |  Pore pressure prediction|
+| **Learned correction** of imperfect physics | Drilling models , Aviation: Wake-vortex models. |
+| **Parametric ROM**: POD / autoencoder + LSTM / Neural ODE / Grassmann | Wind energy, Urban flow - Smart City, H₂ storage |
+| **Equation discovery**: SINDy, symbolic regression | Aluminium process (COSTA-SINDy), Turbine noise |
+| **Sparse sensing** & optimal sensor placement | Greenhouse, Ship engine |
+| **Safe RL** with predictive safety filters | Drone path planning, Autonomous Vessels |
+| **Generative AI** super-resolution (GAN, diffusion) | Wind-field state estimation |
+| **ML data assimilation**: EnKF + nudging | Aviation wake vortices |
+</td>
+</tr>
+</table>
+
+> **Recent focus (2025–2026):** testing and integrating **Agentic AI and Generative AI with hybrid models / scientific ML**. LLM agents *orchestrate* physics models, surrogates, optimisers and verifiers, while the physics-based components remain authoritative.
+
+## Application Areas, Tool Developed, Purpose and Challenges mitigated.
+
+<table>
+<tr><th width="18%">Section</th><th width="36%">Tools used (AI, Novel hybrid, CFD, physics-based)</th><th width="30%">Benefit / purpose</th><th width="16%">Challenges (see key)</th></tr>
+<tr><td valign="top"><a href="#wind-and-renewable-energy"><b>Wind energy</b></a></td><td valign="top"> CFD with actuator line, sliding mesh,<br/> AI tools: POD and conv-autoencoder + LSTM / Neural-ODE for reduced-order models<br/> GAN based super-resolution<br/> Reinforcement Learning  <br/>Gaussian processes<br/>Autoencoder + GMM + LSTM (on SCADA data)</td><td valign="top">1000–10,000× faster simulation<br/>State estimation and super-resolution<br/>Wake-steering optimisation and control<br/>Predictive maintenance<br/>Uncertainty quantification</td><td valign="top"><sub>A1 A2 A4 A6 A10<br/>P1 P2 P3 P7 P8</sub></td></tr>
+<tr><td rowspan="6" valign="top"><a href="#process-industry-and-oil-and-gas"><b>Process industry</b></a></td><td valign="top"><b>Industry 4.0 / agentic workflows</b><br/>LLM agents, RAG, tool calling<br/>Verifier / critic agents<br/>Physics models and surrogates as tools</td><td valign="top">Automation<br/>Optimisation<br/>Decision support</td><td valign="top"><sub>A8 A11<br/>P8</sub></td></tr>
+<tr><td valign="top"><b>Chemical / multiphase</b><br/>Multiphase CFD: Euler–Euler involving LES with sub-grid models<br/>CFD-DEM<br/> Data Analysis: POD + wavelets</td><td valign="top">Closure models<br/>Flow-structure insight<br/>Equipment design</td><td valign="top"><sub>P3 P5 P7 P8 P9</sub></td></tr>
+<tr><td valign="top"><b>Aluminium electrolysis</b><br/> Solving ODEs and Hybrid models (COSTA-SINDy, COSTA-DDM)<br/>LLM optimiser agent</td><td valign="top">Optimisation<br/>Simulator arbitration</td><td valign="top"><sub>A1 A11<br/>P3 P4</sub></td></tr>
+<tr><td valign="top"><b>Reactor design, low-carbon and H₂</b><br/>Physics: CFD-DEM + 1D multiscale particle-reactor model<br/>AI: POD-LSTM surrogate</td><td valign="top">Closure relations<br/>Design choice<br/>Fast state estimation</td><td valign="top"><sub>A1 A4<br/>P3 P7 P8</sub></td></tr>
+<tr><td valign="top"><b>Oil &amp; gas drilling</b><br/>1D cuttings-transport model + LSTM / Transformer learned correction (intrusive and non-intrusive)<br/>Bayesian PINN<br/>Isolation Forest, LSTM autoencoder<br/>Continual learning</td><td valign="top">Closure in physics<br/>Parameter estimation<br/>Uncertainty quantification<br/>Anomaly detection<br/>Pore-pressure prediction</td><td valign="top"><sub>A2 A3 A4 A9 A12<br/>P1 P3 P4</sub></td></tr>
+<tr><td valign="top"><b>Greenhouse (digital-twin enabler)</b><br/>CFD, POD + QR sensor placement<br/>LSTM surrogate<br/>RL / MPC, LLM agents<br/>Unity 3D, IoT</td><td valign="top">State estimation from ~10 sensors<br/>Control<br/>What-if analysis</td><td valign="top"><sub>A1 A2<br/>P1 P6</sub></td></tr>
+<tr><td rowspan="3" valign="top"><a href="#drones-and-autonomous-ships"><b>Aerospace and Marine Autonomy</b></a></td><td valign="top"><b>Drones</b><br/>Multiscale CFD (SIMRA, LES)<br/>Grassmann deep-learning ROM<br/>RL path planning</td><td valign="top">Real-time turbulence prediction<br/>Risk-aware path planning<br/>Control</td><td valign="top"><sub>A1 A10<br/>P1 P2 P7</sub></td></tr>
+<tr><td valign="top"><b>Autonomous vessels</b><br/>ML-Kalman sensor fusion<br/>RL + predictive safety filter<br/>LSTM remaining-useful-life<br/>Multi-agent LLM (ShipAgent)</td><td valign="top">Collision avoidance (COLREGS)<br/>Predictive maintenance<br/>RAMS trade-offs</td><td valign="top"><sub>A3 A10 A11</sub></td></tr>
+<tr><td valign="top"><b>Aviation safety</b><br/>Terrain / building CFD (LES, RANS)<br/>Galerkin ROM + EnKF + LSTM nudging</td><td valign="top">Hazard assessment<br/>Data assimilation<br/>Real-time vortex tracking</td><td valign="top"><sub>A2 A7<br/>P1 P2 P3 P6</sub></td></tr>
+<tr><td valign="top"><a href="#material-science"><b>Material science</b></a></td><td valign="top">Random Forest vs deep neural network on DFT dataset </td><td valign="top">Accelerated Screening of thermoelectric candidates at ~2 % of DFT cost<br/>Accelerated discovery</td><td valign="top"><sub>A1 A3 A4<br/>P8</sub></td></tr>
+<tr><td valign="top"><a href="#smart-city-urban-climate-mobility-and-health"><b>Smart city</b></a></td><td valign="top">LASSO / Ridge, SVR, Random Forest, ANN, LSTM<br/>CFD thermal comfort (PMV)<br/>Nested LES / RANS urban wind</td><td valign="top">Interpretable mobility drivers<br/>Planning of infrastructure<br/>Urban-wind assessment</td><td valign="top"><sub>A3 A4 A8<br/>P1 P2</sub></td></tr>
+<tr><td valign="top"><a href="#smart-city-urban-climate-mobility-and-health"><b>Health</b></a></td><td valign="top">CFD + unsupervised ML (POD) of carotid-artery flow</td><td valign="top">Insight into disease progression</td><td valign="top"><sub>A1<br/>P1 P2 P9</sub></td></tr>
+</table>
+
+<details open>
+<summary><b>🔑 Key to the challenge numbers</b></summary>
+
+**A: AI / data-driven challenges**
+**A1** sparse or limited data · **A2** noisy or uncertain data · **A3** imbalanced or biased data · **A4** bias vs variance, generalisation · **A5** hyper-parameter sensitivity · **A6** training instability / convergence (incl. GAN mode collapse) · **A7** physical consistency of predictions · **A8** interpretability and trust · **A9** data / concept drift · **A10** safety and reliability of learned control (RL) · **A11** LLM-agent latency, cost, reproducibility, context drift · **A12** multi-modal and multi-fidelity data fusion
+
+**P: physics-based-model challenges**
+**P1** uncertain initial / boundary conditions · **P2** geometry and meshing · **P3** incomplete physics and closure (turbulence, inter-phase forces) · **P4** unknown or uncalibrated parameters · **P5** stiffness, numerical stability and convergence · **P6** ill-posed inverse problems · **P7** multiscale / multi-physics coupling · **P8** computational cost (limits real-time use) · **P9** scarce validation data
+</details>
+
+<sub>Challenge numbers mark the ones most relevant to each piece of work, not an exhaustive list. Click a section name to jump to its results.</sub>
+
+
+<p align="center">
+  <img src="assets/methods/ham_physics_vs_data.png" width="80%" alt="Hybrid Analysis and Modelling combines the strengths of physics-based and data-driven modelling"/>
+  <br/><sub><i>Hybrid Analysis & Modelling (HAM): generalisable and trustworthy like physics, efficient and self-adapting like AI (after Rasheed et al. 2020).</i></sub>
+</p>
 
 ---
 
