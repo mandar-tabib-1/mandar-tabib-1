@@ -139,17 +139,8 @@ flowchart LR
     Au["🚁🚢 Drones & Ships"]
     S["🏙️ Smart city"]
   end
-  A -->  H
-  C --> H
-  H --> G
-  G --> W & P & Au
-  G -. "Agentic CFD" .-> C
-  H --> W & Hy & Gh & P & Av & Au & S
-  C --> Hy & P & Av & S
-```
-
----
--->
+  A -->
+  [H C --> H   H --> G   G --> W & P & Au   G -. "Agentic CFD" .-> C   H --> W & Hy & Gh & P & Av & Au & S   C --> Hy & P & Av & S]: #
 
 ## Agentic AI and Hybrid Modelling: Four Cases
 **Question:** *Can LLM-based agents automate physics-based engineering workflows, and can local open-weight LLMs replace costly closed models?*
