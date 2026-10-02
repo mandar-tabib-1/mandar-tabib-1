@@ -104,7 +104,9 @@
 </tr>
 </table>
 
-## Application Domains: Click Hyperlink to Jump to Results
+## Application Areas
+
+**Application areas of AI, hybrid AI + physics, and physics-based models. Click a link to jump to the results.**
 
 <table align="center">
 <tr>
@@ -113,7 +115,7 @@
 <td align="center" width="20%"><a href="#drones-and-autonomous-ships">🚁🚢<br/><b>Drones &amp; Autonomous Ships</b></a></td>
 </tr>
 <tr>
-<td align="center" width="20%"><a href="#aviation-safety-and-defense">✈️<br/><b>Aviation Safety &amp;Aerospace and Marine Autonomy</b></a></td>
+<td align="center" width="20%"><a href="#aviation-safety">✈️<br/><b>Aviation Safety &amp; Aerospace and Marine Autonomy</b></a></td>
 <td align="center" width="20%"><a href="#digital-twin-enablers-greenhouse-example">🌱<br/><b>Digital Twin Enablers (Greenhouse)</b></a></td>
 <td align="center" width="20%"><a href="#process-industry-and-oil-and-gas">🏭<br/><b>Process Industry &amp; Oil-Gas</b></a></td>
 <td align="center" width="20%"><a href="#smart-city-urban-climate-mobility-and-health">🏙️<br/><b>Smart City &amp; Health</b></a></td>
@@ -140,8 +142,7 @@ flowchart LR
     S["🏙️ Smart city"]
   end
   A -->
-  [H C --> H   H --> G   G --> W & P & Au   G -. "Agentic CFD" .-> C   H --> W & Hy & Gh & P & Av & Au & S   C --> Hy & P & Av & S]: #
-
+  
 ## Agentic AI and Hybrid Modelling: Four Cases
 **Question:** *Can LLM-based agents automate physics-based engineering workflows, and can local open-weight LLMs replace costly closed models?*
 We tested this on four cases, from industrial operations to fully agentic CFD simulation, all following a **propose → verify → constrain** pattern.
