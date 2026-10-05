@@ -542,7 +542,8 @@ I worked on two oil & gas projects, centred on **safe and efficient drilling and
 
 ---
 ## Low-Carbon Process Design and Hydrogen
-
+### In EU DemoCLOCK project, I researched on multi-scale physics based modelling on reactor packed bed Chemical looping Combustion (CLC) in large-scale power plants.
+ 
 <table>
 <tr>
 <td width="34%" align="center">
@@ -553,8 +554,9 @@ I worked on two oil & gas projects, centred on **safe and efficient drilling and
 <img src="assets/hydrogen/packed_bed_flow.gif" width="100%" alt="Flow through packed bed"/><br/>
 <sub>Resolved flow through the DEM-generated bed.</sub>
 </td>
-<td width="44%" align="center">
+<td width="36%" align="center">
 <img src="assets/hydrogen/clc_reduction_reaction.gif" width="100%" alt="Chemical looping redox cycle with H2 and CO"/><br/>
+<img src="assets/hydrogen/oxygen_carrier_pellets.jpg" width="8%" alt="Oxygen carrier pellets"/><br/>
 <sub><b>Chemical looping combustion:</b> oxygen carrier cycles between reduction by syngas (H₂/CO) and oxidation, with inherent CO₂ capture.</sub>
 </td>
 </tr>
@@ -567,9 +569,8 @@ I worked on two oil & gas projects, centred on **safe and efficient drilling and
 - **Towards green-H₂ metallurgy:** multiphase reactive CFD of smelting where CO/H₂ post-combustion drives reduction; see the HIsmelt work under [Process industry](#process-and-chemical-industry).
 
 <p align="center">
-  <img src="assets/hydrogen/h2_storage_pod_lstm.png" height="220" alt="POD-LSTM temperature state estimation"/>
-  <img src="assets/hydrogen/oxygen_carrier_pellets.jpg" height="220" alt="Oxygen carrier pellets"/>
-  <br/>
+  <img src="assets/hydrogen/h2_storage_pod_lstm.png" height="420" alt="POD-LSTM temperature state estimation"/>
+ 
   <img src="assets/hydrogen/h2_embrittlement_ml.png" width="85%" alt="ML for hydrogen embrittlement susceptibility"/>
 </p>
 
