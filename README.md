@@ -642,14 +642,8 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
 - ✅ **Computational saving:** DFT alone needs about **85 CPU-hours per compound** (≈ 408,000 CPU-hours for 4,800 compounds). Screening those 4,800 compounds takes the trained model **80 s (RF) or 132 s (DNN)**, and the whole DFT + ML workflow costs **about 2 %** of DFT alone.
 
 <p align="center">
-<img src="assets/materials/te_learning_curves.jpg" width="100%" alt="Learning curves: overfitting of the deep neural network versus the random forest"/><br/>
-<sub>Bias–variance check: DNN learning curve (left, train vs test R²) and Random Forest learning curve (right).</sub>
-</p>
-
-<p align="center">
-<img src="assets/materials/te_predicted_vs_actual.jpg" width="48%" alt="Predicted versus actual ZT for the three train/test splits, DNN (left) and random forest (right)"/>
-<img src="assets/materials/te_top_candidates.jpg" width="48%" alt="Best two thermoelectric candidates predicted by the DNN (left) and the random forest (right) for the three cases"/><br/>
-<sub>Left: predicted vs actual ZT on training and unseen test compounds for the three splits (DNN left column, RF right column). Right: best two candidate silicides found by DNN (left) and RF (right); ZT vs chemical potential (eV).</sub>
+<img src="assets/materials/te_summary.png" width="100%" alt="Summary: methods compared on sparse data, DNN overfitting versus random forest, and screening results with 47 promising compounds"/><br/>
+<sub>Summary: sparse-data challenges, methods compared (feature engineering, regularisation, ensembles, SMOTE), DNN overfitting vs RF, and screening results (47 promising compounds).</sub>
 </p>
 
 <details open>
