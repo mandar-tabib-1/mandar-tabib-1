@@ -477,13 +477,13 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ## Oil and Gas Industry
 
-I worked on two oil & gas projects, both centred on **safe and efficient drilling**: (1) **Clean Drilling / hole cleaning** (hybrid AI + physics and anomaly detection) and (2) **Big Pressure** (uncertainty quantification for pore-pressure prediction). Slides from both are shown below.
+I worked on two oil & gas projects, centred on **safe and efficient drilling and pore pressure prediction**: (1) **Clean Drilling / hole cleaning** (hybrid AI + physics and anomaly detection) and (2) **Big Pressure** (uncertainty quantification for pore-pressure prediction). Slides from both are shown below.
 
 ### Project 1 · Clean Drilling: hybrid AI, physics and anomaly detection (KPN Hole Cleaning; WP manager)
 
-**Problem:** the 1D multiphase cuttings-transport model used for real-time drilling monitoring is physically incomplete and its inputs are uncertain, so its bottom-hole equivalent circulating density (ECD) deviates from measurements. The same issue arises in CO₂ capture, geothermal and oil & gas wells.
+**Problem:** The 1D multiphase cuttings-transport model used for real-time drilling monitoring to monitor the drilling concentration is physically incomplete and its inputs are uncertain, so its bottom-hole equivalent circulating density (ECD and the pressure profile) deviates from measurements. The same issue arises when drilling in CO₂ capture, geothermal and oil & gas wells.
 
-**What I did:** *learned corrections* of the physics-based model with ML, using the past three time-steps of surface pressure, RPM, measured depth, flow rate and other along-string sensor data to predict the ECD error (ECD<sub>measured</sub> − ECD<sub>predicted</sub>). Two hybrid routes were built and compared: **intrusive** (the ML correction is applied inside the solver, updating the cuttings volume fraction at every grid cell) and **non-intrusive** (post-correction of the model output), both **with uncertainty quantification** (95 % confidence band).
+**What I did:** I used ML to *learn corrections* to the physics-based model. Using the past three time-steps of surface pressure, RPM, measured depth, flow rate and other along-string sensor data , i  predicted the ECD error (ECD<sub>measured</sub> − ECD<sub>predicted</sub>). Two hybrid routes were built and compared: **intrusive** (the ML correction is applied inside the solver, updating the cuttings volume fraction at every grid cell) and **non-intrusive** (post-correction of the model output), both **with uncertainty quantification** (95 % confidence band).
 
 <p align="center">
   <img src="assets/oilgas/drilling_hybrid_ecd.png" width="95%" alt="Hybrid modelling slide: ML correction of the 1D cuttings-transport model for bottom-hole ECD, with uncertainty quantification"/>
