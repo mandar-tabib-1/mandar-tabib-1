@@ -562,17 +562,33 @@ I worked on two oil & gas projects, centred on **safe and efficient drilling and
 </tr>
 </table>
 
-**What I did**
-- **Hydrogen storage, thermal state estimation:** a deep-learning **hybrid POD-LSTM surrogate** that reconstructs natural-convection temperature fields in storage enclosures in real time.
-- **Hydrogen-material susceptibility (exploratory):** ML surrogates that estimate embrittlement indices of alloys from composition and processing features, replacing slow, costly experiments.
-- **Syngas (H₂/CO) chemical-looping combustion with CO₂ capture (EU DemoCLOCK, 500 kW):** a multiscale workflow in which 3D CFD-DEM of real pellet shapes (spheres, fluted rings, cylinders) supplies closures (Δp, heat and mass transfer, porosity) to a **1D multi-domain particle-reactor model**. This helps select oxygen-carrier shapes that minimise pressure drop, maximise conversion and avoid fuel slip.
-- **Towards green-H₂ metallurgy:** multiphase reactive CFD of smelting where CO/H₂ post-combustion drives reduction; see the HIsmelt work under [Process industry](#process-and-chemical-industry).
-
 <p align="center">
-  <img src="assets/hydrogen/h2_storage_pod_lstm.png" height="420" alt="POD-LSTM temperature state estimation"/>
- 
-  <img src="assets/hydrogen/h2_embrittlement_ml.png" width="85%" alt="ML for hydrogen embrittlement susceptibility"/>
+  <img src="assets/hydrogen/clc_1d_model_cycle.gif" width="45%" alt="1D reactor model over the oxidation, purge, reduction and heat-removal cycle"/><br/>
+  <sub><b>1D multiphase reactive model</b> using closures from 3D CFD-DEM: oxidation, purge, reduction and heat-removal cycle.</sub>
 </p>
+
+**What I did**
+- **Syngas (H₂/CO) chemical-looping combustion with CO₂ capture (EU DemoCLOCK, 500 kW):** A multiscale model as seen above in which 3D CFD-DEM of real pellet shapes (spheres, fluted rings, cylinders) supplies closures (Δp, heat and mass transfer, porosity) to a **1D multi-domain particle-reactor model**. This helps select oxygen-carrier shapes that minimise pressure drop, maximise conversion and avoid fuel slip.
+
+- **Hydrogen :  AI based Thermal state estimation:** 
+- A deep-learning **hybrid POD-LSTM surrogate** that reconstructs natural-convection temperature fields in storage enclosures in real time.
+
+- **Hydrogen: AI model for material susceptibility to hydrogen:** 
+ML model that estimate hydrogen embrittlement indices of alloys from composition and processing features, replacing slow, costly experiments.
+
+
+<table>
+<tr>
+<td align="center" valign="top">
+<img src="assets/hydrogen/h2_storage_pod_lstm.png" height="460" alt="POD-LSTM temperature state estimation"/><br/>
+<sub><b>AI surrogate for temperature state estimation</b></sub>
+</td>
+<td align="center" valign="top">
+<img src="assets/hydrogen/h2_embrittlement_ml.png" width="100%" alt="ML for hydrogen embrittlement susceptibility"/><br/>
+<sub><b>ML for hydrogen embrittlement susceptibility</b></sub>
+</td>
+</tr>
+</table>
 
 <details open>
 <summary><b>📚 Peer-reviewed evidence</b></summary>
