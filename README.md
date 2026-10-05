@@ -145,20 +145,21 @@ flowchart LR
   A -->
   
 ## Agentic AI and Hybrid Modelling: Four Cases
-**Question:** *Can LLM-based agents automate physics-based engineering workflows, and can local open-weight LLMs replace costly closed models?*
-We tested this on four cases, from industrial operations to fully agentic CFD simulation, all following a **propose → verify → constrain** pattern.
+
+**Question:** 
+
+### Can LLM-based agents automate physics-based engineering workflows
+### Can local open-weight LLMs replace costly closed models?
+
+We tested this on four cases, from industrial operations to fully agentic CFD simulation, all following a **propose → verify → constrain** patterns.
 
 <p align="center"><img src="assets/agentic/poster/0_header.png" width="100%" alt="Poster: Testing Agentic AI and Hybrid Modelling for Optimization and Predictive Maintenance in Engineering"/></p>
-
-<sub>The figures for Cases 1–3 are panels cut from the A1 poster *"Testing Agentic AI and Hybrid Modelling for Optimization and Predictive Maintenance in Engineering"*. **Click any panel to enlarge it.**</sub>
 
 ### Case 1 · Testing AI Agents for Wind farm optimisation and predictive maintenance.
 
 **How are AI Agents used?**  
 
-
 **In optimization**, the LLM-based Agent helps to choose an optimizer. n a multi-step loop with self-verification it calls `evaluate_yaw`, `run_optimizer`, `compare_results`, `validate_physics` and `commit_solution`, reasoning over earlier results before each new call.  We compared native tool calling with prompt-based ReAct. In addition, the LLM Agents are used as an Orchestrator, recommendor, critic agents and verifiers that are run in advisory or blocking mode via optimizaing for the yaw angles. The LLM agents assist a nine-module pipeline comprising of modules to 1. check for live weather data and wind farm infomration based on user-request (through yr.no API + BM25/RAG search) , 2. parametric ROM of the wake (10,000× faster than CFD), 3. Gaussian-process power prediction with confidence bounds , and 4. wake-steering optimiszers.  
-
 
 **In predictive maintenance**, the LLM agents are used with and without tools to help diagnoize faults from the input multi-variate SCADA data for fault, and its performance is compared with a classical ML pipeline for fault diagnosis. 
 
@@ -179,7 +180,8 @@ The agent is *not* the optimiser; it *chooses* one. In a multi-step loop with se
 
 ---
 
-### Case 2 · Agentic Process Optimization. Case study: Aluminium electrolysis. 
+### Case 2 · Agentic Process Optimization. Case study: Aluminium electrolysis.
+
 **How are AI Agents used?**   
 
 An LLM agent uses reasoning and past optimization performance to switch between different optimizers and helps to set the anode–cathode distance to minimise energy usage for electrolysis while keeping the process stable. LLM Agent also acts as a critic to choose between four process simulators: physics-based ODEs simulator, pure data-driven simulator, and two hybrids (COSTA-SINDy and COSTA-DDM).
@@ -204,13 +206,21 @@ An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintai
 <p align="center"><img src="assets/agentic/poster/3c_communication_safety.png" width="100%" alt="Poster case 3: cross-agent communication and safety logic"/></p>
 <p align="center"><img src="assets/agentic/poster/3d_observations.png" width="100%" alt="Poster case 3: observations"/></p>
 
+---
+
 ### Case 4 · Agentic Simulation with Agentic CFD
 *(in collaboration with NTNU: Mikael Shahly , Adil Rasheed, Vasileios Tsiolakis and myself with SEP funding.)*
 **How are AI Agents used?**   
 
-*Can a team of AI agents, supervised by a human, take a fluid-flow simulation from a one-sentence request to a validated result?* 
+#### Can a team of AI agents supervised by a human, take a fluid-flow simulation from a one-sentence request to a validated result? 
 
 Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticCFD** chains four pipeline agents: **Specification → Case Builder → Mesh → Improvement**. A user approval gate follows each agent. Three fresh-context subagents are on call: an **adversarial critic** briefed to *fail* each mesh and result, a CFD hand, and a source explorer. The design is cybernetic: one feedback loop closed three times, as agent ↔ case, critic ↔ builder, and user ↔ agents. Every number in the specification carries a provenance tag (`[ASSUMED]`, `[INFERRED]`, `[COMPUTED]`, `[REVISED]`, `[RETRACTED]`).
+
+<p align="center">
+<img src="assets/agentic/agentic_cfd_pipeline_architecture.png" width="700" alt="AgenticCFD pipeline with approval gates and software architecture"/><br/>
+<img src="assets/agentic/agentic_cfd_case_studies.png" width="700" alt="AgenticCFD case studies: cylinder, NASA hump, flange, propeller"/><br/>
+<sub>AgenticCFD: the pipeline with four approval gates, the software architecture, and the four validation case studies.</sub>
+</p>
 
 | Case (increasing difficulty) | Result vs trusted reference |
 |---|---|
@@ -220,12 +230,6 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 | 🟠 **E779A rotating propeller** (blade rebuilt from tables) | thrust within **1.7 %** of experiment, up from 38 % off after the agent found a bug in its *own* geometry code |
 
 ✅ Every case was driven by **a user with no prior CFD background**, and the agents found and cited the reference data themselves. The agents also caught a physically impossible request (vortex shedding at Re < 40) and refused an unsuitable meshing tool after checking the source.
-
-<p align="center">
-<img src="assets/agentic/agentic_cfd_pipeline_architecture.png" width="700" alt="AgenticCFD pipeline with approval gates and software architecture"/><br/>
-<img src="assets/agentic/agentic_cfd_case_studies.png" width="700" alt="AgenticCFD case studies: cylinder, NASA hump, flange, propeller"/><br/>
-<sub>AgenticCFD: the pipeline with four approval gates, the software architecture, and the four validation case studies.</sub>
-</p>
 
 <details>
 <summary><b>📊 Show more: AgenticCFD feedback loops, ML vs LLM fault diagnosis, optimiser comparison</b></summary>
