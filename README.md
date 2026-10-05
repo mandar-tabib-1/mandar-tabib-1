@@ -113,11 +113,12 @@
 <td align="center" width="20%"><a href="#agentic-ai-and-hybrid-modelling-four-cases">🤖<br/><b>Agentic AI &amp; Hybrid Modelling</b></a></td>
 <td align="center" width="20%"><a href="#wind-and-renewable-energy">🌬️<br/><b>Wind &amp; Renewable Energy</b></a></td>
 <td align="center" width="20%"><a href="#drones-and-autonomous-ships">🚁🚢<br/><b>Drones &amp; Autonomous Ships</b></a></td>
-</tr>
-<tr>
 <td align="center" width="20%"><a href="#aviation-safety">✈️<br/><b>Aviation Safety &amp; Aerospace and Marine Autonomy</b></a></td>
 <td align="center" width="20%"><a href="#digital-twin-enablers-greenhouse-example">🌱<br/><b>Digital Twin Enablers (Greenhouse)</b></a></td>
-<td align="center" width="20%"><a href="#process-industry-and-oil-and-gas">🏭<br/><b>Process Industry &amp; Oil-Gas</b></a></td>
+</tr>
+<tr>
+<td align="center" width="20%"><a href="#process-and-chemical-industry">🏭<br/><b>Process &amp; Chemical Industry</b></a></td>
+<td align="center" width="20%"><a href="#oil-and-gas-industry">🛢️<br/><b>Oil &amp; Gas (Drilling, Pore Pressure)</b></a></td>
 <td align="center" width="20%"><a href="#smart-city-urban-climate-mobility-and-health">🏙️<br/><b>Smart City &amp; Health</b></a></td>
 <td align="center" width="20%"><a href="#material-science">🔬<br/><b>Material Science</b></a></td>
 <td align="center" width="20%"><a href="#low-carbon-process-design-and-hydrogen">💧<br/><b>Low-Carbon Process Design &amp; Hydrogen</b></a></td>
@@ -411,7 +412,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 ---
 
-## Process Industry and Oil and Gas
+## Process and Chemical Industry
 
 <table>
 <tr>
@@ -436,19 +437,91 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I did**
-- **Hybrid AI for drilling (KPN Hole Cleaning, Big Pressure; WP manager):** *learned corrections* of a physics-based 1D multiphase cuttings-transport model using along-string sensor data, both **intrusive (in-code)** and non-intrusive, **with uncertainty quantification**. In our comparison **LSTM (MSE 2.1×10⁻⁶) beat a Transformer (20.1×10⁻⁶)** for bottom-hole ECD correction. 
---  Real-time anomaly detection (Isolation Forest to LSTM-autoencoders), 
--- **Uncertainty Quantification for pore-pressure prediction** (multi-modal well logs + simulations).
-- **Multiphase and reactive CFD for design:** bubble columns, pump-mixers (LES with sub-grid-scale dispersion models), iron smelting, packed-bed reactors, CFD-DEM.
-- **Unsupervised ML on flow physics, since my PhD:** snapshot POD and hybrid **POD-wavelet** analysis to identify the dominant coherent structures that drive transport in process equipment.
-- **ML for materials:** tree-based, linear and neural models for discovering thermo-electric materials from sparse data.
+**What I have been involved in Process and Chemical Industry:**
+- **AI use :**  
+   - AI for fault diagnosis and 
+   - AI + Physics for developing surrogate models to model process.  
+   - AI for materials.
+
+  - **Physics-based models i.e. Multiphase and reactive CFD for design of:** 
+    - Gas-liqud bubble columns, 
+    - Gas-solid Chemical looping combustion reactions,
+    - Pump-mixers (LES with sub-grid-scale dispersion models), 
+    - Iron smelting reactor 
+    - Multi-scale modelling of reactor-particle using CFD-DEM and 1D models. 
+
+- **Unsupervised ML on flow physics in my PhD:** 
+  - Used snapshot POD and hybrid **POD-wavelet** analysis to identify the dominant coherent structures that drive transport in process equipment.
+
+- **ML for materials:** Developed tree-based ML, linear and neural models for discovering thermo-electric materials from sparse data.
 - **Agentic optimisation of aluminium electrolysis:** see the [Agentic AI flagship](#agentic-ai-and-hybrid-modelling-four-cases).
 
+<details open>
+<summary><b>📚 Peer-reviewed evidence (selected)</b></summary>
+
+*Process and chemical industry (CFD + unsupervised ML + ML for materials)*
+- **Tabib**, Roy, Joshi, *CFD simulation of bubble column: an analysis of interphase forces and turbulence models*, **Chem. Eng. J.** 139(3) (2008), 100+ citations. [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cej.2007.09.015-blue?style=flat-square)](https://doi.org/10.1016/j.cej.2007.09.015)
+- Joshi, **Tabib**, Deshpande, Mathpati, *Dynamics of flow structures and transport phenomena, 1 & 2*, **Ind. Eng. Chem. Res.** 48(17) (2009). [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie8012506-blue?style=flat-square)](https://doi.org/10.1021/ie8012506) [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie900396k-blue?style=flat-square)](https://doi.org/10.1021/ie900396k)
+- **Tabib**, Schwarz, *Quantifying sub-grid scale turbulent dispersion force using one-equation SGS LES in gas–liquid and liquid–liquid systems*, **Chem. Eng. Sci.** 66(14) (2011). [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.ces.2011.03.058-blue?style=flat-square)](https://doi.org/10.1016/j.ces.2011.03.058)
+- **Tabib**, Lane, Yang, Schwarz, *CFD study of single-phase and multiphase (liquid–liquid) pump-mixer*, **Chem. Eng. Sci.** 80 (2012). [🔎](https://scholar.google.com/scholar?q=%22CFD+study+of+single+phase+and+multiphase+%28liquid-liquid%29+pump-mixer%22)
+- **Tabib**, Sathe, Deshpande, Joshi, *A hybridized snapshot POD–discrete wavelet transform technique for the analysis of flow structures*, **Chem. Eng. Sci.** 64(21) (2009). [🔎](https://scholar.google.com/scholar?q=%22hybridized+snapshot+proper+orthogonal+decomposition-discrete+wavelet+transform%22)
+- **Tabib**, Joshi, *Analysis of dominant flow structures in chemical process equipment using snapshot POD*, **Chem. Eng. Sci.** 63(14) (2008). [🔎](https://scholar.google.com/scholar?q=%22Analysis+of+dominant+flow+structures+and+their+flow+dynamics+in+chemical+process+equipment%22)
+- Dhotre, Nere, Vedantam, **Tabib**, *Advances in computational fluid dynamics*, Int. J. Chem. Eng. (2013). [![DOI](https://img.shields.io/badge/DOI-10.1155%2F2013%2F917373-blue?style=flat-square)](https://doi.org/10.1155/2013/917373)
+- **Tabib** et al., *Discovering thermo-electric materials using machine learning: insights and challenges*, LNCS 11139, Springer (2018). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--030--01418--6__39-blue?style=flat-square)](https://doi.org/10.1007/978-3-030-01418-6_39)
+- *Also:* Deshpande, **Tabib** et al., J. Turbulence 11 (2010) · **Tabib** et al., J. Computational Multiphase Flows 2(3) (2010).
+
+**Partners:** Rio Tinto / CSIRO Minerals · RCN projects.
+</details>
+
+---
+
+## Oil and Gas Industry
+
+I worked on two oil & gas projects, both centred on **safe and efficient drilling**: (1) **Clean Drilling / hole cleaning** (hybrid AI + physics and anomaly detection) and (2) **Big Pressure** (uncertainty quantification for pore-pressure prediction). Slides from both are shown below.
+
+### Project 1 · Clean Drilling: hybrid AI, physics and anomaly detection (KPN Hole Cleaning; WP manager)
+
+**Problem:** the 1D multiphase cuttings-transport model used for real-time drilling monitoring is physically incomplete and its inputs are uncertain, so its bottom-hole equivalent circulating density (ECD) deviates from measurements. The same issue arises in CO₂ capture, geothermal and oil & gas wells.
+
+**What I did:** *learned corrections* of the physics-based model with ML, using the past three time-steps of surface pressure, RPM, measured depth, flow rate and other along-string sensor data to predict the ECD error (ECD<sub>measured</sub> − ECD<sub>predicted</sub>). Two hybrid routes were built and compared: **intrusive** (the ML correction is applied inside the solver, updating the cuttings volume fraction at every grid cell) and **non-intrusive** (post-correction of the model output), both **with uncertainty quantification** (95 % confidence band).
+
 <p align="center">
-  <img src="assets/process/drilling_schematic.png" height="240" alt="Drilling cuttings transport schematic"/>
-  <img src="assets/process/drilling_ham_uncertainty.jpg" height="240" alt="Hybrid learned-correction ECD predictions with 95% CI"/>
-  <br/><sub>Wellbore cuttings transport · 1D-physics prediction vs <b>ML-corrected hybrid</b> vs measurement, with 95 % confidence band.</sub>
+  <img src="assets/oilgas/drilling_hybrid_ecd.png" width="95%" alt="Hybrid modelling slide: ML correction of the 1D cuttings-transport model for bottom-hole ECD, with uncertainty quantification"/>
+  <br/><sub>Slide: physics (1D cuttings transport) · intrusive and non-intrusive ML corrections · corrected ECD with uncertainty bands.</sub>
+</p>
+
+**Result:** for bottom-hole ECD correction, an **LSTM (MSE 2.1×10⁻⁶) outperformed a Transformer (MSE 20.1×10⁻⁶)** by about 10×, and the ML-corrected prediction follows the measurement much more closely than the 1D physics model alone.
+
+<p align="center">
+  <img src="assets/oilgas/drilling_transformer_vs_lstm.png" width="95%" alt="Transformer vs LSTM for ECD correction with 95% confidence interval"/>
+  <br/><sub>Transformer vs LSTM: 1D-model prediction, ML-corrected prediction, measurement and 95 % confidence interval.</sub>
+</p>
+
+**Real-time anomaly detection:** unsupervised methods (**PCA reconstruction, Isolation Forest and LSTM-autoencoder**) detect anomalies of different kinds in multivariate drilling time series (poor hole cleaning, wellbore instability, loss of circulation, stuck pipe). On the Mainbore 12.25 in section the LSTM-autoencoder gave the fewest false alarms (120 false positives vs ~3,400 for PCA and Isolation Forest), while Isolation Forest detected the most true anomalies (6,484).
+
+<p align="center">
+  <img src="assets/oilgas/drilling_anomaly_detection.png" width="95%" alt="Anomaly detection in drilling with PCA, Isolation Forest and LSTM autoencoder"/>
+  <br/><sub>Observed vs predicted anomalies, confusion matrices and detections per anomaly type (Altindal et al., Geoenergy Sci. Eng. 2024).</sub>
+</p>
+
+### Project 2 · Big Pressure: deep-learning uncertainty quantification for pore pressure
+
+**My role:** developing deep-learning **uncertainty quantification (UQ)** methods in WP1 and WP3 to predict the *distribution* of pore pressure (a point estimate is of limited use for safe drilling decisions).
+
+**Data:** a controlled **Equinor** well case study: Presssim simulations from SINTEF colleagues, well logs as input features, and sparse pore-pressure measurements from Equinor.
+
+**Methods:** several DL-UQ methods were compared on identical data and metrics (NLL, RMSE, PICP, MPIW, ECE with reliability diagrams): joint heteroscedastic Gaussian-NLL (MAP / MLE) with Deep Ensembles or MC-Dropout, Beta-NLL re-weighting, and a lightweight last-layer Bayesian VI baseline. I proposed two new methods: **2S-NN-HMCD** (two-stage decoupled mean and variance networks with an MC-Dropout epistemic layer) and **1S-SC** (the same decoupled mean network with a distribution-free split-conformal interval, with no learned variance model).
+
+<p align="center">
+  <img src="assets/oilgas/bigpressure_uq_overview.png" width="95%" alt="Big Pressure: pore-pressure prediction and uncertainty quantification overview"/>
+  <br/><sub>Big Pressure workflow (3D pressure modelling, logs, ML for overpressure, North Sea case studies) and pore-pressure depth profile with uncertainty bands.</sub>
+</p>
+
+**Results:** every method that trains a mean and a log-variance head jointly under one Gaussian-NLL objective suffered a **sigma-inflation pathology** (σ ≈ 148 bar, giving physically invalid negative pore pressure and a poor mean fit). Beta-NLL fixes the mean (RMSE ≈ 3.3 bar) but not the variance. In contrast, **2S-NN-HMCD and 1S-SC reach the best mean accuracy of all twelve methods (RMSE 2.51 bar)**, and **1S-SC has the best NLL (2.41), the narrowest 90 % interval (6.5 bar) and the best calibration (ECE 0.017)**. Both are recommended.
+
+<p align="center">
+  <img src="assets/oilgas/bigpressure_uq_results.png" width="95%" alt="Comparison table of twelve uncertainty quantification methods for pore pressure"/>
+  <br/><sub>Twelve UQ methods compared: NLL, RMSE, PICP, MPIW and ECE.</sub>
 </p>
 
 <details open>
@@ -462,19 +535,10 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 - Nivlet et al., *Towards real-time bad hole cleaning problem detection through adaptive deep learning models*, MEOS GEO (2023). [![DOI](https://img.shields.io/badge/DOI-10.2118%2F213643--MS-blue?style=flat-square)](https://doi.org/10.2118/213643-MS)
 - Altindal, Rasheed, **Tabib**, Nybø, *Online parameter calibration in drilling hydraulics model*, SPE Gas & Oil Technology (2025). · **Tabib**, Rasheed, Fuchs, *Unsteady hydrodynamics of vortex-induced vibrations on a bluff-bodied offshore structure*, OMAE (2017).
 
-*Process industry (CFD + unsupervised ML)*
-- **Tabib**, Roy, Joshi, *CFD simulation of bubble column: an analysis of interphase forces and turbulence models*, **Chem. Eng. J.** 139(3) (2008), 100+ citations. [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.cej.2007.09.015-blue?style=flat-square)](https://doi.org/10.1016/j.cej.2007.09.015)
-- Joshi, **Tabib**, Deshpande, Mathpati, *Dynamics of flow structures and transport phenomena, 1 & 2*, **Ind. Eng. Chem. Res.** 48(17) (2009). [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie8012506-blue?style=flat-square)](https://doi.org/10.1021/ie8012506) [![DOI](https://img.shields.io/badge/DOI-10.1021%2Fie900396k-blue?style=flat-square)](https://doi.org/10.1021/ie900396k)
-- **Tabib**, Schwarz, *Quantifying sub-grid scale turbulent dispersion force using one-equation SGS LES in gas–liquid and liquid–liquid systems*, **Chem. Eng. Sci.** 66(14) (2011). [![DOI](https://img.shields.io/badge/DOI-10.1016%2Fj.ces.2011.03.058-blue?style=flat-square)](https://doi.org/10.1016/j.ces.2011.03.058)
-- **Tabib**, Lane, Yang, Schwarz, *CFD study of single-phase and multiphase (liquid–liquid) pump-mixer*, **Chem. Eng. Sci.** 80 (2012). [🔎](https://scholar.google.com/scholar?q=%22CFD+study+of+single+phase+and+multiphase+%28liquid-liquid%29+pump-mixer%22)
-- **Tabib**, Sathe, Deshpande, Joshi, *A hybridized snapshot POD–discrete wavelet transform technique for the analysis of flow structures*, **Chem. Eng. Sci.** 64(21) (2009). [🔎](https://scholar.google.com/scholar?q=%22hybridized+snapshot+proper+orthogonal+decomposition-discrete+wavelet+transform%22)
-- **Tabib**, Joshi, *Analysis of dominant flow structures in chemical process equipment using snapshot POD*, **Chem. Eng. Sci.** 63(14) (2008). [🔎](https://scholar.google.com/scholar?q=%22Analysis+of+dominant+flow+structures+and+their+flow+dynamics+in+chemical+process+equipment%22)
-- Dhotre, Nere, Vedantam, **Tabib**, *Advances in computational fluid dynamics*, Int. J. Chem. Eng. (2013). [![DOI](https://img.shields.io/badge/DOI-10.1155%2F2013%2F917373-blue?style=flat-square)](https://doi.org/10.1155/2013/917373)
-- **Tabib** et al., *Discovering thermo-electric materials using machine learning: insights and challenges*, LNCS 11139, Springer (2018). [![DOI](https://img.shields.io/badge/DOI-10.1007%2F978--3--030--01418--6__39-blue?style=flat-square)](https://doi.org/10.1007/978-3-030-01418-6_39)
-- *Also:* Deshpande, **Tabib** et al., J. Turbulence 11 (2010) · **Tabib** et al., J. Computational Multiphase Flows 2(3) (2010).
-
-**Partners:** Aker BP · Equinor · Rio Tinto / CSIRO Minerals · RCN KPN projects.
+**Partners:** Aker BP · Equinor · RCN KPN projects.
 </details>
+
+---
 
 ---
 ## Low-Carbon Process Design and Hydrogen
@@ -500,7 +564,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 - **Hydrogen storage, thermal state estimation:** a deep-learning **hybrid POD-LSTM surrogate** that reconstructs natural-convection temperature fields in storage enclosures in real time.
 - **Hydrogen-material susceptibility (exploratory):** ML surrogates that estimate embrittlement indices of alloys from composition and processing features, replacing slow, costly experiments.
 - **Syngas (H₂/CO) chemical-looping combustion with CO₂ capture (EU DemoCLOCK, 500 kW):** a multiscale workflow in which 3D CFD-DEM of real pellet shapes (spheres, fluted rings, cylinders) supplies closures (Δp, heat and mass transfer, porosity) to a **1D multi-domain particle-reactor model**. This helps select oxygen-carrier shapes that minimise pressure drop, maximise conversion and avoid fuel slip.
-- **Towards green-H₂ metallurgy:** multiphase reactive CFD of smelting where CO/H₂ post-combustion drives reduction; see the HIsmelt work under [Process industry](#process-industry-and-oil-and-gas).
+- **Towards green-H₂ metallurgy:** multiphase reactive CFD of smelting where CO/H₂ post-combustion drives reduction; see the HIsmelt work under [Process industry](#process-and-chemical-industry).
 
 <p align="center">
   <img src="assets/hydrogen/h2_storage_pod_lstm.png" height="220" alt="POD-LSTM temperature state estimation"/>
@@ -626,11 +690,11 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
 <table>
 <tr><th width="18%">Section</th><th width="36%">Tools used (AI, Novel hybrid, CFD, physics-based)</th><th width="30%">Benefit / purpose</th><th width="16%">Challenges (see key)</th></tr>
 <tr><td valign="top"><a href="#wind-and-renewable-energy"><b>Wind energy</b></a></td><td valign="top"> CFD with actuator line, sliding mesh,<br/> AI tools: POD and conv-autoencoder + LSTM / Neural-ODE for reduced-order models<br/> GAN based super-resolution<br/> Reinforcement Learning  <br/>Gaussian processes<br/>Autoencoder + GMM + LSTM (on SCADA data)</td><td valign="top">1000–10,000× faster simulation<br/>State estimation and super-resolution<br/>Wake-steering optimisation and control<br/>Predictive maintenance<br/>Uncertainty quantification</td><td valign="top"><sub>A1 A2 A4 A6 A10<br/>P1 P2 P3 P7 P8</sub></td></tr>
-<tr><td rowspan="6" valign="top"><a href="#process-industry-and-oil-and-gas"><b>Process industry</b></a></td><td valign="top"><b>Industry 4.0 / agentic workflows</b><br/>LLM agents, RAG, tool calling<br/>Verifier / critic agents<br/>Physics models and surrogates as tools</td><td valign="top">Automation<br/>Optimisation<br/>Decision support</td><td valign="top"><sub>A8 A11<br/>P8</sub></td></tr>
+<tr><td rowspan="6" valign="top"><a href="#process-and-chemical-industry"><b>Process industry</b></a></td><td valign="top"><b>Industry 4.0 / agentic workflows</b><br/>LLM agents, RAG, tool calling<br/>Verifier / critic agents<br/>Physics models and surrogates as tools</td><td valign="top">Automation<br/>Optimisation<br/>Decision support</td><td valign="top"><sub>A8 A11<br/>P8</sub></td></tr>
 <tr><td valign="top"><b>Chemical / multiphase</b><br/>Multiphase CFD: Euler–Euler involving LES with sub-grid models<br/>CFD-DEM<br/> Data Analysis: POD + wavelets</td><td valign="top">Closure models<br/>Flow-structure insight<br/>Equipment design</td><td valign="top"><sub>P3 P5 P7 P8 P9</sub></td></tr>
 <tr><td valign="top"><b>Aluminium electrolysis</b><br/> Solving ODEs and Hybrid models (COSTA-SINDy, COSTA-DDM)<br/>LLM optimiser agent</td><td valign="top">Optimisation<br/>Simulator arbitration</td><td valign="top"><sub>A1 A11<br/>P3 P4</sub></td></tr>
 <tr><td valign="top"><b>Reactor design, low-carbon and H₂</b><br/>Physics: CFD-DEM + 1D multiscale particle-reactor model<br/>AI: POD-LSTM surrogate</td><td valign="top">Closure relations<br/>Design choice<br/>Fast state estimation</td><td valign="top"><sub>A1 A4<br/>P3 P7 P8</sub></td></tr>
-<tr><td valign="top"><b>Oil &amp; gas drilling</b><br/>1D cuttings-transport model + LSTM / Transformer learned correction (intrusive and non-intrusive)<br/>Bayesian PINN<br/>Isolation Forest, LSTM autoencoder<br/>Continual learning</td><td valign="top">Closure in physics<br/>Parameter estimation<br/>Uncertainty quantification<br/>Anomaly detection<br/>Pore-pressure prediction</td><td valign="top"><sub>A2 A3 A4 A9 A12<br/>P1 P3 P4</sub></td></tr>
+<tr><td valign="top"><a href="#oil-and-gas-industry"><b>Oil &amp; gas drilling</b></a><br/>1D cuttings-transport model + LSTM / Transformer learned correction (intrusive and non-intrusive)<br/>Bayesian PINN<br/>Isolation Forest, LSTM autoencoder<br/>Continual learning</td><td valign="top">Closure in physics<br/>Parameter estimation<br/>Uncertainty quantification<br/>Anomaly detection<br/>Pore-pressure prediction</td><td valign="top"><sub>A2 A3 A4 A9 A12<br/>P1 P3 P4</sub></td></tr>
 <tr><td valign="top"><b>Greenhouse (digital-twin enabler)</b><br/>CFD, POD + QR sensor placement<br/>LSTM surrogate<br/>RL / MPC, LLM agents<br/>Unity 3D, IoT</td><td valign="top">State estimation from ~10 sensors<br/>Control<br/>What-if analysis</td><td valign="top"><sub>A1 A2<br/>P1 P6</sub></td></tr>
 <tr><td rowspan="3" valign="top"><a href="#drones-and-autonomous-ships"><b>Aerospace and Marine Autonomy</b></a></td><td valign="top"><b>Drones</b><br/>Multiscale CFD (SIMRA, LES)<br/>Grassmann deep-learning ROM<br/>RL path planning</td><td valign="top">Real-time turbulence prediction<br/>Risk-aware path planning<br/>Control</td><td valign="top"><sub>A1 A10<br/>P1 P2 P7</sub></td></tr>
 <tr><td valign="top"><b>Autonomous vessels</b><br/>ML-Kalman sensor fusion<br/>RL + predictive safety filter<br/>LSTM remaining-useful-life<br/>Multi-agent LLM (ShipAgent)</td><td valign="top">Collision avoidance (COLREGS)<br/>Predictive maintenance<br/>RAMS trade-offs</td><td valign="top"><sub>A3 A10 A11</sub></td></tr>
