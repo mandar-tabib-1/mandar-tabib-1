@@ -146,43 +146,38 @@ flowchart LR
   
 ## Agentic AI and Hybrid Modelling: Four Cases
 
-**Question:** 
+My work involves collaborating in testing and exploring Agentic AI on the **four** different scientific cases following a **propose → verify → constrain** pattern. The initial results are presented here.  The Four cases are from the most common Agentic Simulation to Agent based Maintenance, Optimization and Safety. 
 
-### Can LLM-based agents automate physics-based engineering workflows
-### Can local open-weight LLMs replace costly closed models?
+**1. Agentic Predictive Maintenance** and Optimization on Wind Turbine (Renewable energy). 
 
-We tested this on four cases, from industrial operations to fully agentic CFD simulation, all following a **propose → verify → constrain** patterns.
+**2. Agentic Optimization** on Aluminium Electrolysis Process (Process and Chemical Industry).
 
-<p align="center"><img src="assets/agentic/poster/0_header.png" width="100%" alt="Poster: Testing Agentic AI and Hybrid Modelling for Optimization and Predictive Maintenance in Engineering"/></p>
+**3. Agentic Safety** with Autonomous Vessel.  
 
-### Case 1 · Testing AI Agents for Wind farm optimisation and predictive maintenance.
+**4. Agentic Simulation** with Computational Fluid Dynamics to a help a non-CFD persom background set-up and run it.  
 
-**How are AI Agents used?**  
+---
+---
 
-**In optimization**, the LLM-based Agent helps to choose an optimizer. n a multi-step loop with self-verification it calls `evaluate_yaw`, `run_optimizer`, `compare_results`, `validate_physics` and `commit_solution`, reasoning over earlier results before each new call.  We compared native tool calling with prompt-based ReAct. In addition, the LLM Agents are used as an Orchestrator, recommendor, critic agents and verifiers that are run in advisory or blocking mode via optimizaing for the yaw angles. The LLM agents assist a nine-module pipeline comprising of modules to 1. check for live weather data and wind farm infomration based on user-request (through yr.no API + BM25/RAG search) , 2. parametric ROM of the wake (10,000× faster than CFD), 3. Gaussian-process power prediction with confidence bounds , and 4. wake-steering optimiszers.  
+### Case 1 · Testing AI Agents for Wind farm optimisation and Predictive Maintenance.
 
-**In predictive maintenance**, the LLM agents are used with and without tools to help diagnoize faults from the input multi-variate SCADA data for fault, and its performance is compared with a classical ML pipeline for fault diagnosis. 
+**How are AI Agents tested here?**  
 
-- ✅ Classical ML pipeline (Autoencoder + GMM health states + gradient-boosting classifier + RNN RUL + SHAP) **outperformed a local LLM with tools** for SCADA fault diagnosis
+**In Agentic wind turbine optimization (see poster below)**, the LLM-based Agent (LLM-4-Optimization)  helps to choose an optimizer. This involves a multi-step loop with self-verification and LLM agents calls tools like: `evaluate_yaw`, `run_optimizer`, `compare_results`, `validate_physics` and `commit_solution`, and reasons over earlier results in its context before each new call.  We compared native tool calling vs prompt-based ReAct. In addition, the LLM Agents are used as an Orchestrator, recommendor, critic agents and verifiers that are run in advisory or blocking mode via optimizaing for the yaw angles. The LLM agents assist and are part of a 9 nine-module pipeline comprising of modules to 1. check for live weather data and wind farm infomration based on user-request (through yr.no API + BM25/RAG search) , 2. parametric ROM of the wake (10,000× faster than CFD), 3. Gaussian-process power prediction with confidence bounds , and 4. wake-steering optimiszers.  
+**In Agentic predictive maintenance of wind turbine (see poster below):** The LLM agents are used in two ways and compared with a ML-based approach for fault diagnosis from SCADA dataset. The **LLM-4-PdM-Tool** approach provides an LLM with external tools to enable fault diagnosis of input data, with tools calls to a persistence test, decision-boundary instability analysis, feature-level analysis and a SHAP consistency check. The LLM's reasoning is logged for audit as it determines faults. The second approach called **LLM-4-PdM-Code**  involves LLM writing its own diagnostic code (as its own tool) for the SCADA data and no other external diagnosis tool is provided for it to act. The ability of two LLMs approaches to diagnoize faults from the input multi-variate SCADA data for fault is compared with a classical ML pipeline for fault diagnosis. 
+- Results: ✅ Classical ML pipeline (Autoencoder + GMM health states + gradient-boosting classifier + RNN RUL + SHAP) **outperformed a local LLM with tools** for SCADA fault diagnosis
 
 
 <p align="center"><img src="assets/agentic/poster/1a_title.png" width="100%" alt="Poster case 1 title"/></p>
 <p align="center"><img src="assets/agentic/poster/1b_wake_steering.png" width="100%" alt="Poster case 1: wake-steering optimisation, modules 1 to 5"/></p>
 <p align="center"><img src="assets/agentic/poster/1c_pdm_agents.png" width="100%" alt="Poster case 1: fault diagnosis, predictive maintenance and supporting agent layers"/></p>
 <p align="center"><img src="assets/agentic/poster/1d_observations.png" width="100%" alt="Poster case 1: observations and challenges"/></p>
-
-**Agents in optimisation (LLM-4-Optimization).**   
-The agent is *not* the optimiser; it *chooses* one. In a multi-step loop with self-verification it calls `evaluate_yaw`, `run_optimizer`, `compare_results`, `validate_physics` and `commit_solution`, reasoning over earlier results before each new call. We compared native tool calling with prompt-based ReAct.
-
-
-**Agents in predictive maintenance.**  
- **LLM-4-PdM-Code** writes its own diagnostic code (its own tool) from the SCADA data. **LLM-4-PdM-Tool** uses external tools we provide: a persistence test, decision-boundary instability analysis, feature-level analysis and a SHAP consistency check. The LLM's reasoning is logged for audit.
-
+---
 ---
 
 ### Case 2 · Agentic Process Optimization. Case study: Aluminium electrolysis.
 
-**How are AI Agents used?**   
+**How are AI Agents used here?**   
 
 An LLM agent uses reasoning and past optimization performance to switch between different optimizers and helps to set the anode–cathode distance to minimise energy usage for electrolysis while keeping the process stable. LLM Agent also acts as a critic to choose between four process simulators: physics-based ODEs simulator, pure data-driven simulator, and two hybrids (COSTA-SINDy and COSTA-DDM).
 - ✅ Modest accuracy gain and **~10× lower run-to-run variance** than rule-based search
@@ -192,6 +187,7 @@ An LLM agent uses reasoning and past optimization performance to switch between 
 <p align="center"><img src="assets/agentic/poster/2b_results.png" width="100%" alt="Poster case 2: results"/></p>
 <p align="center"><img src="assets/agentic/poster/2c_observations.png" width="100%" alt="Poster case 2: observations"/></p>
 
+---
 ---
 
 ### Case 3 · Agentic Safety with ShipAgent: Multi-agent AI for autonomous vessels
@@ -207,12 +203,15 @@ An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintai
 <p align="center"><img src="assets/agentic/poster/3d_observations.png" width="100%" alt="Poster case 3: observations"/></p>
 
 ---
+---
+
 
 ### Case 4 · Agentic Simulation with Agentic CFD
 *(in collaboration with NTNU: Mikael Shahly , Adil Rasheed, Vasileios Tsiolakis and myself with SEP funding.)*
-**How are AI Agents used?**   
+#### Can a team of AI agents supervised by a human do a fluid-flow simulation from a one-sentence user request and provide a validated result? 
+#### Can a user with no prior CFD background, use the AI agents to learn CFD and set-up CFD simulations and run it?
 
-#### Can a team of AI agents supervised by a human, take a fluid-flow simulation from a one-sentence request to a validated result? 
+**How are AI Agents used?**  
 
 Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticCFD** chains four pipeline agents: **Specification → Case Builder → Mesh → Improvement**. A user approval gate follows each agent. Three fresh-context subagents are on call: an **adversarial critic** briefed to *fail* each mesh and result, a CFD hand, and a source explorer. The design is cybernetic: one feedback loop closed three times, as agent ↔ case, critic ↔ builder, and user ↔ agents. Every number in the specification carries a provenance tag (`[ASSUMED]`, `[INFERRED]`, `[COMPUTED]`, `[REVISED]`, `[RETRACTED]`).
 
