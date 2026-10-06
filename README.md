@@ -146,7 +146,7 @@ flowchart LR
   
 ## Agentic AI and Hybrid Modelling: Four Cases
 
-My work involves collaborating in testing and exploring Agentic AI on the **four** different scientific cases following a **propose → verify → constrain** pattern. The initial results are presented here.  The Four cases are from the most common Agentic Simulation to Agent based Maintenance, Optimization and Safety. 
+My current research involves testing and exploring Agentic AI on the **four** different scientific cases from energy to process industry to safety following a **propose → verify → constrain** feedback pattern over agentic AI cycles. The initial results are presented here from four domains.  The Four cases are from the most common Agentic Simulation to Agent based Maintenance, Optimization and Safety. 
 
 **1. Agentic Predictive Maintenance** and Optimization on Wind Turbine (Renewable energy). 
 
@@ -207,7 +207,7 @@ An LLM RAMS supervisor coordinates Reliability (LSTM-RUL), Availability, Maintai
 
 
 ### Case 4 · Agentic Simulation with Agentic CFD
-*(in collaboration with NTNU: Mikael Shahly , Adil Rasheed, Vasileios Tsiolakis and myself with SEP funding.)*
+**(in collaboration with NTNU: Mikael Shahly , Adil Rasheed, Vasileios Tsiolakis and Mandar tabib with SEP funding.)**
 #### Can a team of AI agents supervised by a human do a fluid-flow simulation from a one-sentence user request and provide a validated result? 
 #### Can a user with no prior CFD background, use the AI agents to learn CFD and set-up CFD simulations and run it?
 
