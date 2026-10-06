@@ -658,7 +658,11 @@ ML model that estimate hydrogen embrittlement indices of alloys from composition
 
 **Discovering thermoelectric materials with machine learning + density functional theory (DFT)** *(MLFunc project, 2018; WP manager and lead researcher; SINTEF Digital with SINTEF Industry; SEP funding)*
 
-Thermoelectric (TE) materials turn waste heat directly into electricity, but finding new ones means searching an almost limitless space of chemical compounds with slow experiments or very expensive DFT. We combined **physics-based DFT (+ Boltzmann transport theory)** with **data-driven ML** to screen new candidates by their figure of merit **ZT**, and studied how well ML generalises when data is scarce.
+Thermoelectric (TE) materials turn waste heat directly into electricity, but finding new ones means searching an almost limitless space of chemical compounds with slow experiments or very expensive DFT. We combined data from **physics-based DFT (+ Boltzmann transport theory)** with **data-driven ML** to screen new candidates by their figure of merit **ZT**, and studied how well ML generalises when data is scarce.
+<p align="center">
+<img src="assets/materials/te_summary.png" width="100%" alt="Summary: methods compared on sparse data, DNN overfitting versus random forest, and screening results with 47 promising compounds"/><br/>
+<sub>Summary: sparse-data challenges, methods compared (feature engineering, regularisation, ensembles, SMOTE), DNN overfitting vs RF, and screening results (47 promising compounds).</sub>
+</p>
 
 - **Data:** 115 DFT-computed compounds × 51 chemical potentials × 15 temperatures = **87,975 data points**, each with **50 descriptors** (atomic mass, radius, electronegativity, valence electrons, periodic-table features, crystal shape). The trained models then screened an unseen search space of **4,800 silicide compounds** (240,312 data points).
 - **Train/test design:** models were trained on some compounds and tested on *unseen compounds*. Three splits were compared: two random and one deterministic and balanced. The split changed generalisation strongly, even after cross-validation.
@@ -673,10 +677,6 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
 - ✅ **Candidates found:** RF, trained on the balanced split, proposed simple silicides such as **Li₂MgSi**, close to the Mg₂LiSi family under experimental investigation, plus SrMgSi. The DNN preferred complex compounds (more than 3 elements) that are hard to make and verify. Both models identified BeSiIr₂.
 - ✅ **Computational saving:** DFT alone needs about **85 CPU-hours per compound** (≈ 408,000 CPU-hours for 4,800 compounds). Screening those 4,800 compounds takes the trained model **80 s (RF) or 132 s (DNN)**, and the whole DFT + ML workflow costs **about 2 %** of DFT alone.
 
-<p align="center">
-<img src="assets/materials/te_summary.png" width="100%" alt="Summary: methods compared on sparse data, DNN overfitting versus random forest, and screening results with 47 promising compounds"/><br/>
-<sub>Summary: sparse-data challenges, methods compared (feature engineering, regularisation, ensembles, SMOTE), DNN overfitting vs RF, and screening results (47 promising compounds).</sub>
-</p>
 
 <details open>
 <summary><b>📚 Peer-reviewed evidence</b></summary>
