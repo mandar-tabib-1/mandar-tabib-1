@@ -281,13 +281,13 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 **What I am involved in: (FME NorthWind, WP4 lead researcher)**
 - **AI based Predictive Maintenance in  Digital-twins for offshore wind farms :** A Semi-supervised predictive maintenance tool involving (Autoencoder + GMM + LSTM) on the SCADA data.  
---**Reduced order models using AI for wake flows:** Surrogates for wake prediction using PCA/ conv-autoencoders for identifying latent low-dimensional space and for learning latent dynamics (methods like Neural ODE, Recurrent neural networks like LSTM and Operator inference). Further, yaw parameterized ROMS are developed as shown in animation above.
-  **Reinforcement learning** for wake-steering power optimisation; 
-  **Physics-informed Generative AI (GANs) for super-resolved wind states**; 
+-**Reduced order models using AI for wake flows:** Surrogates for wake prediction using PCA/ conv-autoencoders for identifying latent low-dimensional space and for learning latent dynamics (methods like Neural ODE, Recurrent neural networks like LSTM and Operator inference). Further, yaw parameterized ROMS are developed as shown in animation above.
+- **Reinforcement learning** for wake-steering power optimisation; 
+- **Physics-informed Generative AI (GANs) for super-resolved wind states**; 
  Physics-informed Generator AI (GANS) has been used for super-resolution of wind data from coarse measurements.    
  Note: The Unity User-interface was developed in NTNU by Florian and Adil, and my enablers were developed for this digital twin. 
 - **High-fidelity CFD of rotating turbines and real wind farms:** LES/RANS of the industrial-scale **Bessaker wind farm** (terrain, wakes, atmospheric stability); actuator-line vs sliding-mesh vs MRF comparisons; NREL 5 MW and marine-boundary-layer interaction; FSI (NOWITECH FME, KPN FSI-WT).
-- **Reduced-order models:** POD-based data mining of near wakes and parametric ROMs of flow around blades.
+- **Gaussian process regression with uncertainty for power prediction:** 
 - **Now:** *PreWinT* (2026–2028): an AI-enabled digital twin for **wind-turbine noise**, correcting low-order aero-acoustic models with symbolic regression.
 
 <p align="center">
