@@ -325,6 +325,9 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 **Projects:** FME NorthWind (RCN) · PreWinT (RCN KSP) · NOWITECH FME · KPN FSI-WT · SEP Agentic AI. **Partners:** Statkraft, Equinor, TrønderEnergi, Hydro Energi, wind-farm operators.
 </details>
 
+
+---
+---
 ---
 ## Drones and Autonomous Ships
 
@@ -342,7 +345,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </table>
 
 <p align="center">
-<img src="assets/autonomy/drone_urban_workflow.png" height="260" alt="Workflow from multiscale CFD to ML turbulence prediction"/><br/>
+<img src="assets/autonomy/drone_urban_workflow.png" height="460" alt="Workflow from multiscale CFD to ML turbulence prediction"/><br/>
 <sub>Multiscale CFD (HARMONIE → SIMRA → building-resolved) → <b>ML reduced-order model</b> → turbulence along flight paths (hospital drone logistics).</sub>
 </p>
 
@@ -353,9 +356,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 
 <p align="center">
   <a href="https://www.youtube.com/watch?v=00EQJdHGcxs"><img src="https://img.youtube.com/vi/00EQJdHGcxs/hqdefault.jpg" width="42%" alt="Conference presentation: AI for wind and turbulence"/></a>
-  <a href="https://www.youtube.com/watch?v=DOWOsiUe9uw"><img src="https://img.youtube.com/vi/DOWOsiUe9uw/hqdefault.jpg" width="42%" alt="Deep learning based parametric ROM: urban flow"/></a>
-  <br/><sub>▶️ <b>AI for wind & turbulence</b> (conference talk, 2025) · ▶️ <b>Deep-learning parametric ROM for urban flow</b></sub>
-</p>
+  </p>
 
 <details open>
 <summary><b>📚 Peer-reviewed evidence</b></summary>
@@ -366,6 +367,9 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 - **Tabib**, Midtbø, Skaslien, Rasheed, Kvamsdal, *Towards understanding wind impact for drone operations: comparison of wind models on different scales in a nested multiscale set-up*, CFD 2020, SINTEF Proceedings (2020). [🔎](https://scholar.google.com/scholar?q=%22Towards+understanding+wind+impact+for+drone+operations%22)
 </details>
 
+
+---
+---
 ---
 
 ## Digital Twin Enablers: Greenhouse Example
@@ -405,6 +409,10 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 - **Tabib**, Rasheed, Skare, Bruaset, *Data-driven spatio-temporal modelling and optimal sensor placement for a digital twin set-up*, Engineering Proceedings 39(1), 98 (2023). [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fengproc2023039098-blue?style=flat-square)](https://doi.org/10.3390/engproc2023039098)
 - Sundby, Graham, Rasheed, **Tabib**, San, *Geometric change detection in digital twins* (DMD + YOLOv5 + 3D pose estimation), **Digital** 1(2) (2021). [![DOI](https://img.shields.io/badge/DOI-10.3390%2Fdigital1020009-blue?style=flat-square)](https://doi.org/10.3390/digital1020009)
 </details>
+
+
+---
+---
 
 ---
 ## Aviation Safety 
@@ -446,6 +454,8 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 - 12 SINTEF technical reports for Avinor and EU SESAR 12.2.2 (wake-vortex micro-scale turbulence), 2014–2016.
 </details>
 
+---
+---
 ---
 
 ## Process and Chemical Industry
@@ -509,6 +519,8 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 **Partners:** Rio Tinto / CSIRO Minerals · RCN projects.
 </details>
 
+---
+---
 ---
 
 ## Oil and Gas Industry
@@ -575,8 +587,9 @@ I worked on two oil & gas projects, centred on **safe and efficient drilling and
 </details>
 
 ---
-
 ---
+---
+
 ## Low-Carbon Process Design and Hydrogen
 ### In EU DemoCLOCK project, I researched on multi-scale physics based modelling on reactor packed bed Chemical looping Combustion (CLC) in large-scale power plants.
  
@@ -637,6 +650,8 @@ ML model that estimate hydrogen embrittlement indices of alloys from composition
 </details>
 
 ---
+---
+---
 
 ## Smart City, Urban Climate, Mobility and Health
 
@@ -653,6 +668,10 @@ ML model that estimate hydrogen embrittlement indices of alloys from composition
 </tr>
 </table>
 
+<p align="center">
+   <a href="https://www.youtube.com/watch?v=DOWOsiUe9uw"><img src="https://img.youtube.com/vi/DOWOsiUe9uw/hqdefault.jpg" width="42%" alt="Deep learning based parametric ROM: urban flow"/></a>
+  <br/><sub>▶️ <b>AI for wind & turbulence</b> (conference talk, 2025) · ▶️ <b>Deep-learning parametric ROM for urban flow</b></sub>
+</p>
 **What I did**
 - **ML with subsequent physics-based analytics for transport planning (DIGMOB, AI-CLIMAMOB; RCN):** regression, SVR, random forest, ANN and LSTM on Oslo cycle-counter and weather data. Interpretable weather drivers of mobility are then turned into **CFD-based comfort maps** that guide where new bike infrastructure should go.
 - **Nested multiscale urban wind (meso → micro, LES vs RANS)**, validated against masts at Rikshospitalet, Oslo.
@@ -673,6 +692,8 @@ ML model that estimate hydrogen embrittlement indices of alloys from composition
 - **Tabib**, Fonn, Rasheed, *A computational framework involving CFD and data mining tools for analyzing disease in carotid artery bifurcation*, Progress in Applied CFD, SINTEF Proceedings (2017). [🔎](https://scholar.google.com/scholar?q=%22CFD+and+data+mining+tools+for+analyzing+disease+in+carotid+artery+bifurcation%22)
 </details>
 
+---
+---
 ---
 
 ## Material Science
@@ -706,6 +727,9 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
 - *Related:* ML surrogates for hydrogen-material susceptibility (see [Low-Carbon Process Design and Hydrogen](#low-carbon-process-design-and-hydrogen)).
 </details>
 
+
+---
+---
 ---
 ## 🧰Method toolbox: Hybrid Analysis & Modelling, and Agentic AI.
 
@@ -731,6 +755,10 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
 </table>
 
 > **Recent focus (2025–2026):** testing and integrating **Agentic AI and Generative AI with hybrid models / scientific ML**. LLM agents *orchestrate* physics models, surrogates, optimisers and verifiers, while the physics-based components remain authoritative.
+
+
+---
+---
 
 ## Application Areas, Tool Developed, Purpose and Challenges mitigated.
 
@@ -769,6 +797,8 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
   <br/><sub><i>Hybrid Analysis & Modelling (HAM): generalisable and trustworthy like physics, efficient and self-adapting like AI (after Rasheed et al. 2020).</i></sub>
 </p>
 
+---
+---
 ---
 
 ## 🧰 Method toolbox: Hybrid Analysis & Modelling for digital twins
@@ -810,6 +840,8 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
 </p>
 
 ---
+---
+---
 
 ## 🎓 Education & career
 
@@ -822,7 +854,7 @@ Thermoelectric (TE) materials turn waste heat directly into electricity, but fin
 | 2002 – 2004 | **M.E. Chemical Engineering**, BITS Pilani, India (CGPA 9.3/10) | Thesis: *AI for fault classification with Support Vector Machines + genetic algorithms* on the Tennessee Eastman benchmark (52 sensors) |
 | 1997 – 2001 | B.E. Chemical Engineering, Pune University (Distinction) | |
 
-**Teaching & mentoring:** supervised or mentored **6 PhD** candidates (NTNU; Oklahoma State University, USA) and **8 MSc** theses, one of which won a best-MSc-thesis award (OpenAI Lab, NTNU). Mentored a post-doc (NOWITECH). Taught at the Geilo Winter School (*Practical Machine Learning*, 2017). Contributed to NTNU courses TTK4260 (Multivariate Data Analysis) and TTK29 (Hybrid Analysis & Modelling for Digital Twins). External examiner for 15+ AI theses. Journal co-editor (2×) and frequent reviewer in wind energy and applied AI.
+**Teaching & mentoring:** supervised 1 or mentored 4 **6 PhD** candidates (NTNU; Oklahoma State University, USA) and **8 MSc** theses, one of which won a best-MSc-thesis award (OpenAI Lab, NTNU). Mentored a post-doc (NOWITECH). Taught at the Geilo Winter School (*Practical Machine Learning*, 2017). Contributed to NTNU courses TTK4260 (Multivariate Data Analysis) and TTK29 (Hybrid Analysis & Modelling for Digital Twins). External examiner for 15+ AI theses. Journal co-editor (2×) and frequent reviewer in wind energy and applied AI.
 
 ---
 
