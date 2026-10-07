@@ -265,11 +265,26 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </tr>
 </table>
 
-**What I was involved in: (FME NorthWind, WP4 lead researcher)**
+<table>
+<tr>
+<td width="50%" align="center">
+<img src="assets/wind/wake_demo_yaw_0.gif" width="100%" alt="Turbine wake ROM at yaw 0 degrees"/><br/>
+<sub><b>Wake ROM, yaw = 0°</b></sub>
+</td>
+<td width="50%" align="center">
+<img src="assets/wind/wake_demo_yaw_15.gif" width="100%" alt="Turbine wake ROM at different yaw"/><br/>
+<sub><b>Wake ROM, differnt yaw </b></sub>
+</td>
+</tr>
+</table>
+<p align="center"><sub><b>Reduced-order models of turbine wakes, parameterized on yaw angle and time</b>: the same ROM predicts the wake evolution for different yaw settings.</sub></p>
+
+**What I am involved in: (FME NorthWind, WP4 lead researcher)**
 - **AI based Predictive Maintenance in  Digital-twins for offshore wind farms :** A Semi-supervised predictive maintenance tool involving (Autoencoder + GMM + LSTM) on the SCADA data.  
+--**Reduced order models using AI for wake flows:** Surrogates for wake prediction using PCA/ conv-autoencoders for identifying latent low-dimensional space and for learning latent dynamics (methods like Neural ODE, Recurrent neural networks like LSTM and Operator inference). Further, yaw parameterized ROMS are developed as shown in animation above.
   **Reinforcement learning** for wake-steering power optimisation; 
   **Physics-informed Generative AI (GANs) for super-resolved wind states**; 
-  Hybrid surrogates for wake prediction (PCA / conv-autoencoders + RNN / Neural ODE latent dynamics).  
+ Physics-informed Generator AI (GANS) has been used for super-resolution of wind data from coarse measurements.    
  Note: The Unity User-interface was developed in NTNU by Florian and Adil, and my enablers were developed for this digital twin. 
 - **High-fidelity CFD of rotating turbines and real wind farms:** LES/RANS of the industrial-scale **Bessaker wind farm** (terrain, wakes, atmospheric stability); actuator-line vs sliding-mesh vs MRF comparisons; NREL 5 MW and marine-boundary-layer interaction; FSI (NOWITECH FME, KPN FSI-WT).
 - **Reduced-order models:** POD-based data mining of near wakes and parametric ROMs of flow around blades.
