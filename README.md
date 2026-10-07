@@ -34,7 +34,7 @@
 
 ## About Me
 - **Purpose:** Facilitate **Research Collaborations and Knowledge Exchange** by Disseminating my peer-reviewed research involving AI + Physics in different Engineering and Scientific Domains. 
-- **Content:** This README provides an overview of my research areas and results, and introduces me. The computational tools developed, and the technical challenges faced while providing solutions in the specific application areas are mentioned. My research involved fruitful collaborations as shown in publications and acknowledgements. 
+- **Content:** This README provides an overview of my research areas and results, and introduces me. Most of the work here is published in journals for more information. My research presented here involved some good collaborations as shown in publications and acknowledgements.  
 - **Position:** Senior Research Scientist, Computational Science and Engineering, **SINTEF Digital**, Trondheim, Norway.
 - **My Organisation:** SINTEF is one of Europe's largest independent research organisations, with **2,000+ employees**.
 - **Research experience:** Nearly **two decades of research experience**, including my Ph.D. and Master's research with AI and Physics.
@@ -43,6 +43,7 @@
   - **Physics-based modelling and numerical simulation**
   - **Hybrid analytics and modelling**, combining data-driven and physics-based approaches to mitigate challenges related to Generalization, Interpretability, Sparse and Noisy data quality, Uncertainty Quantifications, Accuracy and Efficiency. Methods mentioned below.
   - **Agentic AI in 2026, and Generative AI**,
+  - **Uncertainty Quantification in Deep learning**,
 - **Digital engineering:** Integration of these methods into **digital twins, simulation workflows, and Industry 4.0 applications**.
 - **Application domains:** My research has been applied across several domains, including:
   - Energy
@@ -104,7 +105,7 @@
 </tr>
 </table>
 
-## Application Areas
+## My Application Areas
 
 **Application areas of AI, hybrid AI + physics, and physics-based models. Click a link to jump to the results.**
 
