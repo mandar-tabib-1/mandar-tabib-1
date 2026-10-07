@@ -167,6 +167,7 @@ My current research involves testing and exploring Agentic AI on the **four** di
 **In Agentic wind turbine optimization (see poster below)**, the LLM-based Agent (LLM-4-Optimization)  helps to choose an optimizer. This involves a multi-step loop with self-verification and LLM agents calls tools like: `evaluate_yaw`, `run_optimizer`, `compare_results`, `validate_physics` and `commit_solution`, and reasons over earlier results in its context before each new call.  We compared native tool calling vs prompt-based ReAct. In addition, the LLM Agents are used as an Orchestrator, recommendor, critic agents and verifiers that are run in advisory or blocking mode via optimizaing for the yaw angles. The LLM agents assist and are part of a 9 nine-module pipeline comprising of modules to 1. check for live weather data and wind farm infomration based on user-request (through yr.no API + BM25/RAG search) , 2. parametric ROM of the wake (10,000× faster than CFD), 3. Gaussian-process power prediction with confidence bounds , and 4. wake-steering optimiszers.  
 <p align="center"><img src="assets/agentic/poster/1a_title.png" width="100%" alt="Poster case 1 title"/></p>
 <p align="center"><img src="assets/agentic/poster/1b_wake_steering.png" width="100%" alt="Poster case 1: wake-steering optimisation, modules 1 to 5"/></p>
+
 **In Agentic predictive maintenance of wind turbine (see poster below):** The LLM agents are used in two ways and compared with a ML-based approach for fault diagnosis from SCADA dataset. The **LLM-4-PdM-Tool** approach provides an LLM with external tools to enable fault diagnosis of input data, with tools calls to a persistence test, decision-boundary instability analysis, feature-level analysis and a SHAP consistency check. The LLM's reasoning is logged for audit as it determines faults. The second approach called **LLM-4-PdM-Code**  involves LLM writing its own diagnostic code (as its own tool) for the SCADA data and no other external diagnosis tool is provided for it to act. The ability of two LLMs approaches to diagnoize faults from the input multi-variate SCADA data for fault is compared with a classical ML pipeline for fault diagnosis. 
 - Results: ✅ Classical ML pipeline (Autoencoder + GMM health states + gradient-boosting classifier + RNN RUL + SHAP) **outperformed a local LLM with tools** for SCADA fault diagnosis
 <p align="center"><img src="assets/agentic/poster/1c_pdm_agents.png" width="100%" alt="Poster case 1: fault diagnosis, predictive maintenance and supporting agent layers"/></p>
@@ -249,6 +250,10 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 *Poster: "Testing Agentic AI and Hybrid Modelling for Optimization and Predictive Maintenance in Engineering", M. Tabib & A. Rasheed, SINTEF (2026). Funded by the Research Council of Norway, the EU and SINTEF (FME NorthWind, AI4HyDROP, SEP, TAPI).*
 *Poster: "Agentic CFD: Building AI Agents for Physics-Based Simulation", A. Rasheed, M. Shahly, V. Tsiolakis & M. Tabib, NTNU / SINTEF Digital (2026).*
 </details>
+
+
+---
+---
 
 ---
 ## Wind and Renewable Energy
