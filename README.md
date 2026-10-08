@@ -482,6 +482,10 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
 </td>
 </tr>
 </table>
+<p align="center">
+<img src="assets/hydrogen/clc_closures_multiscale.png" width="80%" alt="Closures for 1D and 2D reactor models from 3D CFD-DEM"/><br/>
+<sub><i>Obtaining Closures for 1D reactor porous model and 2D gas-solid multiphase reactor scale models using results from the single-phase 3D CFD+Discrete Element Modeling (DEM) particle tracking on bed segment.</i></sub>
+</p>
 
 **What I have been involved in Process and Chemical Industry:**
 - **AI use :**  
@@ -494,7 +498,7 @@ Built on the **Claude Agent SDK** with **OpenFOAM** and **ParaView**, **AgenticC
     - Gas-solid Chemical looping combustion reactions,
     - Pump-mixers (LES with sub-grid-scale dispersion models), 
     - Iron smelting reactor 
-    - Multi-scale modelling of reactor-particle using CFD-DEM and 1D models. 
+    - Multi-scale modelling  using 3D CFD-DEM particle for packing structure and reactor modelling using a 1D porous multiphase reactive models, a separate 1D reactor-particle model and a separate 2D Eulerian-Eulerian multiphase model.
 
 - **Unsupervised ML on flow physics in my PhD:** 
   - Used snapshot POD and hybrid **POD-wavelet** analysis to identify the dominant coherent structures that drive transport in process equipment.
@@ -591,8 +595,13 @@ I worked on two oil & gas projects, centred on **safe and efficient drilling and
 ---
 
 ## Low-Carbon Process Design and Hydrogen
-### In EU DemoCLOCK project, I researched on multi-scale physics based modelling on reactor packed bed Chemical looping Combustion (CLC) in large-scale power plants.
- 
+### In EU DemoCLOCK project, I researched on multi-scale physics based modelling on reactor packed bed Chemical looping Combustion (CLC) in large-scale power plants. 
+
+<p align="center">
+<img src="assets/hydrogen/clc_closures_multiscale.png" width="80%" alt="Closures for 1D and 2D reactor models from 3D CFD-DEM"/><br/>
+<sub><i>Obtaining Closures for 1D reactor porous model and 2D gas-solid multiphase reactor scale models using results from the single-phase 3D CFD+Discrete Element Modeling (DEM) particle tracking on bed segment.</i></sub>
+</p>
+
 <table>
 <tr>
 <td width="34%" align="center">
