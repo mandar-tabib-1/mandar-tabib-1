@@ -173,6 +173,13 @@ My current research involves testing and exploring Agentic AI on the **four** di
 <p align="center"><img src="assets/agentic/poster/1c_pdm_agents.png" width="100%" alt="Poster case 1: fault diagnosis, predictive maintenance and supporting agent layers"/></p>
 <p align="center"><img src="assets/agentic/poster/1d_observations.png" width="100%" alt="Poster case 1: observations and challenges"/></p>
 
+**Slide 1 · Agentic maintenance: predicting turbine faults.** A trained ML pipeline is compared against a tool-calling LLM agent and a code-writing LLM agent for drivetrain fault detection from SCADA data. The trained ML model did better than the local open-weight LLM tested (Kimi-K 2.6, ranked 42nd); top-ranked cloud models such as Claude are still to be tested.
+<p align="center"><img src="assets/agentic/agentic_maintenance_slide.png" width="100%" alt="Agentic maintenance: ML pipeline vs LLM tool and code agents for turbine fault detection. Mandar Tabib"/></p>
+<sub>Source: Agentic AI for wind farm, Mandar Tabib, NorthWind Windy Wednesday, 2026 (in preparation).</sub>
+
+**Slide 2 · Agentic wind turbine noise curtailment with physics.** An AI agent chooses whether to slow, pitch or turn a turbine, tests the choice with wake and acoustic simulations (AI-enhanced dynamic wake meandering model), and repeats until the noise is low enough with minimal power loss. The agent proposed actions that cut noise at the neighbour by 2 dB (about 39 % less sound power) within the allowed energy-loss limit.
+<p align="center"><img src="assets/agentic/agentic_noise_curtailment_slide.png" width="100%" alt="Agentic wind turbine noise curtailment via AI agents with physics. Mandar Tabib"/></p>
+
 
 ---
 ---
@@ -569,11 +576,23 @@ I worked on two oil & gas projects, centred on **safe and efficient drilling and
   <br/><sub>Big Pressure workflow (3D pressure modelling, logs, ML for overpressure, North Sea case studies) and pore-pressure depth profile with uncertainty bands.</sub>
 </p>
 
-**Results:** every method that trains a mean and a log-variance head jointly under one Gaussian-NLL objective suffered a **sigma-inflation pathology** (σ ≈ 148 bar, giving physically invalid negative pore pressure and a poor mean fit). Beta-NLL fixes the mean (RMSE ≈ 3.3 bar) but not the variance. In contrast, **2S-NN-HMCD and 1S-SC reach the best mean accuracy of all twelve methods (RMSE 2.51 bar)**, and **1S-SC has the best NLL (2.41), the narrowest 90 % interval (6.5 bar) and the best calibration (ECE 0.017)**. Both are recommended.
+**Results:** twelve methods were ranked by CRPS (lower is better). The two best are the proposed **2S-NN-HMCD (CRPS 5.425 bar, RMSE 9.91 bar)** and a **conditional diffusion model, DDPM (CRPS 5.428 bar, best 90 % coverage PICP 0.83 and ECE 0.311)**. 2S-NN-HMCD wins because its mean network is trained alone with plain MSE, so σ can neither inflate nor starve the mean, and MC-Dropout widens the band where the network is unsure. The joint Gaussian-NLL methods (Deep Ensemble, MC-Dropout, VI) stay too narrow under the data shift (PICP 0.39 to 0.73), conformal bands have a fixed width, and the normalizing flow has the largest error.
 
 <p align="center">
-  <img src="assets/oilgas/bigpressure_uq_results.png" width="95%" alt="Comparison table of twelve uncertainty quantification methods for pore pressure"/>
-  <br/><sub>Twelve UQ methods compared: NLL, RMSE, PICP, MPIW and ECE.</sub>
+  <img src="assets/oilgas/bigpressure_uq_summary.png" width="100%" alt="ML-based uncertainty quantification for pore pressure: predicted pressure with uncertainty for all methods, comparison table and reasons for the two best models"/>
+  <br/><sub>Summary: predicted pore pressure with 90 % intervals for all methods, the quantitative comparison, and why the two best models win.</sub>
+</p>
+<p align="center">
+  <img src="assets/oilgas/bigpressure_uq_methods_nll.png" width="100%" alt="UQ methods 1 of 3: the Gaussian-NLL family"/>
+  <br/><sub>UQ methods (1/3): the Gaussian-NLL family (heteroscedastic NLL, MAP/MLE, Deep Ensemble, MC-Dropout, last-layer VI, Beta-NLL).</sub>
+</p>
+<p align="center">
+  <img src="assets/oilgas/bigpressure_uq_methods_decoupled.png" width="100%" alt="UQ methods 2 of 3: decoupled and generative"/>
+  <br/><sub>UQ methods (2/3): decoupled two-stage network, split conformal, conditional diffusion and normalizing flow.</sub>
+</p>
+<p align="center">
+  <img src="assets/oilgas/bigpressure_uq_metrics.png" width="100%" alt="UQ metrics used to score every method"/>
+  <br/><sub>UQ metrics: RMSE, bias, NLL, CRPS, PICP/MPIW and ECE, computed per depth from (μ, σ).</sub>
 </p>
 
 <details open>
